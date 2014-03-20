@@ -176,39 +176,3 @@
 		$("#"+destination_container).html('<div class="ov_text_18">Lo sentimos, pero tu dispositivo no permite geolocalización.</div>');
 		$("#"+destination_big_container).show();
 	}
-	
-	//Para scroll
-	function isTouchDevice(){
-	    try{
-	        document.createEvent("TouchEvent");
-	        return true;
-	    } 
-	    catch(e){
-	        return false;
-	    }
-	}
-	function touchScroll(id){
-	    if(isTouchDevice())
-	    { //if touch events exist...
-	        var el=document.getElementById(id);
-	        var scrollStartPos=0;
-	
-	        document.getElementById(id).addEventListener("touchstart", function(event) {
-	            scrollStartPos=this.scrollTop+event.touches[0].pageY;
-	            event.preventDefault();
-	        }, false);
-	
-	        document.getElementById(id).addEventListener("touchmove", function(event) {
-	            this.scrollTop=scrollStartPos-event.touches[0].pageY;
-	            event.preventDefault();
-	        }, false);
-	    }
-	} 
-	
-	$(document).ready(function() { 
-	   touchScroll("ov_box_07_1");
-	   touchScroll("ov_zone_12_1");
-	   touchScroll("ov_zone_15_1");
-	   touchScroll("ov_zone_15_2");
-	   touchScroll("ov_box_02_b");
-	});

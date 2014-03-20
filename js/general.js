@@ -39,7 +39,7 @@
 		
 		$("#ov_zone_15_1").css("height",(viewport_height-60)+"px");
 		$("#ov_zone_15_2").css("height",(viewport_height-60)+"px");
-		$("#ov_zone_15_1").css("overflow","auto");
+		$("#ov_zone_15_1").css("overflow-y","scroll");
 		$("#ov_zone_15_2").css("overflow","auto");
 		
 		$("#ov_zone_12_1").css("height",(viewport_height-250)+"px");

@@ -1,0 +1,277 @@
+<script>
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_encuentro_1" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_encuentro_1").click(function(e){
+			if(referrer_from_herman=="")
+			{
+				$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_herman,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_herman="";				
+				});
+			}
+				
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_encuentro_1" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_encuentro_1" class="ov_box_13_b">
+		<div id="ov_box_14_encuentro_1" class="ov_box_14">
+			<div id="ov_text_12_encuentro_1" class="ov_text_12_b">
+				PROCESIÓN DE LA ILUSIÓN
+			</div>
+			<div id="ov_text_13_encuentro_1" class="ov_text_13">
+				día 14<br>
+				Lunes Santo<br><br> 
+			</div>
+		</div>
+		<div id="ov_box_15_encuentro_1" class="ov_box_15">
+			<div id="ov_text_15_encuentro_1" class="ov_text_15">
+				Salida:
+			</div>
+			<div id="ov_text_14_encuentro_1" class="ov_text_14">
+				21 00h<br>
+				Ermita de Nuestra Señora de Las Vacas<br>
+				Plaza de Las Vacas
+			</div>				
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+<div id="ov_zone_14_encuentro_1" class="ov_zone_14">
+	<div id="ov_box_17_encuentro_1" class="ov_box_17">
+		
+		<div id="ov_text_16_encuentro_1" class="ov_text_16">
+			El Lunes Santo se llevan a cabo dos procesiones que confluyen en uno de los momentos más emotivos de la Semana Santa abulense: <b>El Encuentro</b>
+			<br>
+			Por un lado, de la Ermita de Ntra. Sra. de las Vacas sale esta Procesión de la Ilusión portando en andas al Cristo del mismo nombre.
+			<br>
+			El Ilustre Patronato de la Santísima Trinidad y Ntra. Sra. de las Vacas es uno de los más populares de la ciudad y la Virgen es una de las tallas de gloria que más devoción despiertan en Ávila.
+			<br>
+			Este Patronato decidió incorporarse a la Semana Santa en 1992 con la imagen del Santísimo Cristo, realizada en madera de pino ruso en 1989 por el imaginero murciano Manuel Ortega. 
+		</div>
+		
+		<div id="ov_text_16_encuentro_1_2" class="ov_text_16">
+			<span class="ov_span_02">Organiza.</span>
+			<br><br>
+			<div id="ov_text_17_encuentro_1_1" class="ov_text_17">
+				Iltre. Patronato de la Stma. Trinidad y Ntra. Sra. de las Vacas
+			</div>
+			<script>
+				$("#ov_text_17_encuentro_1_1").click(function(e){
+					referrer_from_proce="./views/procesiones/ov_view_encuentro_1_01.html";
+					$('#ov_view_container_02').load("./views/hermandades/ov_view_h_vacas_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>
+		</div>
+		
+		<div id="ov_text_16_encuentro_1_3" class="ov_text_16">
+			<span class="ov_span_02">Hábito.</span>
+			<br><br>
+			Túnica de color verde con cíngulo en blanco y verde, botonadura en blanco, caperuza verde, con el emblema de la Hermandad, y capa blanca.
+			<br><br>
+			<img src="styles/images/habitos/las_vacas.png" class="ov_image_11"/>
+		</div>
+		
+		<div id="ov_text_16_encuentro_1_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span>
+			<br><br>
+			<div id="ov_text_18_encuentro_1_1" class="ov_text_18">
+				<span class="ov_span_03">Santísimo Cristo de la Ilusión</span>
+				<div id="ov_text_19_encuentro_1_1" class="ov_text_19">					
+				    Autor: D. Manuel Ortega<br>
+				    Fecha: 1990<br>
+				    El Cristo de la Ilusión es una talla de madera de pino ruso, tallada por el escultor murciano D. Manuel Ortega que habia terminado el año anterior en el Cerro de los Angeles, adquirida en 1990.<br>
+				    En 1991 estrenó unas andas nuevas, talladas en madera de nogal por el escultor abulense D. Rafael Gonzalez Gonzalez a quien habian sido encargadas por varios cofrades y simpatizantes				
+					<br><br>
+					<img src="styles/images/pasos/ilusion_vacas.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>								
+		</div>
+		
+		<div id="ov_text_16_encuentro_1_6" class="ov_text_16">
+			<span class="ov_span_02">Música.</span>
+			<br><br>
+			Banda de Cornetas y Tambores del Stmo. Cristo a la Columna "El Amarrado". 
+		</div>
+		
+		<div id="ov_text_16_encuentro_1_5" class="ov_text_16">
+			<span class="ov_span_02">Ruta.</span>
+			
+			<br><br>
+			Con salida y llegada en <span class="ov_span_03">Plaza Las Vacas</span>, el encuentro con la Procesión de la Esperanza se produce en
+			la <span class="ov_span_03">Plaza de la Catedral</span> a las <span class="ov_span_03">22:30h</span> aproximadamente.			
+			<br><br>
+			
+			<div id="ov_mapa_ruta_encuentro_1_1" class="ov_mapa_ruta_01">
+				<div class="ov_text_18">Para acceder al mapa necesitas una conexión activa</div>
+			</div>
+			
+			<br>
+			<script>
+				current_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza Las Vacas, Ávila&destination=Plaza Las Vacas, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle San Cristóbal, Ávila|Calle Jesús del Gran Poder, 2, Ávila|Calle Francisco Gallego, Ávila|Plaza Rastro, Ávila|Plaza Pedro Dávila, Ávila|Calle Cardenal Pla y Deniel, Ávila|Plaza Teniente Arévalo, Ávila|Plaza José Tome, Ávila|Calle Don Gerónimo Ávila|Calle Cruz Vieja, Ávila|Plaza Catedral, Ávila|Calle San Segundo, Ávila|Calle Dean Castor Robledo, Ávila&language=es&zoom=15&center=40.656143,-4.697067";
+				draw_map(current_url,'ov_mapa_ruta_encuentro_1_1');
+			</script>
+			<div class="ov_button_01" id="ov_button_01_encuentro_1_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_encuentro_1_1')">
+				Actualizar Mapa
+			</div>
+			<br>
+			
+			<span class="ov_span_03">Itinerario:</span>
+			<br>
+			<i>Pulsa sobre cualquier punto abajo para obtener una ruta desde tu ubicación actual</i>
+			
+			<div id="ov_geo_route_2" style="display:none">
+				<br><br>
+				<div id="ov_mapa_ruta_encuentro_1_2" class="ov_mapa_ruta_01" style="background-color:#DDD">
+					<div class="ov_text_18">Espera, por favor...</div>
+				</div>
+				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
+					
+				</div>				
+				<div class="ov_button_01" id="ov_button_01_encuentro_1_refresh_map" onclick="show_route_2(destination,'15',destination_center,destination_container,destination_big_container);">
+				Actualizar posición
+				</div>
+				<br>
+				<div class="ov_button_01" id="ov_button_01_encuentro_1_hide_map" onclick="$('#ov_geo_route_2').hide()">
+				Ocultar
+				</div>					
+			</div>
+			
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_1_1">Plaza de Las Vacas</span>
+			<script>
+				$("#ov_place_encuentro_1_1").click(function(e){
+					show_route_2("Plaza Las Vacas, Ávila","","","ov_mapa_ruta_encuentro_1_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_1_2">Calle San Cristóbal</span>
+			<script>
+				$("#ov_place_encuentro_1_2").click(function(e){
+					show_route_2("Calle San Cristóbal, Ávila","","","ov_mapa_ruta_encuentro_1_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_1_3">Calle Jesús del Gran Poder</span>
+			<script>
+				$("#ov_place_encuentro_1_3").click(function(e){
+					show_route_2("Calle Jesús del Gran Poder, 2, Ávila","","","ov_mapa_ruta_encuentro_1_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_1_4">Calle Francisco Gallego</span>
+			<script>
+				$("#ov_place_encuentro_1_4").click(function(e){
+					show_route_2("Calle Francisco Gallego, Ávila","","","ov_mapa_ruta_encuentro_1_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_1_5">Plaza del Rastro</span>
+			<script>
+				$("#ov_place_encuentro_1_5").click(function(e){
+					show_route_2("Plaza Rastro, Ávila","","","ov_mapa_ruta_encuentro_1_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_1_6">Plaza de Pedro Dávila</span>
+			<script>
+				$("#ov_place_encuentro_1_6").click(function(e){
+					show_route_2("Plaza Pedro Dávila, Ávila","","","ov_mapa_ruta_encuentro_1_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_1_7">Calle Pla y Deniel</span>
+			<script>
+				$("#ov_place_encuentro_1_7").click(function(e){
+					show_route_2("Calle Cardenal Pla y Deniel, Ávila","","","ov_mapa_ruta_encuentro_1_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_1_8">Plaza Teniente Arévalo</span>
+			<script>
+				$("#ov_place_encuentro_1_8").click(function(e){
+					show_route_2("Plaza Teniente Arévalo, Ávila","","","ov_mapa_ruta_encuentro_1_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_1_9">Plaza de José Tome</span>
+			<script>
+				$("#ov_place_encuentro_1_9").click(function(e){
+					show_route_2("Plaza José Tome, Ávila","","","ov_mapa_ruta_encuentro_1_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_1_10">Calle Don Gerónimo</span>
+			<script>
+				$("#ov_place_encuentro_1_10").click(function(e){
+					show_route_2("Calle Don Gerónimo, Ávila","","","ov_mapa_ruta_encuentro_1_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_1_11">Calle Cruz Vieja</span>
+			<script>
+				$("#ov_place_encuentro_1_11").click(function(e){
+					show_route_2("Calle Cruz Vieja, Ávila","","","ov_mapa_ruta_encuentro_1_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_1_12">Plaza de la Catedral</span>
+			<script>
+				$("#ov_place_encuentro_1_12").click(function(e){
+					show_route_2("Plaza Catedral, Ávila","","","ov_mapa_ruta_encuentro_1_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_1_13">Calle San Segundo</span>
+			<script>
+				$("#ov_place_encuentro_1_13").click(function(e){
+					show_route_2("Calle San Segundo, Ávila","","","ov_mapa_ruta_encuentro_1_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_1_14">Calle Deán Castor Robledo</span>
+			<script>
+				$("#ov_place_encuentro_1_14").click(function(e){
+					show_route_2("Calle Dean Castor Robledo, Ávila","","","ov_mapa_ruta_encuentro_1_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_1_15">Plaza de Las Vacas</span>
+			<script>
+				$("#ov_place_encuentro_1_15").click(function(e){
+					show_route_2("Plaza Las Vacas, Ávila","","","ov_mapa_ruta_encuentro_1_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>					
+		</div>
+	</div>
+</div>	
+

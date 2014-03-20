@@ -1,0 +1,138 @@
+<script>
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_h_afligidos" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_h_afligidos").click(function(e){
+			if(referrer_from_proce=="")
+			{
+				$('#ov_view_container_01').load("./views/hermandades/ov_view_herman_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_proce,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_proce="";				
+				});
+			}	
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_h_afligidos" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_h_afligidos" class="ov_box_13_b">
+		<div id="ov_box_14_h_afligidos" class="ov_box_14">
+			<img src="styles/images/escudos/afligidos.jpg" id="ov_image_03_4" class="ov_image_03" alt="circle_04"/>
+		</div>
+		<div id="ov_box_15_h_afligidos" class="ov_box_15">
+			<div id="ov_text_15_h_afligidos" class="ov_text_15">
+				<br>
+				Cofradía del Stmo. Cristo de los Afligidos
+			</div>
+						
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+
+
+<div id="ov_zone_14_h_afligidos" class="ov_zone_14">
+	<div id="ov_box_17_h_afligidos" class="ov_box_17">
+		<div id="ov_text_16_h_afligidos" class="ov_text_16">
+			Nace esta cofradía en el año 2000 en el seno del convento de los Padres Carmelitas, tomando como hábito el carmelitano. Organizan la procesión del "Vía Matris" con un recorrido por el interior del recinto amurallado.
+			<br><br>
+			Tiene la particularidad de la forma en que va colocada sobre el trono la imagen del Santísimo Cristo de los Afligidos, llevando la cruz inclinada en lugar de posición vertical.
+			<br><br>
+			La Cofradía realiza paradas para efectuar las 7 lecturas, en cinco plazas por donde discurre su estación penitencial.
+			<br><br>
+			Como nota curiosa con la Cofradía del Santísimo Cristo de los Afligidos y Santa María Consuelo de los Afligidos, desde su primera estación penitencial, participan en la procesión, con el hábito de la misma, un grupo de reclusas y personal funcionario de la prisión de Brieva.
+		</div>
+		
+		<div id="ov_text_16_h_afligidos_3" class="ov_text_16">
+			<span class="ov_span_02">Datos.</span><br><br>
+			<span class="ov_span_01">Hábito:</span><br>Túnica marrón, capa con capucha y cíngulo beige.
+			<br><br>
+			<img src="styles/images/habitos/afligidos.png" class="ov_image_11"/>
+			<br><br>
+			<span class="ov_span_01">Templo de Residencia Canónica:</span><br>Convento de Santa Teresa.
+			<br><br>
+			<span class="ov_span_01">Fundación:</span><br>1996.
+			<br><br>
+			<span class="ov_span_01">Hermanos:</span><br>160.
+			<br><br>
+			<span class="ov_span_01">Nazarenos:</span><br>90.
+			<br><br>
+			<span class="ov_span_01">Atributos de los Hermanos:</span><br>Cruz de Madera
+			<br><br>
+			<span class="ov_span_01">Culto(s) organizados:</span><br>Triduo al Santísimo Cristo de los Afligidos.
+		</div>
+		<div id="ov_text_16_h_afligidos_6" class="ov_text_16">
+			<span class="ov_span_02">Contacto.</span><br><br>
+			Cofradía del Santisimo Cristo de los Afligidos.<br>
+			Convento de los Padres Carmelitas<br>
+			Plaza de la Santa, nº 2<br>
+			05001 - AVILA<br><br>			
+			afligidosavilahm@gmail.com 
+		</div>
+		<div id="ov_text_16_h_afligidos_2" class="ov_text_16">
+			<span class="ov_span_02">Procesiones.</span><br><br>
+			<div id="ov_text_17_h_afligidos_1" class="ov_text_17">
+				Via Matris (11 de Abril, Viernes de Dolores)
+			</div>
+			<script>
+				$("#ov_text_17_h_afligidos_1").click(function(e){
+					referrer_from_herman="./views/hermandades/ov_view_h_afligidos_01.html";
+					$('#ov_view_container_02').load("./views/procesiones/ov_view_via_matris_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>
+		</div>	
+		<div id="ov_text_16_h_afligidos_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span><br><br>
+			Paso de misterio compuesto por:<br><br>
+			<div id="ov_text_18_h_afligidos_1" class="ov_text_18">
+				<span class="ov_span_03">Santísimo Cristo de Los Afligidos</span>
+				<div id="ov_text_19_h_afligidos_1" class="ov_text_19">					
+				    Autor: Talleres Arte Cristiano de Barcelona<br>
+				    Fecha: 1929<br>
+				    Talla adquirida por los P. Carmelitas del Convento de Santa Teresa de Jesús, donde se encuentra al culto.
+				    La Imagen representa a Jesús crucificado y presenta la particularidad de estar inclinada la cruz en lugar de su posición vertical, siendo la única imagen que sale en esta posición.									
+					<br><br>
+					<img src="styles/images/pasos/cristo_afligidos.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_h_afligidos_2" class="ov_text_18">
+				<span class="ov_span_03">Santa María Consuelo de los Afligidos</span>
+				<div id="ov_text_19_h_afligidos_2" class="ov_text_19">					
+				    Autor: Obra del escultor abulense Kaito<br>
+					Fecha: 2004
+					<br><br>
+					<img src="styles/images/pasos/maria_afligidos.jpg" class="ov_image_12"/>
+					<br>								
+				</div>
+			</div>			
+		</div>
+			
+	</div>
+</div>	
+

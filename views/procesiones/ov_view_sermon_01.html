@@ -1,0 +1,174 @@
+<script>
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_sermon" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_sermon").click(function(e){
+			if(referrer_from_herman=="")
+			{
+				$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_herman,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_herman="";				
+				});
+			}
+				
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_sermon" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_sermon" class="ov_box_13_b">
+		<div id="ov_box_14_sermon" class="ov_box_14">
+			<div id="ov_text_12_sermon" class="ov_text_12_b">
+				SERMÓN DE LAS SIETE PALABRAS
+			</div>
+			<div id="ov_text_13_sermon" class="ov_text_13">
+				día 18<br>
+				Viernes Santo<br><br> 
+			</div>
+		</div>
+		<div id="ov_box_15_sermon" class="ov_box_15">
+			<div id="ov_text_15_sermon" class="ov_text_15">
+				Cuándo y Dónde:
+			</div>
+			<div id="ov_text_14_sermon" class="ov_text_14">
+				12 00h<br>
+				Iglesia de San Ignacio de Loyola<br>
+				Plaza Teniente Arévalo
+			</div>				
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+<div id="ov_zone_14_sermon" class="ov_zone_14">
+	<div id="ov_box_17_sermon" class="ov_box_17">
+		
+		<div id="ov_text_16_sermon" class="ov_text_16">
+			 Organizado por la Junta de Semana Santa de Ávila, se celebraba tradicionalmente en el Mercado Chico presidido por el Paso de "la Tercera Palabra" del Iltre. Patronato de la Santa Vera Cruz.
+			 <br>
+			 Este año se celebrará en la Iglesia de S. Ignacio de Loyola.
+		</div>
+		
+		<div id="ov_text_16_sermon_2" class="ov_text_16">
+			<span class="ov_span_02">Organiza.</span><br><br>
+			<div id="ov_text_17_sermon_1" class="ov_text_17">
+				Junta de Semana Santa de Ávila
+			</div>
+			<script>
+				$("#ov_text_17_sermon_1").click(function(e){
+					referrer_from_proce="./views/procesiones/ov_view_sermon_01.html";
+					$('#ov_view_container_02').load("./views/hermandades/ov_view_h_junta_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>
+		</div>
+		
+		<div id="ov_text_16_sermon_3" class="ov_text_16">
+			<span class="ov_span_02">Hábito.</span><br><br>
+			Túnica y capucho de terciopelo negro, capa color granate y cíngulo en colores rojo y negro.
+			<br><br>
+			<img src="styles/images/habitos/junta.png" class="ov_image_11"/>
+		</div>
+		
+		<div id="ov_text_16_sermon_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span><br><br>
+			<div id="ov_text_18_sermon_1" class="ov_text_18">
+				<span class="ov_span_03">La Tercera Palabra</span>
+				<div id="ov_text_19_pasos_8" class="ov_text_19">					
+				    Autor: "El Cristo de Anaya", atribuido a Juan Bautista Vazquez "El Viejo", San Juan y la Virgen anónimos<br>
+				    Fecha: "El Cristo de Anaya" 1580, San Juan y la Virgen mediados del s. XVIII<br>
+				    Paso de misterio compuesto por la figura de la Virgen y San Juan , de pie, junto a la Cruz, recibiendo el mensaje que Cristo le manifiesta en su Tercera Palabra; la figura de Cristo es una talla impresionante, de autor desconocido, aunque presenta unas características muy similares al Cristo de Burgos, que se venera en la Ciudad de Sevilla, cuyo autor es Juan Bautista Vázquez "El Viejo", escultor que trabajó en Ávila hasta 1561 en que se traslado a Sevilla, donde talló aquella imagen , que nos ha hecho pensar en que sea el autor de este Cristo de la Buena Muerte, que adquirió el Canonigo Anaya, para la capilla que edificó en el Claustro de la Catedral de Ávila
+					<br><br>
+					<img src="styles/images/pasos/veracruz_faz.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>																		
+		</div>
+		
+		<div id="ov_text_16_sermon_9" class="ov_text_16">
+			<span class="ov_span_02">Orador.</span><br><br>
+			P. David Jiménez Herrero, Prior del Convento de los Padres Carmelitas de la Santa
+		</div>
+		
+		<div id="ov_text_16_sermon_6" class="ov_text_16">
+			<span class="ov_span_02">Actuación.</span><br><br>
+			Camerata Abulense
+		</div>
+		
+		<div id="ov_text_16_sermon_5" class="ov_text_16">
+			<span class="ov_span_02">Mapa.</span>
+			
+			<br><br>
+			La lectura del Sermón tendrá lugar en la <span class="ov_span_03">Iglesia de San Ignacio de Loyola</span>, Plaza Teniente Arévalo
+			<br><br>
+			
+			<div id="ov_mapa_ruta_sermon_1" class="ov_mapa_ruta_01">
+				<div class="ov_text_18">Para acceder al mapa necesitas una conexión activa</div>
+			</div>
+								
+			<br>
+			<script>
+				current_url="https://www.google.com/maps/embed/v1/place?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&q=Plaza Teniente Arévalo, Ávila&language=es&zoom=15";
+				draw_map(current_url,'ov_mapa_ruta_sermon_1');
+			</script>
+			<div class="ov_button_01" id="ov_button_01_sermon_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_sermon_1')">
+				Actualizar Mapa
+			</div>
+			<br>
+			
+			<span class="ov_span_03">Dónde:</span>
+			<br>
+			<i>Pulsa abajo para obtener una ruta desde tu ubicación actual</i>
+			
+			<div id="ov_geo_route_2" style="display:none">
+				<br><br>
+				<div id="ov_mapa_ruta_sermon_2" class="ov_mapa_ruta_01" style="background-color:#DDD">
+					<div class="ov_text_18">Espera, por favor...</div>
+				</div>
+				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
+					
+				</div>				
+				<div class="ov_button_01" id="ov_button_01_sermon_refresh_map" onclick="show_route_2(destination,'15',destination_center,destination_container,destination_big_container);">
+				Actualizar posición
+				</div>
+				<br>
+				<div class="ov_button_01" id="ov_button_01_sermon_hide_map" onclick="$('#ov_geo_route_2').hide()">
+				Ocultar
+				</div>					
+			</div>
+			
+			<br><br>
+			<span class="ov_span_04" id="ov_place_sermon_1">Plaza Teniente Arévalo</span>
+			<script>
+				$("#ov_place_sermon_1").click(function(e){
+					show_route_2("Plaza Teniente Arévalo","","","ov_mapa_ruta_sermon_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>											
+		</div>
+	</div>
+</div>	
+

@@ -1,0 +1,28 @@
+<script>
+	//ov_view_01 se carga en container_01
+	$("#ov_view_container_01").css("background-color","#6b135b");
+	$("#ov_view_container_01").css("background-image","url(styles/images/fondo01.jpg)");
+</script>
+
+<div id="ov_zone_01_1" class="ov_zone_01">
+	
+	<img src="styles/images/logoinicio.png" id="ov_image_01_1" class="ov_image_01" alt="logo"/>
+	
+	<div id="ov_text_20_1" class="ov_text_20">
+		<img src="styles/images/loader.gif" id="ov_image_10_1" class="ov_image_10" alt="loader"/>
+	</div>
+	
+</div>
+
+<div id="ov_zone_02_1" class="ov_zone_02">
+	<img src="styles/images/cristo1.png" id="ov_image_02_1" class="ov_image_02" alt="decorative_01"/>	
+</div>
+
+<script>
+	setTimeout(function(){	
+		$('#ov_view_container_02').load("./views/general/ov_view_main_menu_01.html",function(){
+			$('#ov_view_container_02').show('slide',{direction: "right"},500);
+			$('#ov_view_container_01').hide('slide',{direction: "left"},500);						
+		});		
+	},3000);
+</script>

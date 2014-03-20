@@ -1,0 +1,331 @@
+<script>
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_pasion" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_pasion").click(function(e){
+			if(referrer_from_herman=="")
+			{
+				$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_herman,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_herman="";				
+				});
+			}
+				
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_pasion" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_pasion" class="ov_box_13_b">
+		<div id="ov_box_14_pasion" class="ov_box_14">
+			<div id="ov_text_12_pasion" class="ov_text_12_b">
+				PASIÓN Y SANTO ENTIERRO
+			</div>
+			<div id="ov_text_13_pasion" class="ov_text_13">
+				día 18<br>
+				Viernes Santo<br><br> 
+			</div>
+		</div>
+		<div id="ov_box_15_pasion" class="ov_box_15">
+			<div id="ov_text_15_pasion" class="ov_text_15">
+				Salida:
+			</div>
+			<div id="ov_text_14_pasion" class="ov_text_14">
+				20 30h<br>
+				S.A.I Catedral<br>
+				Plaza Catedral
+			</div>				
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+<div id="ov_zone_14_pasion" class="ov_zone_14">
+	<div id="ov_box_17_pasion" class="ov_box_17">
+		
+		<div id="ov_text_16_pasion" class="ov_text_16">
+			 En la tarde noche del Viernes Santo, el Real e Iltre. Patronato de Ntra. Sra. de las Angustias y Santo Sepulcro celebra su desfile Procesional, que inicialmente se componía de dos imágenes, procedentes de dos antiguas parroquias de la Capital.
+			 <br>
+			 Hoy acompañan a estos dos tronos imágenes de otras Cofradías, que se unen a este desfiles con el fin de dar mayor realce a esta Procesión del Viernes Santo.
+			 <br>
+			 Es de siempre costumbre en las procesiones de esta cofradia, que delante de la urna del Santo Sepulcro vaya un niño ataviado con traje de ángel.
+			 <br>
+			 En este desfile procesiona el Stmo. Cristo de las Murallas, obra del escultor Nicomedes Díaz Piquero (2000) y que es la representación de Cristo sobre la ciudad de Ávila con las murallas a sus pies.
+			 <br>
+			 Este Cristo es el simbolo de la unión entre todas las cofradías y va acompañado siempre por la Junta de Semana Santa de Ávila.
+		</div>
+		
+		<div id="ov_text_16_pasion_2" class="ov_text_16">
+			<span class="ov_span_02">Organiza.</span><br><br>
+			<div id="ov_text_17_pasion_1" class="ov_text_17">
+				Real e Ilustre Patronato de Ntra. Sra. de las Angustias y Santo Sepulcro
+			</div>
+			<script>
+				$("#ov_text_17_pasion_1").click(function(e){
+					referrer_from_proce="./views/procesiones/ov_view_pasion_01.html";
+					$('#ov_view_container_02').load("./views/hermandades/ov_view_h_sepulcro_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>
+		</div>
+		
+		<div id="ov_text_16_pasion_3" class="ov_text_16">
+			<span class="ov_span_02">Hábito.</span><br><br>
+			Túnica y capucho de color negro, con fajín color morado.<br>
+			(El resto de cofradías participantes visten su hábito característico)
+			<br><br>
+			<img src="styles/images/habitos/pasion.png" class="ov_image_11"/>
+		</div>
+		
+		<div id="ov_text_16_pasion_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span><br><br>
+			<div id="ov_text_18_pasion_1" class="ov_text_18">
+				<span class="ov_span_03">El Prendimiento</span>
+				<div id="ov_text_19_pasos_4" class="ov_text_19">					
+				    Autor: D. Manuel Sánchez Araciel<br>
+				    Fecha: 1919<br>
+				    Paso de misterio compuesto por las imágenes de Jesús, Judas, San Pedro, Malco y un soldado
+				    <br><br>
+					<img src="styles/images/pasos/veracruz_prendimiento.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_pasion_2" class="ov_text_18">
+				<span class="ov_span_03">Jesús de Medinaceli</span>
+				<div id="ov_text_19_medinaceli_2" class="ov_text_19">					
+				    Autor: D.  Gerardo Morante <br>
+				    Fecha: 1947<br>
+				    La imagen fue donada a la Archicofradia por D. Florentino Rodriguez Germán, hermano del Padre Victoriano y fue bendecida el jueves día 4 de marzo de 1948, en la iglesia de San Antonio, por el Excmo y Rvdmo. Sr. Obispo de la Diócesis D. Santos Moro Briz.Es una replica de Jesús de Medinaceli de Madrid.				   
+					<br><br>
+					<img src="styles/images/pasos/medinaceli_jesus.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_pasion_7" class="ov_text_18">
+				<span class="ov_span_03">La Caída</span>
+				<div id="ov_text_19_pasos_6" class="ov_text_19">					
+				    Autor: D. Manuel Sánchez Araciel<br>
+				    Fecha: 1914<br>
+				    Paso de misterio compuesto por las imágenes de Jesús, El Cirineo, 2 esbirros y un soldado romano
+				    <br><br>
+					<img src="styles/images/pasos/veracruz_caida.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_pasion_3" class="ov_text_18">
+				<span class="ov_span_03">Santísimo Cristo de las Murallas</span>
+				<div id="ov_text_19_pasion_3" class="ov_text_19">					
+				    Autor: D. Nicomedes García Piquero <br>
+				    Fecha: 2000<br>
+				    Este Cristo es el simbolo de la unión entre todas las cofradías y va acompañado siempre por la Junta de Semana Santa de Ávila				   
+					<br><br>
+					<img src="styles/images/pasos/cristo_murallas.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_pasion_4" class="ov_text_18">
+				<span class="ov_span_03">Nuestra Señora de las Angustias</span>
+				<div id="ov_text_19_silencio_1" class="ov_text_19">					
+				    Autor: Escuela Abulense<br>
+				    Fecha:   s.XVI<br>
+				    Constituye una muestra de la expresión dolorosa de una Madre con el corazón traspasado, que apenas puede sostener en sus brazos el cuerpo muerto de su Hijo, recien bajado de la Cruz.
+					<br><br>
+					<img src="styles/images/pasos/silencio_angustias.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_pasion_5" class="ov_text_18">
+				<span class="ov_span_03">Santo Sepulcro</span>
+				<div id="ov_text_19_pasion_5" class="ov_text_19">					
+				    Autor: Anónimo<br>
+				    Fecha: s. XVII<br>
+				    No se trata de la representación de Cristo yacente, sino mas bien de ofrecer el sepulcro en el que Cristo permaneció durante los días anteriores a su Resurrección. Por eso conforma el Paso una urna de cristal, que es portada en andas, en cuyo interior se encierra el cuerpo muerto de Cristo y que recibe el nombre de Santo Sepulcro. El monumento fue concebido para ser colocado en el Monumento del Jueves Santo y posteriormente , conmemorar la sepultura de Cristo hasta el día de su Resurrección
+					<br><br>
+					<img src="styles/images/pasos/sepulcro_sepulcro.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_pasion_6" class="ov_text_18">
+				<span class="ov_span_03">Virgen Dolorosa</span>
+				<div id="ov_text_19_pasion_6" class="ov_text_19">					
+				    Autor: D. Antonio Arenas Martínez <br>
+				    Fecha: 1947<br>
+				    La Virgen dolorosa, es una imagen vestida con manto negro; de sus ojos se desprenden unas lagrimas, que reflejan el dolor de su rostro a la vista del Hijo muerto.
+					<br><br>
+					<img src="styles/images/pasos/dolorosa_sepulcro.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>																		
+		</div>
+		
+		<div id="ov_text_16_pasion_6" class="ov_text_16">
+			<span class="ov_span_02">Música.</span><br><br>
+			Banda de Cornetas y Tambores de Zafra (Badajoz)<br>
+			Banda de Cornetas y Tambores del Stmo. Cristo a la Columna "El Amarrado" <br>
+			Banda de Música de Ávila<br>
+		</div>
+		
+		<div id="ov_text_16_pasion_5" class="ov_text_16">
+			<span class="ov_span_02">Ruta.</span>
+			
+			<br><br>
+			Con salida y llegada en el mismo lugar, <span class="ov_span_03">Plaza Catedral</span>, el Real e Ilustre Patronato de Ntra. Sra. de las Angustias y Santo Sepulcro continuará la marcha hasta llegar
+			a la <span class="ov_span_03">Plaza del Teniente Arévalo</span>
+			<br><br>
+			
+			<div id="ov_mapa_ruta_pasion_1"  class="ov_mapa_ruta_01">
+				<div class="ov_text_18">Para acceder al mapa necesitas una conexión activa</div>
+			</div>
+						
+			<br>
+			<script>
+				current_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza Catedral, 9, Ávila&destination=Plaza Catedral, 9, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle Alemania, Ávila|Plaza José Tome, Ávila|Plaza Teniente Arévalo, Ávila|Calle Cardenal Pla y Deniel, Ávila|Plaza Pedro Dávila, Ávila|Calle Caballeros, Ávila|Plaza Mercado Chico, Ávila|Plaza Zurraquín, Ávila|Calle Esteban Domingo, Ávila|Calle López Núñez, Ávila|Calle Tostado, Ávila&language=es&zoom=15&center=40.657877,-4.697912";
+				draw_map(current_url,'ov_mapa_ruta_pasion_1');
+			</script>
+			<div class="ov_button_01" id="ov_button_01_pasion_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_pasion_1')">
+				Actualizar Mapa
+			</div>
+			<br>
+			
+			<span class="ov_span_03">Itinerario:</span>
+			<br>
+			<i>Pulsa sobre cualquier punto abajo para obtener una ruta desde tu ubicación actual</i>
+			
+			<div id="ov_geo_route_2" style="display:none">
+				<br><br>
+				<div id="ov_mapa_ruta_pasion_2" class="ov_mapa_ruta_01" style="background-color:#DDD">
+					<div class="ov_text_18">Espera, por favor...</div>
+				</div>
+				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
+					
+				</div>				
+				<div class="ov_button_01" id="ov_button_01_pasion_refresh_map" onclick="show_route_2(destination,'15',destination_center,destination_container,destination_big_container);">
+				Actualizar posición
+				</div>
+				<br>
+				<div class="ov_button_01" id="ov_button_01_pasion_hide_map" onclick="$('#ov_geo_route_2').hide()">
+				Ocultar
+				</div>					
+			</div>
+			
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasion_1">Plaza Catedral</span>
+			<script>
+				$("#ov_place_pasion_1").click(function(e){
+					show_route_2("Plaza Catedral, 9, Ávila","","","ov_mapa_ruta_pasion_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasion_2">Calle Alemania</span>
+			<script>
+				$("#ov_place_pasion_1").click(function(e){
+					show_route_2("Calle Alemania, Ávila","","","ov_mapa_ruta_pasion_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasion_3">Plaza José Tome</span>
+			<script>
+				$("#ov_place_pasion_1").click(function(e){
+					show_route_2("Plaza José Tome, Ávila","","","ov_mapa_ruta_pasion_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasion_4">Plaza Teniente Arévalo</span>
+			<script>
+				$("#ov_place_pasion_4").click(function(e){
+					show_route_2("Plaza Teniente Arévalo, Ávila","","","ov_mapa_ruta_pasion_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>			
+			(Aquí se incorpora al desfile el Real e Ilustre Patronato de Ntra. Sra. de las Angustias y Santo Sepulcro)
+			<br><br>			
+			<span class="ov_span_04" id="ov_place_pasion_6">Calle Pla y Deniel</span>
+			<script>
+				$("#ov_place_pasion_6").click(function(e){
+					show_route_2("Calle Cardenal Pla y Deniel, Ávila","","","ov_mapa_ruta_pasion_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>	
+			<span class="ov_span_04" id="ov_place_pasion_7">Plaza Pedro Dávila</span>
+			<script>
+				$("#ov_place_pasion_7").click(function(e){
+					show_route_2("Plaza Pedro Dávila, Ávila","","","ov_mapa_ruta_pasion_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>	
+			<span class="ov_span_04" id="ov_place_pasion_8">Calle Caballeros</span>
+			<script>
+				$("#ov_place_pasion_8").click(function(e){
+					show_route_2("Calle Caballeros, Ávila","","","ov_mapa_ruta_pasion_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasion_9">Plaza Mercado Chico</span>
+			<script>
+				$("#ov_place_pasion_9").click(function(e){
+					show_route_2("Plaza Mercado Chico, Ávila","","","ov_mapa_ruta_pasion_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasion_10">Plaza Zurraquín</span>
+			<script>
+				$("#ov_place_pasion_10").click(function(e){
+					show_route_2("Plaza Zurraquín, Ávila","","","ov_mapa_ruta_pasion_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasion_11">Calle Esteban Domingo</span>
+			<script>
+				$("#ov_place_pasion_11").click(function(e){
+					show_route_2("Calle Estaban Domingo, Ávila","","","ov_mapa_ruta_pasion_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasion_12">Calle López Núñez</span>
+			<script>
+				$("#ov_place_pasion_12").click(function(e){
+					show_route_2("Calle López Núñez, Ávila","","","ov_mapa_ruta_pasion_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>			
+			<span class="ov_span_04" id="ov_place_pasion_13">Calle Tostado</span>
+			<script>
+				$("#ov_place_pasion_13").click(function(e){
+					show_route_2("CAlle Tostado, Ávila","","","ov_mapa_ruta_pasion_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>	
+			<span class="ov_span_04" id="ov_place_pasion_14">Plaza Catedral)</span>
+			<script>
+				$("#ov_place_pasion_14").click(function(e){
+					show_route_2("Plaza Catedral, 9, Ávila","","","ov_mapa_ruta_pasion_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>											
+		</div>
+	</div>
+</div>	
+

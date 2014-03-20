@@ -1,0 +1,297 @@
+<script>
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_resucitado" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_resucitado").click(function(e){
+			if(referrer_from_herman=="")
+			{
+				$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_herman,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_herman="";				
+				});
+			}
+				
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_resucitado" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_resucitado" class="ov_box_13_b">
+		<div id="ov_box_14_resucitado" class="ov_box_14">
+			<div id="ov_text_12_resucitado" class="ov_text_12_b">
+				PROCESIÓN DEL RESUCITADO
+			</div>
+			<div id="ov_text_13_resucitado" class="ov_text_13">
+				día 20<br>
+				Domingo de Resurreción<br><br> 
+			</div>
+		</div>
+		<div id="ov_box_15_resucitado" class="ov_box_15">
+			<div id="ov_text_15_resucitado" class="ov_text_15">
+				Salida:
+			</div>
+			<div id="ov_text_14_resucitado" class="ov_text_14">
+				Al Fin de la Misa Solemne de las 11 00h<br>
+				Iglesia de la Sagrada Familia<br>
+				Calle David Herrero
+			</div>				
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+<div id="ov_zone_14_resucitado" class="ov_zone_14">
+	<div id="ov_box_17_resucitado" class="ov_box_17">
+		
+		<div id="ov_text_16_resucitado" class="ov_text_16">
+			 Cierra los actos de la Semana Santa abulense el desfile con la imagen de Cristo resucitado y Ntra. Sra. del Buen Suceso que desde 1753 recorre las calles de la Ciudad.
+			 <br>
+			 Es característico de esta cofradía el detalle o ceremonia de <b>El Encuentro</b> y que consiste en que, siguiendo itinerarios distintos las imágenes del Cristo Resucitado y de Ntra. Sra. del Buen Suceso, se reúnen en punto determinado para conmemorar la evidente primera manifestación del Señor a su madre, despues de la Resurrección.
+			 <br>
+			 Este encuentro se producirá antes de iniciar propiamente el desfile, a las puertas de la Iglesia de la Sagrada Familia, unos 10 minutos antes de comenzar.
+			 <br>
+			 Durante el recorrido la procesión hace estación en la ermita del Humilladero y en la Iglesia de San Andrés, desde donde se dirige a la ermita del Resucitado , en las afueras de la ciudad, donde tiene lugar la tradicional Romeria que se prolonga durante todo el día
+		</div>
+		
+		<div id="ov_text_16_resucitado_2" class="ov_text_16">
+			<span class="ov_span_02">Organiza.</span><br><br>
+			<div id="ov_text_17_resucitado_1" class="ov_text_17">
+				Cofradía del Stmo. Cristo Resucitado y Ntra. Sra. del Buen Suceso
+			</div>
+			<script>
+				$("#ov_text_17_resucitado_1").click(function(e){
+					referrer_from_proce="./views/procesiones/ov_view_resucitado_01.html";
+					$('#ov_view_container_02').load("./views/hermandades/ov_view_h_resucitado_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>
+		</div>
+		
+		<div id="ov_text_16_resucitado_3" class="ov_text_16">
+			<span class="ov_span_02">Hábito.</span><br><br>
+			Túnica y caperuza de color blanco, cíngulo y capa de color rojo.
+			<br><br>
+			<img src="styles/images/habitos/resucitado.png" class="ov_image_11"/>			
+		</div>
+		
+		<div id="ov_text_16_resucitado_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span><br><br>
+			<div id="ov_text_18_resucitado_1" class="ov_text_18">
+				<span class="ov_span_03">Santísimo Cristo Resucitado</span>
+				<div id="ov_text_19_resucitado_1" class="ov_text_19">					
+				    Autor: Anónimo<br>
+				    Fecha: s.XX
+				    <br><br>
+					<img src="styles/images/pasos/resucitado_resucitado.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_resucitado_2" class="ov_text_18">
+				<span class="ov_span_03">Nuestra Señora del Buen Suceso</span>
+				<div id="ov_text_19_resucitado_2" class="ov_text_19">					
+				    Autor: Anónimo <br>
+				    Fecha: s XVII
+				    <br><br>
+					<img src="styles/images/pasos/suceso_resucitado.jpg" class="ov_image_12"/>
+					<br>				    
+				</div>
+			</div>																					
+		</div>
+		
+		<div id="ov_text_16_resucitado_6" class="ov_text_16">
+			<span class="ov_span_02">Música.</span>
+			<br><br>			
+		</div>
+		
+		<div id="ov_text_16_resucitado_5" class="ov_text_16">
+			<span class="ov_span_02">Ruta.</span>
+			
+			<br><br>
+			Con salida en la <span class="ov_span_03">Calle David Herrero</span> y llegada en la <span class="ov_span_03">Ermita del Resucitado (Calle Valladolid, 47)</span>
+			<br><br>
+			
+			<div id="ov_mapa_ruta_resucitado_1"  class="ov_mapa_ruta_01">
+				<div class="ov_text_18">Para acceder al mapa necesitas una conexión activa</div>
+			</div>
+			
+			<br>
+			<script>
+				current_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Calle David Herrero, Ávila&destination=Calle Valladolid, 47, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle Virgen de la Soterraña, Ávila|Avenida Santa Cruz de Tenerife, Ávila|Calle La Sierpe, Ávila|Calle Ferrocarril, Ávila|Paseo de la Estacion, Ávila|Plaza Santa Ana, Ávila|Calle Arévalo, Ávila|Calle Duque de Alba, Ávila|Plaza Santa Teresa, Ávila|Calle Don Gerónimo, Ávila|Calle Alemania, Ávila|Plaza Catedral, Ávila|Calle San Segundo, Ávila|Calle Humilladero, Ávila|Calle Valladolid, Ávila&language=es&zoom=14&center=40.663131,-4.692499";
+				draw_map(current_url,'ov_mapa_ruta_resucitado_1');
+			</script>
+			<div class="ov_button_01" id="ov_button_01_resucitado_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_resucitado_1')">
+				Actualizar Mapa
+			</div>
+			<br>
+						
+			<span class="ov_span_03">Itinerario:</span>
+			<br>
+			<i>Pulsa sobre cualquier punto abajo para obtener una ruta desde tu ubicación actual</i>
+			
+			<div id="ov_geo_route_2" style="display:none">
+				<br><br>
+				<div id="ov_mapa_ruta_resucitado_2" class="ov_mapa_ruta_01" style="background-color:#DDD">
+					<div class="ov_text_18">Espera, por favor...</div>
+				</div>
+				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
+					
+				</div>				
+				<div class="ov_button_01" id="ov_button_01_resucitado_refresh_map" onclick="show_route_2(destination,'15',destination_center,destination_container,destination_big_container);">
+				Actualizar posición
+				</div>
+				<br>
+				<div class="ov_button_01" id="ov_button_01_resucitado_hide_map" onclick="$('#ov_geo_route_2').hide()">
+				Ocultar
+				</div>					
+			</div>
+			
+			<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_1">Calle David Herrero</span>
+			<script>
+				$("#ov_place_resucitado_1").click(function(e){
+					show_route_2("Calle David Herrero, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>			
+			(Aquí se produce el encuentro entre las imágenes)
+			<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_2">Calle Virgen de la Soterraña</span>
+			<script>
+				$("#ov_place_resucitado_2").click(function(e){
+					show_route_2("Calle Virgen de la Soterraña, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_3">Avenida Santa Cruz de Tenerife</span>
+			<script>
+				$("#ov_place_resucitado_3").click(function(e){
+					show_route_2("Avenida Santa Cruz de Tenerife, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_5">Calle Ferrocarril</span>
+			<script>
+				$("#ov_place_resucitado_5").click(function(e){
+					show_route_2("Calle Ferrocarril, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_25">Calle La Sierpe</span>
+			<script>
+				$("#ov_place_resucitado_25").click(function(e){
+					show_route_2("Calle La Sierpe, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>		
+			<span class="ov_span_04" id="ov_place_resucitado_6">Paseo Estación</span>
+			<script>
+				$("#ov_place_resucitado_6").click(function(e){
+					show_route_2("Paseo de la Estacion, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_7">Plaza Santa Ana</span>
+			<script>
+				$("#ov_place_resucitado_7").click(function(e){
+					show_route_2("Plaza Santa Ana, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_8">Calle Arévalo</span>
+			<script>
+				$("#ov_place_resucitado_8").click(function(e){
+					show_route_2("Calle Arévalo, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_9">Calle Duque de Alba</span>
+			<script>
+				$("#ov_place_resucitado_9").click(function(e){
+					show_route_2("Calle Duque de Alba, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>			
+			<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_11">Plaza Santa Teresa</span>
+			<script>
+				$("#ov_place_resucitado_11").click(function(e){
+					show_route_2("Plaza Santa Teresa, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_12">Calle Don Gerónimo</span>
+			<script>
+				$("#ov_place_resucitado_12").click(function(e){
+					show_route_2("Calle Don Gerónimo, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_13">Calle Alemania</span>
+			<script>
+				$("#ov_place_resucitado_13").click(function(e){
+					show_route_2("Calle Alemania, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_14">Plaza Catedral</span>
+			<script>
+				$("#ov_place_resucitado_14").click(function(e){
+					show_route_2("Plaza Catedral, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_15">Calle San Segundo</span>
+			<script>
+				$("#ov_place_resucitado_15").click(function(e){
+					show_route_2("Calle San Segundo, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_16">Calle Humilladero</span>
+			<script>
+				$("#ov_place_resucitado_16").click(function(e){
+					show_route_2("Calle Humilladero, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>			
+			(Aquí se produce la entrada a la Ermita del Humilladero)<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_17">Calle Valladolid</span>
+			<script>
+				$("#ov_place_resucitado_17").click(function(e){
+					show_route_2("Calle Valladolid, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_resucitado_18">Ermita del Resucitado</span>
+			<script>
+				$("#ov_place_resucitado_18").click(function(e){
+					show_route_2("Calle Valladolid, 47, Ávila","","","ov_mapa_ruta_resucitado_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>																
+		</div>
+	</div>
+</div>	
+

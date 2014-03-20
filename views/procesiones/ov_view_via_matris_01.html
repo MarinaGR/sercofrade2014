@@ -1,0 +1,268 @@
+<script>
+	//ov_view_via_matris_01 se carga en container_01
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_via_matris" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_via_matris").click(function(e){
+			if(referrer_from_herman=="")
+			{
+				$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_herman,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_herman="";				
+				});
+			}
+				
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_via_matris" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_via_matris" class="ov_box_13_b">
+		<div id="ov_box_14_via_matris" class="ov_box_14">
+			<div id="ov_text_12_via_matris" class="ov_text_12">
+				VIA MATRIS
+			</div>
+			<div id="ov_text_13_via_matris" class="ov_text_13">
+				día 11<br>
+				Viernes de Dolores<br><br> 
+			</div>
+		</div>
+		<div id="ov_box_15_via_matris" class="ov_box_15">
+			<div id="ov_text_15_via_matris" class="ov_text_15">
+				Salida:
+			</div>
+			<div id="ov_text_14_via_matris" class="ov_text_14">
+				20 45h<br>
+				Convento de Santa Teresa<br>
+				Plaza de la Santa
+			</div>				
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+<div id="ov_zone_14_via_matris" class="ov_zone_14">
+	
+	<div id="ov_box_17_via_matris" class="ov_box_17">
+		
+		<div id="ov_text_16_via_matris" class="ov_text_16">
+			Su recorrido se realiza por el interior del recinto amurallado, por las calles y plazas medievales, en las que llevan a cabo las lecturas de que consta el Vía Matris, con las canciones propias de este evento.
+			<br>
+			La imagen es llevada en hombros y los hermanos van con cara descubierta portando seis faroles, ocho esquilas y doce cruces de madera.
+		</div>
+		
+		<div id="ov_text_16_via_matris_2" class="ov_text_16">
+			<span class="ov_span_02">Organiza.</span>
+			<br><br>
+			<div id="ov_text_17_via_matris_1" class="ov_text_17">
+				Cofradía del Stmo. Cristo de los Afligidos
+			</div>
+			<script>
+				$("#ov_text_17_via_matris_1").click(function(e){
+					referrer_from_proce="./views/procesiones/ov_view_via_matris_01.html";
+					$('#ov_view_container_02').load("./views/hermandades/ov_view_h_afligidos_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>
+		</div>
+		
+		<div id="ov_text_16_via_matris_3" class="ov_text_16">
+			<span class="ov_span_02">Hábito.</span>
+			<br><br>
+			Túnica marrón, capa con capucha y cíngulo beige.
+			<br><br>
+			<img src="styles/images/habitos/afligidos.png" class="ov_image_11"/>
+		</div>
+		
+		<div id="ov_text_16_via_matris_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span>
+			<br><br>			
+			<div id="ov_text_18_via_matris_1" class="ov_text_18">
+				<span class="ov_span_03">Santísimo Cristo de Los Afligidos</span>
+				<div id="ov_text_19_via_matris_1" class="ov_text_19">					
+				    Autor: Talleres Arte Cristiano de Barcelona
+				    <br>
+				    Fecha: 1929
+				    <br><br>
+				    Talla adquirida por los P. Carmelitas del Convento de Santa Teresa de Jesús, donde se encuentra al culto.
+				    La Imagen representa a Jesús crucificado y presenta la particularidad de estar inclinada la cruz en lugar de su posición vertical, siendo la única imagen que sale en esta posición.									
+					<br><br>
+					<img src="styles/images/pasos/cristo_afligidos.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			
+			<div id="ov_text_18_via_matris_2" class="ov_text_18">
+				<span class="ov_span_03">Santa María Consuelo de los Afligidos</span>
+				<div id="ov_text_19_via_matris_2" class="ov_text_19">					
+				    Autor: Obra del escultor abulense Kaito
+				    <br>
+					Fecha: 2004
+					<br><br>
+					<img src="styles/images/pasos/maria_afligidos.jpg" class="ov_image_12"/>
+					<br>								
+				</div>
+			</div>
+						
+		</div>
+		
+		<div id="ov_text_16_via_matris_6" class="ov_text_16">
+			<span class="ov_span_02">Música.</span>
+			<br><br>
+			Banda de Cornetas y Tambores del Stmo. Cristo a la Columna "El Amarrado"
+		</div>
+		
+		<div id="ov_text_16_via_matris_5" class="ov_text_16">
+			<span class="ov_span_02">Ruta.</span>
+			
+			<br><br>
+			Con salida y llegada en el mismo punto, <span class="ov_span_03">Plaza de La Santa</span>, la ruta es recorrida en el sentido anti-horario.
+			<br><br>
+			
+			<div id="ov_mapa_ruta_via_matris_1" onload="" class="ov_mapa_ruta_01">
+				<div class="ov_text_18">Para acceder al mapa necesitas una conexión activa</div>
+			</div>					
+			
+			<br>			
+			<script>
+				current_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza La Santa, Ávila&destination=Plaza La Santa, Ávila&avoid=tolls|highways&mode=walking&waypoints=Paseo Rastro, Ávila|Calle San Segundo, Ávila|Plaza Catedral, Ávila|Calle Tomás Luis de Victoria, Ávila|Plaza Zurraquín, Ávila|Plaza Mercado Chico, Ávila|Calle Vallespín, 9, Ávila|Calle Jimena Blázquez, Ávila|Calle Las Dama, Ávila|Calle Intendente Aizpuru, Ávila&language=es&zoom=15&center=40.656485,-4.700371";
+				draw_map(current_url,'ov_mapa_ruta_via_matris_1');
+			</script>			
+			<div class="ov_button_01" id="ov_button_01_via_matris_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_via_matris_1')">
+				Actualizar Mapa
+			</div>
+			<br>
+						
+			<span class="ov_span_03">Itinerario:</span>
+			<br>
+			<i>Pulsa sobre cualquier punto abajo para obtener una ruta desde tu ubicación actual</i>
+			
+			<div id="ov_geo_route_2" style="display:none">
+				<br><br>
+				<div id="ov_mapa_ruta_via_matris_2" class="ov_mapa_ruta_01" style="background-color:#DDD">
+					<div class="ov_text_18">Espera, por favor...</div>
+				</div>
+				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
+					
+				</div>				
+				<div class="ov_button_01" id="ov_button_01_via_matris_refresh_map" onclick="show_route_2(destination,'15',destination_center,destination_container,destination_big_container);">
+				Actualizar posición
+				</div>
+				<br>
+				<div class="ov_button_01" id="ov_button_01_via_matris_hide_map" onclick="$('#ov_geo_route_2').hide()">
+				Ocultar
+				</div>					
+			</div>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_matris_1">Plaza de la Santa</span>
+			<script>
+				$("#ov_place_via_matris_1").click(function(e){
+					show_route_2("Plaza La Santa, Ávila","","","ov_mapa_ruta_via_matris_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_matris_2">Paseo del Rastro</span>
+			<script>
+				$("#ov_place_via_matris_2").click(function(e){
+					show_route_2("Paseo Rastro, Ávila","","","ov_mapa_ruta_via_matris_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_matris_3">Calle San Segundo</span>
+			<script>
+				$("#ov_place_via_matris_3").click(function(e){
+					show_route_2("Calle San Segundo, Ávila","","","ov_mapa_ruta_via_matris_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_matris_4">Plaza de la Catedral</span>
+			<script>
+				$("#ov_place_via_matris_4").click(function(e){
+					show_route_2("Plaza Catedral, Ávila","","","ov_mapa_ruta_via_matris_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_matris_5">Calle Tomás Luis de Victoria</span>
+			<script>
+				$("#ov_place_via_matris_5").click(function(e){
+					show_route_2("Calle Tomás Luis de Victora, Ávila","","","ov_mapa_ruta_via_matris_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_matris_6">Plaza de Zurraquín</span>
+			<script>
+				$("#ov_place_via_matris_6").click(function(e){
+					show_route_2("Plaza Zurraquín, Ávila","","","ov_mapa_ruta_via_matris_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_matris_7">Plaza del Mercado Chico</span>
+			<script>
+				$("#ov_place_via_matris_7").click(function(e){
+					show_route_2("Plaza Mercado Chico, Ávila","","","ov_mapa_ruta_via_matris_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_matris_8">Calle Vallespín</span>
+			<script>
+				$("#ov_place_via_matris_8").click(function(e){
+					show_route_2("Calle Vallespín, 9, Ávila","","","ov_mapa_ruta_via_matris_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_matris_9">Calle Jimena Blázquez</span>
+			<script>
+				$("#ov_place_via_matris_9").click(function(e){
+					show_route_2("Calle Jimena Blázquez, Ávila","","","ov_mapa_ruta_via_matris_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_matris_10">Calle Las Dama</span>
+			<script>
+				$("#ov_place_via_matris_10").click(function(e){
+					show_route_2("Calle Las Dama, Ávila","","","ov_mapa_ruta_via_matris_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_matris_11">Calle del Intendente Aizpuru</span>
+			<script>
+				$("#ov_place_via_matris_11").click(function(e){
+					show_route_2("Calle Intendente Aizpuru, Ávila","","","ov_mapa_ruta_via_matris_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_matris_12">Plaza de la Santa</span>
+			<script>
+				$("#ov_place_via_matris_12").click(function(e){
+					show_route_2("Plaza La Santa, Ávila","","","ov_mapa_ruta_via_matris_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>			
+		</div>
+	</div>
+
+</div>	
+

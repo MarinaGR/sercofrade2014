@@ -1,0 +1,127 @@
+<script>
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_h_vacas" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_h_vacas").click(function(e){
+			if(referrer_from_proce=="")
+			{
+				$('#ov_view_container_01').load("./views/general/ov_view_herman_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_proce,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_proce="";				
+				});
+			}	
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_h_vacas" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_h_vacas" class="ov_box_13_b">
+		<div id="ov_box_14_h_vacas" class="ov_box_14">
+			<img src="styles/images/escudos/vacas.jpg" id="ov_image_03_4" class="ov_image_03" alt="circle_04"/>
+		</div>
+		<div id="ov_box_15_h_vacas" class="ov_box_15">
+			<div id="ov_text_15_h_vacas" class="ov_text_15">
+							
+				Iltre. Patronato de la Stma. Trinidad y Ntra. Sra. de las Vacas
+			</div>
+						
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+
+
+<div id="ov_zone_14_h_vacas" class="ov_zone_14">
+	<div id="ov_box_17_h_vacas" class="ov_box_17">
+		<div id="ov_text_16_h_vacas" class="ov_text_16">
+			Es un Patronato de muy antigua tradición y ya figuran datos del mismo en el año 1258. El Patronato de la Santísima Trinidad estaba enclavado en la antigua parroquia del mismo nombre en un hospital anejo a la misma.
+			<br>
+			En el s/XV se fusionan las Cofradía del Santo Sepulcro (de la Ermita del Cristo de la Luz) y el Patronato de la Santísima Trinidad y Santa María de las Vacas, tomando por sede la Ermita de Nuestra Señora de las Vacas
+			<br>
+			Hasta el año 1988 era un Patronato de gloria, dedicando sus actividades y sus fiestas en torno a la Virgen de las Vacas. En este año el Patronato adquirió la imagen del "Santísimo Cristo de la Ilusión" y se incorpora con esta imagen a las procesiones de la Semana Santa abulense del año 1990.
+			<br>
+			Este Patronato, desde su primera salida, parte desde la Ermita de las Vacas para encontrarse durante el recorrido con la Hermandad de Nuestra Señora de la Esperanza, dando origen a la "Procesión del Encuentro". Una vez realizado el "Encuentro" la imagen vuelve a su Ermita.
+		</div>
+		
+		<div id="ov_text_16_h_vacas_3" class="ov_text_16">
+			<span class="ov_span_02">Datos.</span><br><br>
+			<span class="ov_span_01">Hábito:</span><br>Túnica de color verde con cíngulo en blanco y verde, botonadura en blanco, caperuza verde, con el emblema de la Hermandad, y capa blanca.
+			<br><br>
+			<img src="styles/images/habitos/las_vacas.png" class="ov_image_11"/>
+			<br><br>
+			<span class="ov_span_01">Templo de Residencia Canónica:</span><br>Ermita de Nuestra Señora de las Vacas
+			<br><br>
+			<span class="ov_span_01">Fundación:</span><br>1258
+			<br><br>
+			<span class="ov_span_01">Hermanos:</span><br>1184
+			<br><br>
+			<span class="ov_span_01">Nazarenos:</span><br>232 
+			<br><br>
+			<span class="ov_span_01">Atributos de los Hermanos:</span><br>Vela eléctrica con farol.
+			<br><br>
+			<span class="ov_span_01">Culto(s) organizados:</span><br>Misa dominical para los hermanos cofrades y un triduo por los hermanos fallecidos. 
+		</div>
+		<div id="ov_text_16_h_vacas_6" class="ov_text_16">
+			<span class="ov_span_02">Contacto.</span><br><br>
+			Iltre. Patronato de la Stma. Trinidad y Ntra. Señora de las Vacas<br>
+			Ermita de Ntra. Sra de las Vacas<br>
+			Pza. de las Vacas s/n<br>
+			05003 Ávila<br>			
+			patronatovirgendelasvacas@gmail.com
+		</div>
+		<div id="ov_text_16_h_vacas_2" class="ov_text_16">
+			<span class="ov_span_02">Procesiones.</span><br><br>
+			<div id="ov_text_17_h_vacas_1" class="ov_text_17">
+				Procesión de La Ilusión (14 de Abril, Lunes Santo)
+			</div>
+			<script>
+				$("#ov_text_17_h_vacas_1").click(function(e){
+					referrer_from_herman="./views/hermandades/ov_view_h_vacas_01.html";
+					$('#ov_view_container_02').load("./views/procesiones/ov_view_encuentro_1_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>
+		</div>	
+		<div id="ov_text_16_h_vacas_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span><br><br>
+			<div id="ov_text_18_h_vacas_1" class="ov_text_18">
+				<span class="ov_span_03">Santísimo Cristo de la Ilusión</span>
+				<div id="ov_text_19_h_vacas_1" class="ov_text_19">					
+				    Autor: D. Manuel Ortega<br>
+				    Fecha: 1990<br>
+				    El Cristo de la Ilusión es una talla de madera de pino ruso, tallada por el escultor murciano D. Manuel Ortega que habia terminado el año anterior en el Cerro de los Angeles, adquirida en 1990.<br>
+				    En 1991 estrenó unas andas nuevas, talladas en madera de nogal por el escultor abulense D. Rafael Gonzalez Gonzalez a quien habian sido encargadas por varios cofrades y simpatizantes				
+					<br><br>
+					<img src="styles/images/pasos/ilusion_vacas.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>			
+		</div>
+			
+	</div>
+</div>	
+

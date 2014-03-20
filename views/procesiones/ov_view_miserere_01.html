@@ -1,0 +1,237 @@
+<script>
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_miserere" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_miserere").click(function(e){
+			if(referrer_from_herman=="")
+			{
+				$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_herman,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_herman="";				
+				});
+			}
+				
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_miserere" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_miserere" class="ov_box_13_b">
+		<div id="ov_box_14_miserere" class="ov_box_14">
+			<div id="ov_text_12_miserere" class="ov_text_12_b">
+				PROCESIÓN DEL MISERERE
+			</div>
+			<div id="ov_text_13_miserere" class="ov_text_13">
+				día 15<br>
+				Martes Santo<br><br> 
+			</div>
+		</div>
+		<div id="ov_box_15_miserere" class="ov_box_15">
+			<div id="ov_text_15_miserere" class="ov_text_15">
+				Salida:
+			</div>
+			<div id="ov_text_14_miserere" class="ov_text_14">
+				00 00h (Medianoche del Martes)<br><br>
+				Iglesia de la Magdalena<br><br>
+				Plaza de Santa Teresa
+			</div>				
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+<div id="ov_zone_14_miserere" class="ov_zone_14">
+	<div id="ov_box_17_miserere" class="ov_box_17">
+		
+		<div id="ov_text_16_miserere" class="ov_text_16">
+			 En 1993 un grupo de abulenses decidió organizar una procesión penitencial , al estilo de aquellas que organizaron nuestroantepasados en 1540.
+			 <br>
+			 La imagen elegida fue la de la Magdalena. Los hermanos de la procesion del Miserere se dirigen desde la iglesia de la Magdalena hasta la Ermita del Humilladero, como en otro tiempo hiciera el Patronato de Ánimas al visitar al de la Santa Vera Cruz, para sellar un acto de fraternidad.
+			 <br>
+			 Es lo que quiere expresar el canto del Miserere que resuena en el silencio de esta noche del martes Santo.
+			 <br>
+			 Esta procesión está organizada por el Iltre. Patronato de la purísima Concepción, Santa María Magdalena y Ánimas del Purgatorio y sale todos los Martes Santos a las 12 de la noche en uno de los desfiles más severos , pero lleno del más profundo significado cristiano.
+		</div>
+		
+		<div id="ov_text_16_miserere_2" class="ov_text_16">
+			<span class="ov_span_02">Organiza.</span><br><br>
+			<div id="ov_text_17_miserere_1" class="ov_text_17">
+				Iltre. Patronato de la Purísima Concepción, Santa María Magdalena y ánimas del Purgatorio
+			</div>
+			<script>
+				$("#ov_text_17_miserere_1").click(function(e){
+					referrer_from_proce="./views/procesiones/ov_view_miserere_01.html";
+					$('#ov_view_container_02').load("./views/hermandades/ov_view_h_concepcion_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>
+		</div>
+		
+		<div id="ov_text_16_miserere_3" class="ov_text_16">
+			<span class="ov_span_02">Hábito.</span><br><br>
+			Túnica de color blanco, fajín azul, capa y verdugo negro.
+			<br><br>
+			<img src="styles/images/habitos/magdalena.png" class="ov_image_11"/>
+		</div>
+		
+		<div id="ov_text_16_miserere_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span><br><br>
+			<div id="ov_text_18_miserere_1" class="ov_text_18">
+				<span class="ov_span_03">La Magdalena</span>
+				<div id="ov_text_19_miserere_1" class="ov_text_19">					
+				    Autor: Anónimo<br>
+				    Fecha:   s.XVI<br>
+				    La imagen elegida para procesionar fue la de Santa María Magdalena, mujer que no dudó en buscar a Cristo y arrodillarse ante Él y pedirle perdón. Es una talla de madera policromada del s. XVI de autor desconocido. En su mano izquierda sostiene el tarro de los perfumes, que ofrecerá al Maestro.
+					<br><br>
+					<img src="styles/images/pasos/magdalena_magdalena.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>												
+		</div>
+		
+		<div id="ov_text_16_miserere_6" class="ov_text_16">
+			<span class="ov_span_02">Música.</span><br><br>
+			Canto del Miserere por la Coral "Amicus Meus"
+		</div>
+		
+		<div id="ov_text_16_miserere_5" class="ov_text_16">
+			<span class="ov_span_02">Ruta.</span>
+			
+			<br><br>
+			Con salida y llegada en <span class="ov_span_03">Calle Ntra. Sra. de Sonsoles</span>, la ruta se recorre en sentido horario. En la <span class="ov_span_03">Plaza de San Vicente</span> se produce
+			el encuentro con el Ilustre Patronato de de la Santa Vera Cruz. En la <span class="ov_span_03">Ermita del Humilladero (Calle Humilladero)</span> se realiza en canto del Miserere.
+			<br><br>
+			
+			<div id="ov_mapa_ruta_miserere_1" class="ov_mapa_ruta_01">
+				<div class="ov_text_18">Para acceder al mapa necesitas una conexión activa</div>
+			</div>
+						
+			<br>
+			<script>
+				current_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Calle Nuestra Señora de Sonsoles, 3, Ávila&destination=Calle Nuestra Señora de Sonsoles, 3, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle Don Gerónimo, Ávila|Calle Cruz Vieja, Ávila|Plaza Catedral, Ávila|Calle Tostado, Ávila|Plaza San Vicente, Ávila|Calle Humilladero, 3, Ávila|Avenida Portugal, 2, Ávila|Calle San Segundo, 40, Ávila&language=es&zoom=15&center=40.657291,-4.696528";
+				draw_map(current_url,'ov_mapa_ruta_miserere_1');
+			</script>
+			<div class="ov_button_01" id="ov_button_01_miserere_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_miserere_1')">
+				Actualizar Mapa
+			</div>
+			<br>
+			
+			<span class="ov_span_03">Itinerario:</span>
+			<br>
+			<i>Pulsa sobre cualquier punto abajo para obtener una ruta desde tu ubicación actual</i>
+			
+			<div id="ov_geo_route_2" style="display:none">
+				<br><br>
+				<div id="ov_mapa_ruta_miserere_2" class="ov_mapa_ruta_01" style="background-color:#DDD">
+					<div class="ov_text_18">Espera, por favor...</div>
+				</div>
+				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
+					
+				</div>				
+				<div class="ov_button_01" id="ov_button_01_miserere_refresh_map" onclick="show_route_2(destination,'15',destination_center,destination_container,destination_big_container);">
+				Actualizar posición
+				</div>
+				<br>
+				<div class="ov_button_01" id="ov_button_01_miserere_hide_map" onclick="$('#ov_geo_route_2').hide()">
+				Ocultar
+				</div>					
+			</div>
+			
+			<br><br>
+			<span class="ov_span_04" id="ov_place_miserere_1">Calle Nuestra Señora de Sonsoles</span>
+			<script>
+				$("#ov_place_miserere_1").click(function(e){
+					show_route_2("Calle Nuestra Señora de Sonsoles, 3, Ávila","","","ov_mapa_ruta_miserere_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_miserere_2">Calle Don Gerónimo</span>
+			<script>
+				$("#ov_place_miserere_2").click(function(e){
+					show_route_2("Calle Don Gerónimo, 17, Ávila","","","ov_mapa_ruta_miserere_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_miserere_3">Calle Cruz Vieja</span>
+			<script>
+				$("#ov_place_miserere_3").click(function(e){
+					show_route_2("Calle Cruz Vieja, Ávila","","","ov_mapa_ruta_miserere_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_miserere_4">Plaza de la Catedral</span>
+			<script>
+				$("#ov_place_miserere_4").click(function(e){
+					show_route_2("Plaza Catedral, Ávila","","","ov_mapa_ruta_miserere_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_miserere_5">Calle El Tostado</span>
+			<script>
+				$("#ov_place_miserere_5").click(function(e){
+					show_route_2("Calle Tostado, Ávila","","","ov_mapa_ruta_miserere_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_miserere_6">Plaza San Vicente</span>
+			<script>
+				$("#ov_place_miserere_6").click(function(e){
+					show_route_2("Plaza San Vicente, Ávila","","","ov_mapa_ruta_miserere_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_miserere_7">Calle Humilladero</span>
+			<script>
+				$("#ov_place_miserere_7").click(function(e){
+					show_route_2("Calle Humilladero, 3, Ávila","","","ov_mapa_ruta_miserere_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>			
+			<span class="ov_span_04" id="ov_place_miserere_9">Avenida de Portugal</span>
+			<script>
+				$("#ov_place_miserere_9").click(function(e){
+					show_route_2("Avenida de Portugal, 2, Ávila","","","ov_mapa_ruta_miserere_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_miserere_10">Calle San Segundo</span>
+			<script>
+				$("#ov_place_miserere_10").click(function(e){
+					show_route_2("Calle San Segundo, 40, Ávila","","","ov_mapa_ruta_miserere_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_miserere_11">Calle Nuestra Señora de Sonsoles</span>
+			<script>
+				$("#ov_place_miserere_11").click(function(e){
+					show_route_2("Calle Nuestra Señora de Sonsoles, 3, Ávila","","","ov_mapa_ruta_miserere_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>									
+		</div>
+	</div>
+</div>	
+

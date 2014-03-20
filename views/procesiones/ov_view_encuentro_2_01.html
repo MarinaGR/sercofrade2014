@@ -1,0 +1,318 @@
+<script>
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_encuentro_2" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_encuentro_2").click(function(e){
+			if(referrer_from_herman=="")
+			{
+				$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_herman,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_herman="";				
+				});
+			}
+				
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_encuentro_2" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_encuentro_2" class="ov_box_13_b">
+		<div id="ov_box_14_encuentro_2" class="ov_box_14">
+			<div id="ov_text_12_encuentro_2" class="ov_text_12_b">
+				PROCESIÓN DE LA ESPERANZA
+			</div>
+			<div id="ov_text_13_encuentro_2" class="ov_text_13">
+				día 14<br>
+				Lunes Santo<br><br> 
+			</div>
+		</div>
+		<div id="ov_box_15_encuentro_2" class="ov_box_15">
+			<div id="ov_text_15_encuentro_2" class="ov_text_15">
+				Salida:
+			</div>
+			<div id="ov_text_14_encuentro_2" class="ov_text_14">
+				19 30h<br>
+				Iglesia de San Juan Bautista<br>
+				Calle Blasco Jimeno
+			</div>				
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+
+<div id="ov_zone_14_encuentro_2" class="ov_zone_14">
+	<div id="ov_box_17_encuentro_2" class="ov_box_17">
+		
+		<div id="ov_text_16_encuentro_2" class="ov_text_16">
+			El Lunes Santo se llevan a cabo dos procesiones que confluyen en uno de los momentos más emotivos de la Semana Santa abulense: <b>El Encuentro</b>.
+			<br>
+			De la Iglesia Parroquial de San Juan Bautista sale la Hermandad de Ntra. Sra. de la Esperanza, dolorosa bajo palio realizada por el cordobés Manuel Romero en 1954, inspirada en la Esperanza Macarena de Sevilla, que portan 30 braceros.
+			<br>
+			Ambas imágenes se encontraron en la Plaza de la Catedral por primera vez en 2011, ya que en otras ocasiones dicho Encuentro se realizó en otros lugares como el Mercado Grande, la Plaza del Mercado Chico y Arco del Peso de la Harina.
+			<br>
+			Las imágenes son mecidas por anderos y braceros al son de las marchas que interpretan las bandas de música. Al finalizar el Encuentro, cada cofradía vuelve a su lugar de origen.
+			<br>
+			En 2007 la Hermandad de la Esperanza incorporó a su estación de penintencia la imagen de su titular cristífero: Ntro. Padre Jesús de la Salud, talla del escultor local Pedro González Martín que representa el momento del Prendimiento de Cristo en el Huerto de los Olivos.
+		</div>
+		
+		<div id="ov_text_16_encuentro_2_2" class="ov_text_16">
+			<span class="ov_span_02">Organiza.</span>
+			<br><br>
+			<div id="ov_text_17_encuentro_2_1" class="ov_text_17">
+				Hermandad de Ntra. Sra. de la Esperanza
+			</div>
+			<script>
+				$("#ov_text_17_encuentro_2_1").click(function(e){
+					referrer_from_proce="./views/procesiones/ov_view_encuentro_2_01.html";
+					$('#ov_view_container_02').load("./views/hermandades/ov_view_h_esperanza_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>
+		</div>
+		
+		<div id="ov_text_16_encuentro_2_3" class="ov_text_16">
+			<span class="ov_span_02">Hábito.</span>
+			<br><br>
+			Túnica de color blanco con fajín y botonadura en verde, caperuza blanco, con el emblema de la Hermandad, y capa verde.
+			<br><br>
+			<img src="styles/images/habitos/la_esperanza.png" class="ov_image_11"/>
+		</div>
+		
+		<div id="ov_text_16_encuentro_2_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span>
+			<br><br>
+			<div id="ov_text_18_encuentro_2_1" class="ov_text_18">
+				<span class="ov_span_03">Ntra. Sra. de la Esperanza</span>
+				<div id="ov_text_19_encuentro_2_1" class="ov_text_19">					
+				    Autor: D. Manuel Ortega<br>
+				    Fecha: 1954<br>
+				    Nuestra Señora de la Esperanza es un encargo del Colegio de agentes comerciales. Salió por primera vez el Lunes Santo de 1955. Fue enclavada en la Iglesia parroquial de San Juan Bautista donde permanece durante todo el año a la veneración de los fieles.
+					<br><br>
+					<img src="styles/images/pasos/esperanza_esperanza.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_encuentro_2_2" class="ov_text_18">
+				<span class="ov_span_03">Jesús de la Salud</span>
+				<div id="ov_text_19_encuentro_2_2" class="ov_text_19">					
+				    Autor: D. Pedro Gonzalez Martín<br>
+				    Fecha: 1990<br>
+				    Fue bendecida el día 16 de diciembre de 2006 en la Iglesia de San Juan Bautista por el Vicario del Obispado de Ávila. Desde 2007 procesiona a hombros en la Semana Santa abulense el Lunes Santo, precediendo a Ntra. Sra. de la Esperanza. 
+					<br><br>
+					<img src="styles/images/pasos/jesus_esperanza.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>								
+		</div>
+		
+		<div id="ov_text_16_encuentro_2_6" class="ov_text_16">
+			<span class="ov_span_03">Música.</span><br><br>
+			Banda de Granátula de Calatrava, Ciudad Real.
+		</div>
+		
+		<div id="ov_text_16_encuentro_2_5" class="ov_text_16">
+			<span class="ov_span_03">Ruta.</span>
+			
+			<br><br>
+			Con salida y llegada en <span class="ov_span_03">Calle Blasco Jimeno</span>, el encuentro con la Procesión de la Ilusión se produce en
+			la <span class="ov_span_03">Plaza de la Catedral</span> a las <span class="ov_span_03">22:30h</span> aproximadamente.			
+			<br><br>
+			
+			<div id="ov_mapa_ruta_encuentro_2_1"  class="ov_mapa_ruta_01">
+				<div class="ov_text_18">Para acceder al mapa necesitas una conexión activa</div>
+			</div>		
+			
+			<br>
+			<script>
+				current_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Calle Blasco Jimeno, Ávila&destination=Calle Blasco Jimeno, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle Ramón y Cajal, Ávila|Calle Conde Don Ramón, 4, Ávila|Calle Marqués de Benavites, Ávila|Plaza Mosén Rubí, Ávila|Calle Bracamonte, Ávila|Plaza Mercado Chico, Ávila|Calle Comuneros de Castilla Ávila|Calle Reyes Católicos, Ávila|Calle Alemania, Ávila|Plaza Catedral, Ávila|Calle Cruz Vieja, Ávila|Calle Don Gerónimo, Ávila|Plaza Teniente Arévalo, Ávila|Calle Pedro de Lagasca, Ávila|Plaza Pedro Dávila, Ávila|Calle Caballeros, Ávila|Calle Martín Carramolino, Ávila&language=es&zoom=15&center=40.657055,-4.69977";
+				draw_map(current_url,'ov_mapa_ruta_encuentro_2_1');
+			</script>
+			<div class="ov_button_01" id="ov_button_01_encuentro_2_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_encuentro_2_1')">
+				Actualizar Mapa
+			</div>
+			<br>
+			
+			<span class="ov_span_03">Itinerario:</span>
+			<br>
+			<i>Pulsa sobre cualquier punto abajo para obtener una ruta desde tu ubicación actual</i>
+			
+			<div id="ov_geo_route_2" style="display:none">
+				<br><br>
+				<div id="ov_mapa_ruta_encuentro_2_2" class="ov_mapa_ruta_01" style="background-color:#DDD">
+					<div class="ov_text_18">Espera, por favor...</div>
+				</div>
+				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
+					
+				</div>				
+				<div class="ov_button_01" id="ov_button_01_encuentro_2_refresh_map" onclick="show_route_2(destination,'15',destination_center,destination_container,destination_big_container);">
+				Actualizar posición
+				</div>
+				<br>
+				<div class="ov_button_01" id="ov_button_01_encuentro_2_hide_map" onclick="$('#ov_geo_route_2').hide()">
+				Ocultar
+				</div>					
+			</div>
+			
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_1">Calle Blasco Jimeno</span>
+			<script>
+				$("#ov_place_encuentro_2_1").click(function(e){
+					show_route_2("Calle Blasco Jimeno, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_3">Calle Ramón y Cajal</span>
+			<script>
+				$("#ov_place_encuentro_2_3").click(function(e){
+					show_route_2("Calle Ramón y Cajal, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_4">Calle Conde Don Ramón</span>
+			<script>
+				$("#ov_place_encuentro_2_4").click(function(e){
+					show_route_2("Calle Conde Don Ramón, 4, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_5">Calle Marqués de Benavites</span>
+			<script>
+				$("#ov_place_encuentro_2_5").click(function(e){
+					show_route_2("Calle Marqués de Benavites, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_6">Plaza de Mosén Rubí</span>
+			<script>
+				$("#ov_place_encuentro_2_6").click(function(e){
+					show_route_2("Plaza Mosén Rubí, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_7">Calle Bracamonte</span>
+			<script>
+				$("#ov_place_encuentro_2_7").click(function(e){
+					show_route_2("Calle Bracamonte, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>			
+			<span class="ov_span_04" id="ov_place_encuentro_2_9">Plaza del Mercado Chico</span>
+			<script>
+				$("#ov_place_encuentro_2_9").click(function(e){
+					show_route_2("Plaza Mercado Chico, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_10">Calle Comuneros de Castilla</span>
+			<script>
+				$("#ov_place_encuentro_2_10").click(function(e){
+					show_route_2("Calle Comuneros de Castilla, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_11">Calle Reyes Católicos</span>
+			<script>
+				$("#ov_place_encuentro_2_11").click(function(e){
+					show_route_2("Calle Reyes Católicos, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_12">Calle Alemania</span>
+			<script>
+				$("#ov_place_encuentro_2_12").click(function(e){
+					show_route_2("Calle Alemania, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_13">Plaza de la Catedral</span>
+			<script>
+				$("#ov_place_encuentro_2_13").click(function(e){
+					show_route_2("Plaza Catedral, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_14">Calle Cruz Vieja</span>
+			<script>
+				$("#ov_place_encuentro_2_14").click(function(e){
+					show_route_2("Calle Cruz Vieja Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_15">Calle Don Gerónimo</span>
+			<script>
+				$("#ov_place_encuentro_2_15").click(function(e){
+					show_route_2("Calle Don Gerónimo, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>			
+			<span class="ov_span_04" id="ov_place_encuentro_2_17">Plaza Teniente Arévalo</span>
+			<script>
+				$("#ov_place_encuentro_2_17").click(function(e){
+					show_route_2("Plaza Teniente Arévalo, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_18">Calle Pedro Lagasca</span>
+			<script>
+				$("#ov_place_encuentro_2_18").click(function(e){
+					show_route_2("Calle Pedro de Lagasca, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_19">Plaza Pedro Dávila</span>
+			<script>
+				$("#ov_place_encuentro_2_19").click(function(e){
+					show_route_2("Plaza Pedro Dávila, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>			
+			<span class="ov_span_04" id="ov_place_encuentro_2_21">Calle Caballeros</span>
+			<script>
+				$("#ov_place_encuentro_2_21").click(function(e){
+					show_route_2("Calle Caballeros, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_22">Calle Martín Carramolino</span>
+			<script>
+				$("#ov_place_encuentro_2_22").click(function(e){
+					show_route_2("Calle Martín Carramolino, Ávila","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_encuentro_2_23">Calle Blasco Jimeno</span>
+			<script>
+				$("#ov_place_encuentro_2_23").click(function(e){
+					show_route_2("Calle Blasco Jimeno","","","ov_mapa_ruta_encuentro_2_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>					
+		</div>
+	</div>
+</div>	
+

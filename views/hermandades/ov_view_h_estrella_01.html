@@ -1,0 +1,140 @@
+<script>
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_h_estrella" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_h_estrella").click(function(e){
+			if(referrer_from_proce=="")
+			{
+				$('#ov_view_container_01').load("./views/general/ov_view_herman_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_proce,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_proce="";				
+				});
+			}	
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_h_estrella" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_h_estrella" class="ov_box_13_b">
+		<div id="ov_box_14_h_estrella" class="ov_box_14">
+			<img src="styles/images/escudos/nazarenos.jpg" id="ov_image_03_4" class="ov_image_03" alt="circle_04"/>
+		</div>
+		<div id="ov_box_15_h_estrella" class="ov_box_15">
+			<div id="ov_text_15_h_estrella" class="ov_text_15">
+							
+				Hermandad de Nazarenos Jesús Redentor ante Caifás y Ntra. Sra. de la Estrella
+				<br><br>
+			</div>
+						
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+
+
+<div id="ov_zone_14_h_estrella" class="ov_zone_14">
+	<div id="ov_box_17_h_estrella" class="ov_box_17">
+		<div id="ov_text_16_h_estrella" class="ov_text_16">
+			Esta Hermandad comienza a dar sus primeros pasos en el año 2005 cuando un grupo de amigos se proponen crear una nueva Hermandad en Ávila.<br>
+			Por consiguiente es la mas joven de todas las hermandades que componen la Semana Santa abulense, siendo definitivamente creada en el año 2006 coincidiendo con la declaración de Interés Turístico Nacional de la Semana Santa de Ávila.<br>
+			La Hermandad efectúa su primera estación penitencial el Martes Santo 11 de abril del año 2006. Es una de las tres hermandades que efectúa su recorrido a plena luz del día.<br> 
+		</div>
+		
+		<div id="ov_text_16_h_estrella_3" class="ov_text_16">
+			<span class="ov_span_02">Datos.</span><br><br>
+			<span class="ov_span_01">Hábito:</span><br> Túnica y capucho blanco, cinturón de esparto
+			<br><br>
+			<img src="styles/images/habitos/estrella.png" class="ov_image_11"/>
+			<br><br>
+			<span class="ov_span_01">Templo de Residencia Canónica:</span><br>Iglesia de Santa María de Jesús
+			<br><br>
+			<span class="ov_span_01">Fundación:</span><br>2006
+			<br><br>
+			<span class="ov_span_01">Hermanos:</span><br>372
+			<br><br>
+			<span class="ov_span_01">Nazarenos:</span><br>170
+			<br><br>
+			<span class="ov_span_01">Atributos de los Hermanos:</span><br>Vela de cera natural.
+			<br><br>
+			<span class="ov_span_01">Culto(s) organizados:</span><br>Los primeros domingos de los meses impares, Misa de Hermandad en la Iglesia de Santa Maria de Jesús (Las Gordillas).
+				<br>Triduo a Jesús Redentor ante Caifás.
+				<br>Triduo a Nuestra Señora de la Estrella.
+				<br>Lunes Santo, acto de penitencia
+			<br><br>
+			<span class="ov_span_01">Cofradías con que está hermanada:</span><br> Real e Ilustre Hermandad de Penitencia del Santísimo Cristo de la Caridad en su Sagrado Descendimiento, María Santísima de la Piedad en su Quinta Angustia, Nuestra Señora de los Ángeles en su Soledad y Santa Ángela de la Cruz. Vulgo "La Quinta Angustia" de Utrera (Sevilla) 
+			
+		</div>
+		<div id="ov_text_16_h_estrella_6" class="ov_text_16">
+			<span class="ov_span_02">Contacto.</span><br><br>
+			Hermandad de Nazarenos "Jesus Redentor" y Ntra. Sra. de la Estrella<br>
+			Parroquia Inmaculado Corazón de María<br>
+			C/ Héroes del Alcazar, nº 8<br>
+			05001 Ávila<br>
+			secretaria@hermandadlaestrella-avila.es
+		</div>
+		<div id="ov_text_16_h_estrella_2" class="ov_text_16">
+			<span class="ov_span_02">Procesiones.</span><br><br>
+			<div id="ov_text_17_h_estrella_1" class="ov_text_17">
+				Procesión de La Estrella (15 de Abril, Martes Santo)
+			</div>
+			<script>
+				$("#ov_text_17_h_estrella_1").click(function(e){
+					referrer_from_herman="./views/hermandades/ov_view_h_estrella_01.html";
+					$('#ov_view_container_02').load("./views/procesiones/ov_view_estrella_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>
+		</div>	
+		<div id="ov_text_16_h_estrella_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span><br><br>
+			<div id="ov_text_18_h_estrella_1" class="ov_text_18">
+				<span class="ov_span_03">Jesús Redentor</span>
+				<div id="ov_text_19_h_estrella_1" class="ov_text_19">					
+				    Autor: D. Juan Ventura<br>
+				    Fecha: 2006<br>
+				    Paso de misterio que representa el juicio a Jesús y esta formado por Jesús Redentor, Caifás, Anás, José de Arimatea y un centurión romano.<br>
+				    Jesús Redentor es obra del escultor sevillano Juan Ventura y el resto de imágenes son obras del escultor jerezano Ismael Márquez).
+					<br><br>
+					<img src="styles/images/pasos/estrella_redentor.JPG" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_h_estrella_2" class="ov_text_18">
+				<span class="ov_span_03">Nuestra Señora de la Estrella </span>
+				<div id="ov_text_19_h_estrella_2" class="ov_text_19">					
+				    Autor: D. Juan Ventura<br>
+				    Fecha: 2007<br>				   
+					<br><br>
+					<img src="styles/images/pasos/estrella_estrella.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>			
+		</div>
+			
+	</div>
+</div>	
+

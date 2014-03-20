@@ -1,0 +1,185 @@
+<script>
+	//ov_view_main_menu_01 se carga en container_02
+	$("#ov_view_container_02").css("background-color","#EBEBEB");
+	$('#ov_view_container_02').css("min-height",viewport_height+"px");	
+</script>
+
+<div id="ov_zone_15_1" class="ov_zone_15">
+
+	<div id="ov_zone_03_1" class="ov_zone_03">
+	</div>
+	
+	<div class="ov_vertical_space_01">&nbsp;</div>
+	
+	<div id="ov_zone_04_1" class="ov_zone_04">
+	</div>	
+	
+	<div class="ov_vertical_space_01">&nbsp;</div>
+	
+	<!-- -->
+	
+	<div id="ov_zone_05_1" class="ov_zone_05">
+		
+		<div id="ov_box_01_1" class="ov_box_01">
+			<img src="styles/images/circulo1.png" id="ov_image_03_1" class="ov_image_03" alt="circle_01"/>
+		</div>
+		
+		<div id="ov_box_02_1" class="ov_box_02">
+			<div id="ov_text_01_1" class="ov_text_01">La Semana Santa de Ávila</div>
+			<div id="ov_text_02_1" class="ov_text_02">Presentación</div>
+		</div>
+		
+		<div class="ov_clear_floats_01">&nbsp;</div>
+		
+	</div>
+	<script>
+		$("#ov_zone_05_1").click(function(e){
+			$('#ov_view_container_01').load("./views/general/ov_view_info_01.html",function(){
+				$('#ov_view_container_01').show('slide',{direction: "right"},500);
+				$('#ov_view_container_02').hide('slide',{direction: "left"},500);						
+			});	
+		});
+	</script>
+	
+	<div id="ov_zone_05_2" class="ov_zone_05">
+		<div id="ov_box_01_2" class="ov_box_01">
+			<img src="styles/images/circulo2.png" id="ov_image_03_2" class="ov_image_03" alt="circle_02"/>
+		</div>
+		<div id="ov_box_02_2" class="ov_box_02">
+			<div id="ov_text_01_2" class="ov_text_01">Procesiones</div>
+			<div id="ov_text_02_2" class="ov_text_02">Horarios, rutas, pasos...</div>
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	<script>
+		$("#ov_zone_05_2").click(function(e){
+			$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
+				$('#ov_view_container_01').show('slide',{direction: "right"},500);
+				$('#ov_view_container_02').hide('slide',{direction: "left"},500);				
+			});	
+		});
+	</script>
+	
+	<div id="ov_zone_05_3" class="ov_zone_05">
+		<div id="ov_box_01_3" class="ov_box_01">
+			<img src="styles/images/circulo3.png" id="ov_image_03_3" class="ov_image_03" alt="circle_03"/>
+		</div>
+		<div id="ov_box_02_3" class="ov_box_02">
+			<div id="ov_text_01_3" class="ov_text_01">Hermandades &amp; Cofradías</div>
+			<div id="ov_text_02_3" class="ov_text_02">Información, historía y curiosidades</div>
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	<script>
+		$("#ov_zone_05_3").click(function(e){
+			$('#ov_view_container_01').load("./views/general/ov_view_herman_01.html",function(){
+				$('#ov_view_container_01').show('slide',{direction: "right"},500);
+				$('#ov_view_container_02').hide('slide',{direction: "left"},500);				
+			});	
+		});
+	</script>
+	
+	<!-- -->
+	
+	<div class="ov_vertical_space_04">&nbsp;</div>
+	<div class="ov_vertical_space_04">&nbsp;</div>
+	
+	<!-- -->
+	
+	<div id="ov_zone_06_1" class="ov_zone_06">
+		
+		<div id="ov_box_03_1" class="ov_box_03">
+			<img src="styles/images/flecha01.png" id="ov_image_04_1" class="ov_image_04" alt="arrow_01"/>
+		</div>
+		
+		<div id="ov_box_04_1" class="ov_box_04">
+			<div id="ov_text_03_1" class="ov_text_03">SEGUIMIENTO EN TIEMPO REAL</div>
+			<div id="ov_text_04_1" class="ov_text_04">Sigue el recorrido de las procesiones en vivo</div>
+		</div>
+		
+		<div id="ov_box_05_1" class="ov_box_05">
+			<img src="styles/images/movil.png" id="ov_image_05_1" class="ov_image_05" alt="decorative_02"/>
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	<script>
+		$("#ov_zone_06_1").click(function(e){
+			$('#ov_view_container_01').load("./views/remote/ov_view_seguimiento_01.html",function(){
+				$('#ov_view_container_01').show('slide',{direction: "right"},500);
+				$('#ov_view_container_02').hide('slide',{direction: "left"},500);				
+			});	
+		});
+	</script>
+	
+	<!-- -->
+	
+	<div class="ov_vertical_space_04">&nbsp;</div>
+	<div class="ov_vertical_space_01">&nbsp;</div>
+	
+	<!-- -->
+	
+	<div id="ov_zone_07_1" class="ov_zone_07">
+		<div id="ov_text_05_1" class="ov_text_05">
+			VER ÚLTIMA HORA&nbsp;&nbsp;<img src="styles/images/flechas2.png" id="ov_image_06_1" class="ov_image_06" alt="arrow_02"/>
+		</div>
+	</div>
+	<script>
+		$("#ov_zone_07_1").click(function(e){
+			$('#ov_view_container_01').load("./views/remote/ov_view_ultimahora_01.html",function(){
+				$('#ov_view_container_01').show('slide',{direction: "right"},500);
+				$('#ov_view_container_02').hide('slide',{direction: "left"},500);				
+			});	
+		});
+	</script>
+	
+	<div class="ov_vertical_space_01">&nbsp;</div>
+	
+	<div id="ov_zone_07_2" class="ov_zone_07">
+		<div id="ov_text_05_2" class="ov_text_05">
+			OFERTAS EXCLUSIVAS&nbsp;&nbsp;<img src="styles/images/flechas2.png" id="ov_image_06_2" class="ov_image_06" alt="arrow_02"/>
+		</div>
+	</div>
+	<script>
+		$("#ov_zone_07_2").click(function(e){
+			$('#ov_view_container_01').load("./views/remote/ov_view_ofertas_01.html",function(){
+				$('#ov_view_container_01').show('slide',{direction: "right"},500);
+				$('#ov_view_container_02').hide('slide',{direction: "left"},500);				
+			});	
+		});
+	</script>
+	
+	<div class="ov_vertical_space_01">&nbsp;</div>
+	
+	<div id="ov_zone_07_3" class="ov_zone_07">
+		<div id="ov_text_05_3" class="ov_text_05">
+			ACERCA DE&nbsp;&nbsp;<img src="styles/images/flechas2.png" id="ov_image_06_3" class="ov_image_06" alt="arrow_02"/>
+		</div>
+	</div>
+	<script>
+		$("#ov_zone_07_3").click(function(e){
+			$('#ov_view_container_01').load("./views/general/ov_view_acercade_01.html",function(){
+				$('#ov_view_container_01').show('slide',{direction: "right"},500);
+				$('#ov_view_container_02').hide('slide',{direction: "left"},500);				
+			});	
+		});
+	</script>
+	
+	<!-- -->
+	
+	<div class="ov_vertical_space_04">&nbsp;</div>
+	<div class="ov_vertical_space_01">&nbsp;</div>	
+	
+</div>
+<script>
+	$("#ov_zone_15_1").css("height",(viewport_height-60)+"px");
+	$("#ov_zone_15_1").css("overflow","auto");
+</script>
+
+<!-- Publi -->
+<div id="ov_zone_08_1" class="ov_zone_08">
+	
+</div>
+<script>	
+	load_ads("ov_zone_08_1");	
+</script>	
+

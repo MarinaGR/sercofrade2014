@@ -1,0 +1,351 @@
+<script>
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_pasos" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_pasos").click(function(e){
+			if(referrer_from_herman=="")
+			{
+				$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_herman,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_herman="";				
+				});
+			}
+				
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_pasos" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_pasos" class="ov_box_13_b">
+		<div id="ov_box_14_pasos" class="ov_box_14">
+			<div id="ov_text_12_pasos" class="ov_text_12_b">
+				PROCESIÓN DE LOS PASOS
+			</div>
+			<div id="ov_text_13_pasos" class="ov_text_13">
+				día 17<br>
+				Jueves Santo<br><br> 
+			</div>
+		</div>
+		<div id="ov_box_15_pasos" class="ov_box_15">
+			<div id="ov_text_15_pasos" class="ov_text_15">
+				Salida:
+			</div>
+			<div id="ov_text_14_pasos" class="ov_text_14">
+				21 00h<br>
+				S.A.I Catedral<br>
+				Plaza Catedral
+			</div>				
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+<div id="ov_zone_14_pasos" class="ov_zone_14">
+	<div id="ov_box_17_pasos" class="ov_box_17">
+		
+		<div id="ov_text_16_pasos" class="ov_text_16">
+			 Al anochecer sale la procesión de 'Los Pasos' con sus nueve escenas de la Pasión de Cristo.
+			 <br>
+			 La organiza el Ilustre Patronato de la Santa Vera Cruz, que en el Jueves Santo de 1540 puso la primera semilla de lo que es hoy la Semana Santa abulense.
+			 <br>
+			 En primer lugar desfila la Santa Cruz, a la que siguen la Sagrada Cena, la Oración en el Huerto, el Prendimiento, el Cristo Amarrado a la Columna, la Caída, la Santa Faz, la Tercera Palabra y, por último, el Santísimo Cristo de los Ajusticiados.
+			 <br>
+			 La Sagrada Cena, el Prendimiento y la Caída son tres excelentes copias de los pasos de Salzillo de la Semana Santa de Murcia, tallados por Manuel Sánchez Braciel en la segunda década del siglo XX.
+			 <br>
+			 Como curiosidad, esta corporación es la única de Ávila que tiene dos túnicas.
+		</div>
+		
+		<div id="ov_text_16_pasos_2" class="ov_text_16">
+			<span class="ov_span_02">Organiza.</span><br><br>
+			<div id="ov_text_17_pasos_1" class="ov_text_17">
+				Iltre. Patronato de la Santa Vera Cruz
+			</div>
+			<script>
+				$("#ov_text_17_pasos_1").click(function(e){
+					referrer_from_proce="./views/procesiones/ov_view_pasos_01.html";
+					$('#ov_view_container_02').load("./views/hermandades/ov_view_h_veracruz_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>
+		</div>
+		
+		<div id="ov_text_16_pasos_3" class="ov_text_16">
+			<span class="ov_span_02">Hábito.</span><br><br>
+			Túnica, caperuza y capa de color morado, con cíngulo amarillo.
+			<br><br>
+			<img src="styles/images/habitos/pasos_1.png" class="ov_image_11"/>
+			<br>
+			Túnica y caperuza blanco, cíngulo verde y capa morada.
+			<br><br>
+			<img src="styles/images/habitos/pasos_2.png" class="ov_image_11"/>
+		</div>
+		
+		<div id="ov_text_16_pasos_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span><br><br>
+			<div id="ov_text_18_pasos_1" class="ov_text_18">
+				<span class="ov_span_03">Santa Cruz</span>
+				<div id="ov_text_19_pasos_1" class="ov_text_19">					
+				    Autor: Anónimo<br>
+				    Fecha: s.XVI<br>
+				    Constituye el simbolo de la Hermandad, llamada por ello de la "Santa Vera Cruz". Desde su fundación abrió siempre este desfile procesional y se la llamó Cruz Verde, porque aparece desnuda, sin que penda de ella el cuerpo de Cristo; fue elemento esencial en esta Procesión de penitencia, instituida para conmemorar la Pasión del Redentor
+					<br><br>
+					<img src="styles/images/pasos/veracruz_cruz.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_pasos_2" class="ov_text_18">
+				<span class="ov_span_03">La Cena</span>
+				<div id="ov_text_19_pasos_2" class="ov_text_19">					
+				    Autor: D. Manuel Sanchez Araciel<br>
+				    Fecha: 1904				    
+					<br><br>
+					<img src="styles/images/pasos/veracruz_cena.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_pasos_3" class="ov_text_18">
+				<span class="ov_span_03">La Oración en el Huerto</span>
+				<div id="ov_text_19_pasos_3" class="ov_text_19">					
+				    Autor: Cristo - Juan Leal, el Ángel - Antonio Arenas Martinez<br>
+				    Fecha: Cristo - 1612 / el Ángel - 1952<br>
+				    No es una talla completa, sino solamente cabeza y manos, realizada para ser vestida en el resto de su cuerpo
+				    <br><br>
+					<img src="styles/images/pasos/veracruz_huerto.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_pasos_4" class="ov_text_18">
+				<span class="ov_span_03">El Prendimiento</span>
+				<div id="ov_text_19_pasos_4" class="ov_text_19">					
+				    Autor: D. Manuel Sánchez Araciel<br>
+				    Fecha: 1919<br>
+				    Paso de misterio compuesto por las imágenes de Jesús, Judas, San Pedro, Malco y un soldado
+				    <br><br>
+					<img src="styles/images/pasos/veracruz_prendimiento.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_pasos_5" class="ov_text_18">
+				<span class="ov_span_03">Cristo amarrado a la Columna</span>
+				<div id="ov_text_19_pasos_5" class="ov_text_19">					
+				    Autor: Escuela Castellana<br>
+				    Fecha: s. XVII<br>
+				    Se conserva en la Iglesia de los Mártires Vicente, Sabina y Cristeta de nuestra Ciudad de Ávila
+				    <br><br>
+					<img src="styles/images/pasos/veracruz_amarrado.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_pasos_6" class="ov_text_18">
+				<span class="ov_span_03">La Caída</span>
+				<div id="ov_text_19_pasos_6" class="ov_text_19">					
+				    Autor: D. Manuel Sánchez Araciel<br>
+				    Fecha: 1914<br>
+				    Paso de misterio compuesto por las imágenes de Jesús, El Cirineo, 2 esbirros y un soldado romano
+				    <br><br>
+					<img src="styles/images/pasos/veracruz_caida.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_pasos_7" class="ov_text_18">
+				<span class="ov_span_03">La Santa Faz</span>
+				<div id="ov_text_19_pasos_7" class="ov_text_19">					
+				    Autor: Anónimo<br>
+				    Fecha: s.XVIII<br>
+				    Comprende la figura de la Verónica, sosteniendo en sus manos el lienzo con el que ha enjugado el rostro de Jesús, cuya imagen ha quedado impresa en él, y, con ella , el Nazareno en el momento de recibir la atención de la mujer.
+					<br><br>
+					<img src="styles/images/pasos/veracruz_faz.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_pasos_8" class="ov_text_18">
+				<span class="ov_span_03">La Tercera Palabra</span>
+				<div id="ov_text_19_pasos_8" class="ov_text_19">					
+				    Autor: "El Cristo de Anaya", atribuido a Juan Bautista Vazquez "El Viejo", San Juan y la Virgen anónimos<br>
+				    Fecha: "El Cristo de Anaya" 1580, San Juan y la Virgen mediados del s. XVIII<br>
+				    Paso de misterio compuesto por la figura de la Virgen y San Juan , de pie, junto a la Cruz, recibiendo el mensaje que Cristo le manifiesta en su Tercera Palabra; la figura de Cristo es una talla impresionante, de autor desconocido, aunque presenta unas características muy similares al Cristo de Burgos, que se venera en la Ciudad de Sevilla, cuyo autor es Juan Bautista Vázquez "El Viejo", escultor que trabajó en Ávila hasta 1561 en que se traslado a Sevilla, donde talló aquella imagen , que nos ha hecho pensar en que sea el autor de este Cristo de la Buena Muerte, que adquirió el Canonigo Anaya, para la capilla que edificó en el Claustro de la Catedral de Ávila
+					<br><br>
+					<img src="styles/images/pasos/veracruz_faz.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_pasos_9" class="ov_text_18">
+				<span class="ov_span_03">Santísimo Cristo de los Ajusticiados</span>
+				<div id="ov_text_19_pasos_9" class="ov_text_19">					
+				    Autor: Anónimo<br>
+				    Fecha: s. XVI<br>
+				    Es una talla esbelta de finales del siglo XVI o principios del XVII. y desconocemos el autor al que la Hermandad encargó sur realización. Recibió al principio el titulo de "Santísimo Cristo de la Buena Muerte"y muy pronto pasó a llamarse "Santísimo Cristo de los Ajusticiados" por la misión especial de acompañar a los reos en sus últimos momentos antes de la ejecución.Se venera en su Ermita del Humilladero.
+					<br><br>
+					<img src="styles/images/pasos/veracruz_ajusticiados.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>															
+		</div>
+		
+		<div id="ov_text_16_pasos_6" class="ov_text_16">
+			<span class="ov_span_02">Música.</span><br><br>
+			Banda de Cornetas y Tambores de Cuellar.<br>
+			Banda de Cornetas y Tambores La Caida de San Lorenzo del Escorial.
+		</div>
+		
+		<div id="ov_text_16_pasos_5" class="ov_text_16">
+			<span class="ov_span_02">Ruta.</span>
+			
+			<br><br>
+			Con salida y llegada en el mismo lugar, <span class="ov_span_03">Plaza Catedral</span>, la ruta se realiza en sentido anti-horario.
+			<br><br>
+			
+			<div id="ov_mapa_ruta_pasos_1" class="ov_mapa_ruta_01">
+				<div class="ov_text_18">Para acceder al mapa necesitas una conexión activa</div>
+			</div>			
+			
+			<br>
+			<script>
+				current_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza Catedral, 9, Ávila&destination=Plaza Catedral, 9, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle Tostado, Ávila|Calle López Núñez, Ávila|Calle Esteban Domingo, Ávila|Plaza Zurraquín, Ávila|Plaza Mercado Chico, Ávila|Calle Caballeros, Ávila|Plaza Pedro Dávila, Ávila|Calle Cardenal Pla y Deniel, Ávila|Plaza Teniente Arévalo, Ávila|Plaza José Tome, Ávila|Calle Alemania, Ávila&language=es&zoom=15&center=40.657877,-4.697912";
+				draw_map(current_url,'ov_mapa_ruta_pasos_1');
+			</script>
+			<div class="ov_button_01" id="ov_button_01_pasos_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_pasos_1')">
+				Actualizar Mapa
+			</div>
+			<br>
+			
+			<span class="ov_span_03">Itinerario:</span>
+			<br>
+			<i>Pulsa sobre cualquier punto abajo para obtener una ruta desde tu ubicación actual</i>
+			
+			<div id="ov_geo_route_2" style="display:none">
+				<br><br>
+				<div id="ov_mapa_ruta_pasos_2" class="ov_mapa_ruta_01" style="background-color:#DDD">
+					<div class="ov_text_18">Espera, por favor...</div>
+				</div>
+				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
+					
+				</div>				
+				<div class="ov_button_01" id="ov_button_01_pasos_refresh_map" onclick="show_route_2(destination,'15',destination_center,destination_container,destination_big_container);">
+				Actualizar posición
+				</div>
+				<br>
+				<div class="ov_button_01" id="ov_button_01_pasos_hide_map" onclick="$('#ov_geo_route_2').hide()">
+				Ocultar
+				</div>					
+			</div>
+			
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasos_1">Plaza Catedral</span>
+			<script>
+				$("#ov_place_pasos_1").click(function(e){
+					show_route_2("Plaza Catedral, 9, Ávila","","","ov_mapa_ruta_pasos_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasos_2">Calle El Tostado</span>
+			<script>
+				$("#ov_place_pasos_1").click(function(e){
+					show_route_2("Calle Tostado, Ávila","","","ov_mapa_ruta_pasos_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasos_3">Calle López Núñez</span>
+			<script>
+				$("#ov_place_pasos_1").click(function(e){
+					show_route_2("Calle López Núñez, Ávila","","","ov_mapa_ruta_pasos_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasos_4">Calle Esteban Domingo</span>
+			<script>
+				$("#ov_place_pasos_4").click(function(e){
+					show_route_2("Calle Esteban Domingo, Ávila","","","ov_mapa_ruta_pasos_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasos_5">Plaza Zurraquín</span>
+			<script>
+				$("#ov_place_pasos_5").click(function(e){
+					show_route_2("Plaza Zurraquín, Ávila","","","ov_mapa_ruta_pasos_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasos_6">Plaza del Mercado Chico</span>
+			<script>
+				$("#ov_place_pasos_6").click(function(e){
+					show_route_2("Plaza Mercado Chico, Ávila","","","ov_mapa_ruta_pasos_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasos_7">Calle Caballeros</span>
+			<script>
+				$("#ov_place_pasos_7").click(function(e){
+					show_route_2("Calle Caballeros, Ávila","","","ov_mapa_ruta_pasos_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasos_8">Plaza Pedro Dávila</span>
+			<script>
+				$("#ov_place_pasos_8").click(function(e){
+					show_route_2("Plaza Pedro Dávila, Ávila","","","ov_mapa_ruta_pasos_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasos_9">Calle Pla y Deniel</span>
+			<script>
+				$("#ov_place_pasos_9").click(function(e){
+					show_route_2("Calle Cardenal Pla y Deniel, Ávila","","","ov_mapa_ruta_pasos_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasos_10">Plaza Teniente Arévalo</span>
+			<script>
+				$("#ov_place_pasos_10").click(function(e){
+					show_route_2("Plaza Teniente Arévalo, Ávila","","","ov_mapa_ruta_pasos_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasos_11">Plaza José Tome</span>
+			<script>
+				$("#ov_place_pasos_11").click(function(e){
+					show_route_2("Plaza José Tome, Ávila","","","ov_mapa_ruta_pasos_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasos_12">Calle Alemania</span>
+			<script>
+				$("#ov_place_pasos_12").click(function(e){
+					show_route_2("Calle Alemania, Ávila","","","ov_mapa_ruta_pasos_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_pasos_13">Plaza Catedral</span>
+			<script>
+				$("#ov_place_pasos_13").click(function(e){
+					show_route_2("Plaza Catedral, 9, Ávila","","","ov_mapa_ruta_pasos_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>								
+		</div>
+	</div>
+</div>	
+

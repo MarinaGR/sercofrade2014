@@ -1,0 +1,135 @@
+<script>
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_h_soledad" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_h_soledad").click(function(e){
+			if(referrer_from_proce=="")
+			{
+				$('#ov_view_container_01').load("./views/general/ov_view_herman_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_proce,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_proce="";				
+				});
+			}	
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_h_soledad" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_h_soledad" class="ov_box_13_b">
+		<div id="ov_box_14_h_soledad" class="ov_box_14">
+			<img src="styles/images/escudos/soledad.jpg" id="ov_image_03_4" class="ov_image_03" alt="circle_04"/>
+		</div>
+		<div id="ov_box_15_h_soledad" class="ov_box_15">
+			<div id="ov_text_15_h_soledad" class="ov_text_15">
+				<br>			
+				Cofradía Damas de la Soledad
+			</div>
+						
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+
+
+<div id="ov_zone_14_h_soledad" class="ov_zone_14">
+	<div id="ov_box_17_h_soledad" class="ov_box_17">
+		<div id="ov_text_16_h_soledad" class="ov_text_16">
+			El 14 de Febrero de 1957 es erigida en la iglesia de Mosén Rubi la Asociación piadosa de las Damas de la Soledad con el objeto de "promover la perfección cristiana e incrementar el culto público, proponer, como medio, a las mujeres abulenses la devoción a la Santísima Virgen María, bajo la advocación de su soledad y contribuir, con espíritu de recogimiento y presencia, al esplendor litúrgico de la Semana Santa".
+			<br>
+			La primera procesión se realizó ese mismo año con una imagen de la Dolorosa cedida por la Cofradía de Nuestra señora de las Angustias y Santo Sepulcro y partió de la iglesia de Santo Tome. Ya en 1958 la cofradía adquiere la actual imagen de Ntra. Sra. de la Soledad. En el año 1963 la cofradía se traslada a la iglesia de San Pedro, sede definitiva de la misma. La cofradía esta formada totalmente por mujeres.
+		</div>
+		
+		<div id="ov_text_16_h_soledad_3" class="ov_text_16">
+			<span class="ov_span_02">Datos.</span><br><br>
+			<span class="ov_span_01">Hábito:</span><br>Traje negro con mantilla española y cruz de madera con cordón blanco.
+			<br><br>
+			<img src="styles/images/habitos/soledad.png" class="ov_image_11"/>	
+			<br><br>
+			<span class="ov_span_01">Templo de Residencia Canónica:</span><br>Iglesia de San Pedro Apóstol
+			<br><br>
+			<span class="ov_span_01">Fundación:</span><br>1957 
+			<br><br>
+			<span class="ov_span_01">Hermanos:</span><br>309
+			<br><br>
+			<span class="ov_span_01">Nazarenos:</span><br>150
+			<br><br>
+			<span class="ov_span_01">Atributos de los Hermanos:</span><br>Vela eléctrica.
+			<br><br>
+			<span class="ov_span_01">Culto(s) organizados:</span><br> Quinario en la semana anterior a Semana Santa y fiesta de la virgen de los Dolores el 15 de septiembre.			
+		</div>
+		<div id="ov_text_16_h_soledad_6" class="ov_text_16">
+			<span class="ov_span_02">Contacto.</span><br><br>
+			 Cofradía Damas de la Soledad<br>
+			Parroquia de San Pedro Apostol<br>
+			Pza. de Santa Teresa<br>
+			05001 Ávila<br>
+			tlf: 920 226117<br>
+			soledaddeavila@gmail.com<br> 
+
+		</div>
+		<div id="ov_text_16_h_soledad_2" class="ov_text_16">
+			<span class="ov_span_02">Procesiones.</span><br><br>
+			<div id="ov_text_17_h_soledad_1" class="ov_text_17">
+				Procesión de la Soledad (19 de Abril, Sábado Santo)
+			</div>
+			<script>
+				$("#ov_text_17_h_soledad_1").click(function(e){
+					referrer_from_herman="./views/hermandades/ov_view_h_soledad_01.html";
+					$('#ov_view_container_02').load("./views/procesiones/ov_view_soledad_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>			
+		</div>	
+		<div id="ov_text_16_h_soledad_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span><br><br>			
+			<div id="ov_text_18_h_soledad_1" class="ov_text_18">
+				<span class="ov_span_03">Ntra. Señora de la Soledad</span>
+				<div id="ov_text_19_h_soledad_1" class="ov_text_19">					
+				    Autor: Eduardo Capa Sacristán<br>
+				    Fecha: 1958<br>
+				    La imagen de la Soledad de María se encargó al prestigioso escultor D. Eduardo Capa Sacristan, conocido en Ávila, donde realizó sus primeros estudios como alumno de la Escuela de Artes yOficios Artísticos, el cual entregó la imagen el día 30 de Marzo de 1958, siendo bendicida al día siguiente, Martes Santo, por el Obispo de la Diócesis.La imagen es una talla de 1.80 m. de alta, policromada; para la túnica se ha empleado el rosa pálido, mientras que su manto es verde oliva con matices grises; representa a la Virgen, de pie, en actitud llorosa, apoyada su espalda sobre la cruz, que ya no sostiene el cuerpo de su Hijo; su mirada en éxtasis amoroso, caído su brazo derecho, al tiempo que el izquierdo apoya la mano en su pecho, oprimido por el ahogo de su hondo pesar e imprime a su rostro toda la amargura que, no obstante, intenta mantener en silencio, concentrándolo en su corazón
+					<br><br>
+					<img src="styles/images/pasos/soledad_soledad.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_h_soledad_2" class="ov_text_18">
+				<span class="ov_span_03">Santa Cruz </span>
+				<div id="ov_text_19_h_soledad_2" class="ov_text_19">					
+				    Autor: Mª Paz Prieto García y Mª Paz Muñoz Prieto <br>
+				    Fecha: 1989 (decorada en 1999)<br>
+				    En el año 1993 la Asociación de Damas asoció a su Procesión del Sábado Santo un nuevo Paso, con una Cruz desnuda, cubierta solamente con el sudario que simboliza la ausencia del cuerpo de Cristo, cuya soledad llora la Madre, que sigue tras ella en un desfile lleno de emotividad, de recogimiento y de devoción
+					<br><br>
+					<img src="styles/images/pasos/cruz_soledad.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>			
+		</div>
+			
+	</div>
+</div>	
+

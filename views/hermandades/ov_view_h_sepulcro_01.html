@@ -1,0 +1,137 @@
+<script>
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_h_sepulcro" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_h_sepulcro").click(function(e){
+			if(referrer_from_proce=="")
+			{
+				$('#ov_view_container_01').load("./views/general/ov_view_herman_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_proce,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_proce="";				
+				});
+			}	
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_h_sepulcro" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_h_sepulcro" class="ov_box_13_b">
+		<div id="ov_box_14_h_sepulcro" class="ov_box_14">
+			<img src="styles/images/escudos/sepulcro.jpg" id="ov_image_03_4" class="ov_image_03" alt="circle_04"/>
+		</div>
+		<div id="ov_box_15_h_sepulcro" class="ov_box_15">
+			<div id="ov_text_15_h_sepulcro" class="ov_text_15">
+							
+				Real e Ilustre Patronato de Ntra. Sra. de las Angustias y Santo Sepulcro
+			</div>
+						
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+
+
+<div id="ov_zone_14_h_sepulcro" class="ov_zone_14">
+	<div id="ov_box_17_h_sepulcro" class="ov_box_17">
+		<div id="ov_text_16_h_sepulcro" class="ov_text_16">
+			La Cofradía de Nuestra Señora de las Angustias es una de las más antiguas de la ciudad, pues data del siglo XVI y estaba instalada en el antiguo Convento del Carmen, siendo la encargada de organizar la procesión del Descendimiento y Santo Entierro. Desaparecida tanto la imagen primitiva como el Convento del Carmen, con motivo de la desamortización, la cofradía se traslada a la iglesia de Santo Tome el Viejo.
+			<br>
+			A finales del siglo XIX se fusionan la cofradía de Nuestra Señora de las Angustias con la del Santo Sepulcro, trasladando su sede a la iglesia de Santo Tome el Viejo.
+			<br>
+			Acompañan a este Patronato en su procesión el resto de las cofradías abulenses, en la denominada "procesión general de la Semana Santa de Ávila".
+			<br>
+			Este Patronato tiene actualmente su sede en la S.A.I. Catedral.
+		</div>
+		
+		<div id="ov_text_16_h_sepulcro_3" class="ov_text_16">
+			<span class="ov_span_02">Datos.</span><br><br>
+			<span class="ov_span_01">Hábito:</span><br>Túnica y capucho de color negro, con fajín color morado.
+			<br><br>
+			<img src="styles/images/habitos/pasion.png" class="ov_image_11"/>
+			<br><br>
+			<span class="ov_span_01">Templo de Residencia Canónica:</span><br>S.A.I. Catedral
+			<br><br>
+			<span class="ov_span_01">Fundación:</span><br>s.XVI
+			<br><br>
+			<span class="ov_span_01">Hermanos:</span><br>200
+			<br><br>
+			<span class="ov_span_01">Nazarenos:</span><br>80
+			<br><br>
+			<span class="ov_span_01">Atributos de los Hermanos:</span><br>Vela de cera
+			<br><br>
+			<span class="ov_span_01">Culto(s) organizados:</span><br> 			
+		</div>
+		<div id="ov_text_16_h_sepulcro_6" class="ov_text_16">
+			<span class="ov_span_02">Contacto.</span><br><br>
+			Real e Il. Patr. de Ntra. Sra. de las Angustias y Santa Sepulcro<br>
+			S. A. C. de Ávila<br>
+			Plaza de la Catedral, s/n<br>
+			05001 Ávila<br>
+
+		</div>
+		<div id="ov_text_16_h_sepulcro_2" class="ov_text_16">
+			<span class="ov_span_02">Procesiones.</span><br><br>
+			<div id="ov_text_17_h_sepulcro_1" class="ov_text_17">
+				Procesión de La Pasión y Santo Entierro (18 de Abril, Viernes Santo)
+			</div>
+			<script>
+				$("#ov_text_17_h_sepulcro_1").click(function(e){
+					referrer_from_herman="./views/hermandades/ov_view_h_sepulcro_01.html";
+					$('#ov_view_container_02').load("./views/procesiones/ov_view_pasion_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>			
+		</div>	
+		<div id="ov_text_16_h_sepulcro_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span><br><br>			
+			<div id="ov_text_18_h_sepulcro_5" class="ov_text_18">
+				<span class="ov_span_03">Santo Sepulcro</span>
+				<div id="ov_text_19_h_sepulcro_5" class="ov_text_19">					
+				    Autor: Anónimo<br>
+				    Fecha: s. XVII<br>
+				    No se trata de la representación de Cristo yacente, sino mas bien de ofrecer el sepulcro en el que Cristo permaneció durante los días anteriores a su Resurrección. Por eso conforma el Paso una urna de cristal, que es portada en andas, en cuyo interior se encierra el cuerpo muerto de Cristo y que recibe el nombre de Santo Sepulcro. El monumento fue concebido para ser colocado en el Monumento del Jueves Santo y posteriormente , conmemorar la sepultura de Cristo hasta el día de su Resurrección
+					<br><br>
+					<img src="styles/images/pasos/sepulcro_sepulcro.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_h_sepulcro_6" class="ov_text_18">
+				<span class="ov_span_03">Virgen Dolorosa</span>
+				<div id="ov_text_19_h_sepulcro_6" class="ov_text_19">					
+				    Autor: D. Antonio Arenas Martínez <br>
+				    Fecha: 1947<br>
+				    La Virgen dolorosa, es una imagen vestida con manto negro; de sus ojos se desprenden unas lagrimas, que reflejan el dolor de su rostro a la vista del Hijo muerto.
+					<br><br>
+					<img src="styles/images/pasos/dolorosa_sepulcro.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>			
+		</div>
+			
+	</div>
+</div>	
+

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>SER COFRADE 2014 - Guía Semana Santa - Cadena SER Ávila</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, maximum-scale=3.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+<meta name="robots" content="NOINDEX,NOFOLLOW,NOARCHIVE,NOODP,NOSNIPPET">
+<meta name="description" content="SER COFRADE 2014, La guía de información para la Semana Santa Ávila 2014. Procesiones, Cofradías, Horarios, Recorridos, Información...">
+<META name="CACHE-CONTROL" content="NO-CACHE">
+<META name="EXPIRES" content="-1">
+<link id="ov_style_link_01" href="styles/styles_01_complete.css" rel="stylesheet" type="text/css">	
+<script src="./js/jquery.js"></script>
+<script src="./js/jqueryui.js"></script>
+<script src="./js/general.js"></script>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script>
+function onLoad() {
+	document.addEventListener("deviceready", onDeviceReady, false);
+}
+function onDeviceReady() {
+
+}
+</script>
+
+</head>
+
+<body id="ov_body_01" class="ov_body_01">
+	
+	<div id="ov_curtain_1_1" class="ov_curtain_1">&nbsp;</div>
+	
+	<div id="ov_view_container_01" class="ov_view_container_01">&nbsp;</div>
+	<script>
+		$('#ov_view_container_01').css("min-height",viewport_height+"px");
+		
+		$('#ov_view_container_02').css("min-height",viewport_height+"px");
+		
+		$('#ov_view_container_01').load("./views/general/ov_view_01.html",function(){
+			$('#ov_curtain_1_1').hide('fade',500);
+			$('#ov_view_container_01').show('fade',500);
+		});		
+	</script>
+	  
+	<div id="ov_view_container_02" class="ov_view_container_02">&nbsp;</div>	
+</body>
+</html>

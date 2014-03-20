@@ -1,0 +1,150 @@
+<script>
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_h_angustias" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_h_angustias").click(function(e){
+			if(referrer_from_proce=="")
+			{
+				$('#ov_view_container_01').load("./views/general/ov_view_herman_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_proce,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_proce="";				
+				});
+			}	
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_h_angustias" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_h_angustias" class="ov_box_13_b">
+		<div id="ov_box_14_h_angustias" class="ov_box_14">
+			<img src="styles/images/escudos/angustias.JPG" id="ov_image_03_4" class="ov_image_03" alt="circle_04"/>
+		</div>
+		<div id="ov_box_15_h_angustias" class="ov_box_15">
+			<div id="ov_text_15_h_angustias" class="ov_text_15">							
+				Cofradía de Ntra. Sra. de las Angustias
+			</div>
+						
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+
+
+<div id="ov_zone_14_h_angustias" class="ov_zone_14">
+	<div id="ov_box_17_h_angustias" class="ov_box_17">
+		<div id="ov_text_16_h_angustias" class="ov_text_16">
+			Tradicionalmente se sitúa la institución de la Cofradía de Nuestra Señora de las Angustias en 1691, aunque documentalmente no aparece constancia hasta 1708.
+			<br>
+			La Cofradía entró en declive en el siglo XIX, llegando a su desaparición a principios del XX, aunque se mantuvo el culto a la Virgen saliendo en procesión acompañada solamente por mujeres.
+			<br>
+			La primera procesión que se celebró con la imagen de Nuestra Señora de las Angustias para la Semana Santa de Ávila fue organizada en 1950 por el Consejo Diocesano de JJ. de Acción Católica, acompañada de la Juventud Antoniana (ambas Entidades encapuchadas) y de muchos vecinos de la barriada, haciendo su salida desde la iglesia de San Nicolás.
+			<br>
+			Esta situación se mantuvo hasta 1956 en que renació la Cofradía de Nuestra Señora de las Angustias, organizando un año más tarde la procesión que actualmente es conocida como "La Procesión del Silencio" siempre desde la iglesia de San Nicolás.
+		</div>
+		
+		<div id="ov_text_16_h_angustias_3" class="ov_text_16">
+			<span class="ov_span_02">Datos.</span><br><br>
+			<span class="ov_span_01">Hábito:</span><br>Túnica de color azul, cíngulo, caperuza y capa de color blanco.
+			<br><br>
+			<img src="styles/images/habitos/silencio.png" class="ov_image_11"/>
+			<br><br>
+			<span class="ov_span_01">Templo de Residencia Canónica:</span><br>Iglesia de San Nicolás de Bari
+			<br><br>
+			<span class="ov_span_01">Fundación:</span><br>1708, reorganizada en 1956
+			<br><br>
+			<span class="ov_span_01">Hermanos:</span><br>645
+			<br><br>
+			<span class="ov_span_01">Nazarenos:</span><br>420
+			<br><br>
+			<span class="ov_span_01">Atributos de los Hermanos:</span><br>Farol con luz eléctrica
+			<br><br>
+			<span class="ov_span_01">Culto(s) organizados:</span><br>En el mes de Septiembre, Solemne Triduo en honor a Nuestra Señora de las Angustias, con procesión con la imagen por las calles de la barriada.
+				<br>Todos los primeros lunes de cada mes se celebra una misa por los difuntos de la Cofradía.
+				<br>En fechas anteriores a la Semana Santa se celebra un Septenario a Nuestra Señora de las Angustias, finalizando siempre el Martes Santo. 
+			<br><br>
+			<span class="ov_span_01">Cofradías con que está hermanada:</span><br>Cofradía del Santo Cristo del Despojo de Valladolid
+		</div>
+		<div id="ov_text_16_h_angustias_6" class="ov_text_16">
+			<span class="ov_span_02">Contacto.</span><br><br>
+			Cofradía de Nuestra Señora de las Angustias<br>
+			Centro Parroquial de Santiago<br>
+			C/ Casimiro Hernández, nº 12<br>
+			05002 AVILA<br>
+		</div>
+		<div id="ov_text_16_h_angustias_2" class="ov_text_16">
+			<span class="ov_span_02">Procesiones.</span><br><br>
+			<div id="ov_text_17_h_angustias_1" class="ov_text_17">
+				Procesión del Silencio (16 de Abril, Miércoles Santo)
+			</div>
+			<script>
+				$("#ov_text_17_h_angustias_1").click(function(e){
+					referrer_from_herman="./views/hermandades/ov_view_h_angustias_01.html";
+					$('#ov_view_container_02').load("./views/procesiones/ov_view_silencio_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>
+		</div>	
+		<div id="ov_text_16_h_angustias_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span><br><br>			
+			<div id="ov_text_18_h_angustias_1" class="ov_text_18">
+				<span class="ov_span_03">Nuestra Señora de las Angustias</span>
+				<div id="ov_text_19_h_angustias_1" class="ov_text_19">					
+				    Autor: Escuela Abulense<br>
+				    Fecha:   s.XVI<br>
+				    Constituye una muestra de la expresión dolorosa de una Madre con el corazón traspasado, que apenas puede sostener en sus brazos el cuerpo muerto de su Hijo, recien bajado de la Cruz.
+					<br><br>
+					<img src="styles/images/pasos/silencio_angustias.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_h_angustias_2" class="ov_text_18">
+				<span class="ov_span_03">Cristo de la Agonía</span>
+				<div id="ov_text_19_h_angustias_2" class="ov_text_19">					
+				    Autor: Casa Garín de Madrid<br>
+				    Fecha:   1984<br>
+				    La Cofradía adquirió en la casa "Garín" de Madrid una nueva imagen de Cristo en la Cruz, que le representa en el momento de su muerte, por lo que ha recibido el título de Cristo de la Agonía
+					<br><br>
+					<img src="styles/images/pasos/silencio_agonia.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>
+			<div id="ov_text_18_h_angustias_3" class="ov_text_18">
+				<span class="ov_span_03">Santísimo Cristo Arrodillado</span>
+				<div id="ov_text_19_h_angustias_3" class="ov_text_19">					
+				    Autor: D. José Francisco Javier Díaz Pintor<br>
+				    Fecha:   1993<br>
+				    Imagen con la figura de Cristo en el momento de caer al suelo, bajo la cruz, que le dio el nombre de Cristo arrodillado, talla de madera, obra del escultor D.José Francisco Javier Díaz Pintor, natural del pueblo abulense de San Esteban del Valle.
+					<br><br>
+					<img src="styles/images/pasos/silencio_arrodillado.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>			
+		</div>
+			
+	</div>
+</div>	
+

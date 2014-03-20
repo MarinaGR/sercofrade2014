@@ -1,0 +1,239 @@
+<script>
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_madrugada" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_madrugada").click(function(e){
+			if(referrer_from_herman=="")
+			{
+				$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_herman,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_herman="";				
+				});
+			}
+				
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_madrugada" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_madrugada" class="ov_box_13_b">
+		<div id="ov_box_14_madrugada" class="ov_box_14">
+			<div id="ov_text_12_madrugada" class="ov_text_12_b">
+				PROCESIÓN DE LA MADRUGADA
+			</div>
+			<div id="ov_text_13_madrugada" class="ov_text_13">
+				día 17<br>
+				Jueves Santo<br><br> 
+			</div>
+		</div>
+		<div id="ov_box_15_madrugada" class="ov_box_15">
+			<div id="ov_text_15_madrugada" class="ov_text_15">
+				Salida:
+			</div>
+			<div id="ov_text_14_madrugada" class="ov_text_14">
+				02 00h<br>
+				Iglesia de Mosén Rubí<br>
+				Plaza de Mosén Rubí
+			</div>				
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+<div id="ov_zone_14_madrugada" class="ov_zone_14">
+	<div id="ov_box_17_madrugada" class="ov_box_17">
+		
+		<div id="ov_text_16_madrugada" class="ov_text_16">
+			 Ya el Jueves Santo la Hermandad del Cristo de las Batallas lleva a cabo otra procesión, en este caso la de la Madrugada, pues sale a las 2.00 horas de la Capilla de Mosén Rubí de Bracamonte, con la talla histórica del Stmo. Cristo de las Batallas, pequeña imagen esculpida en terracota por el florentino Lucca della Robbia hacia 1450 para el rey de Aragón y que pasó a formar parte del ajuar de Fernando en su boda con Isabel de Castilla.
+			 <br>
+			 Los Reyes Católicos portaban esta imagen en sus campañas bélicas y ahora procesiona en la Semana Santa de Ávila acompañada por la luz de las antorchas de la cofradía y la música de los tambores destemplados y las cornetas tocando silencio
+		</div>
+		
+		<div id="ov_text_16_madrugada_2" class="ov_text_16">
+			<span class="ov_span_02">Organiza.</span><br><br>
+			<div id="ov_text_17_madrugada_1" class="ov_text_17">
+				Hermandad del Santísimo Cristo de las Batallas
+			</div>
+			<script>
+				$("#ov_text_17_madrugada_1").click(function(e){
+					referrer_from_proce="./views/procesiones/ov_view_madrugada_01.html";
+					$('#ov_view_container_02').load("./views/hermandades/ov_view_h_batallas_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>
+		</div>
+		
+		<div id="ov_text_16_madrugada_3" class="ov_text_16">
+			<span class="ov_span_02">Hábito.</span><br><br>
+			Túnica negra con la Cruz de la Cofradía al pecho. Capirote negro. Cíngulo de esparto. Zapato y calcetín negro.
+			<br><br>
+			<img src="styles/images/habitos/batallas.png" class="ov_image_11"/>
+		</div>
+		
+		<div id="ov_text_16_madrugada_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span><br><br>
+			<div id="ov_text_18_madrugada_1" class="ov_text_18">
+				<span class="ov_span_03">Santísimo Cristo de las Batallas (antigua)</span>
+				<div id="ov_text_19_madrugada_1" class="ov_text_19">					
+				    Autor: Lucca della Robbia<br>
+				    Fecha:    s. XV<br>
+				    La imagen del Santísimo Cristo de las Batallas es una imagen pequeña, de sesenta centímetros de altura, de barro cocido y artísticamente moldeado de la época de los Reyes Católicos. Representa el busto de Cristo con la cruz a cuesta, camino del Calvario. Está enmarcada por cuatro columnas, que apoyan en una base cuadrada, dispuesta para recibir los prensiles, que permitan su transporte; la parte superior está rematada por una cúpula, bajo la cual se sitúa la imagen. Esta imagen , era llevada consigo por los Reyes Católicos en todas sus campañas bélicas, lo que le dio este título de "Cristo de las Batallas"
+					<br><br>
+					<img src="styles/images/pasos/batallas_viejo.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>															
+		</div>
+		
+		<div id="ov_text_16_madrugada_6" class="ov_text_16">
+			<span class="ov_span_02">Música.</span><br><br>
+			Toques de Silencio.
+		</div>
+		
+		<div id="ov_text_16_madrugada_5" class="ov_text_16">
+			<span class="ov_span_02">Ruta.</span>
+			
+			<br><br>
+			Con salida y llegada en el mismo lugar, la <span class="ov_span_03">Plaza Mosén Rubí</span>, la ruta se realiza en sentido horario.
+			<br><br>
+			
+			<div id="ov_mapa_ruta_madrugada_1"  class="ov_mapa_ruta_01">
+				<div class="ov_text_18">Para acceder al mapa necesitas una conexión activa</div>
+			</div>
+								
+			<br>
+			<script>
+				current_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza Mosén Rubí, Ávila&destination=Plaza Mosén Rubí, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle Bracamonte, Ávila|Plaza Fuente el Sol, Ávila|Carretera Ronda Vieja, 1, Ávila|Plaza San Vicente, Ávila|Calle San Segundo, 40, Ávila|Plaza Catedral, Ávila|Calle Tomás Luis De Victoria, Ávila|Plaza Zurraquín, 1, Ávila|Calle Marqués de Benavites, 2, Ávila&language=es&zoom=15&center=40.659196,-4.698299";
+				draw_map(current_url,'ov_mapa_ruta_madrugada_1');
+			</script>
+			<div class="ov_button_01" id="ov_button_01_madrugada_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_madrugada_1')">
+				Actualizar Mapa
+			</div>
+			<br>
+			
+			<span class="ov_span_03">Itinerario:</span>
+			<br>
+			<i>Pulsa sobre cualquier punto abajo para obtener una ruta desde tu ubicación actual</i>
+			
+			<div id="ov_geo_route_2" style="display:none">
+				<br><br>
+				<div id="ov_mapa_ruta_madrugada_2" class="ov_mapa_ruta_01" style="background-color:#DDD">
+					<div class="ov_text_18">Espera, por favor...</div>
+				</div>
+				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
+					
+				</div>				
+				<div class="ov_button_01" id="ov_button_01_madrugada_refresh_map" onclick="show_route_2(destination,'15',destination_center,destination_container,destination_big_container);">
+				Actualizar posición
+				</div>
+				<br>
+				<div class="ov_button_01" id="ov_button_01_madrugada_hide_map" onclick="$('#ov_geo_route_2').hide()">
+				Ocultar
+				</div>					
+			</div>
+			
+			<br><br>
+			<span class="ov_span_04" id="ov_place_madrugada_1">Plaza Mosén Rubí</span>
+			<script>
+				$("#ov_place_madrugada_1").click(function(e){
+					show_route_2("Plaza Mosén Rubí, Ávila","","","ov_mapa_ruta_madrugada_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_madrugada_2">Calle Bracamonte</span>
+			<script>
+				$("#ov_place_madrugada_2").click(function(e){
+					show_route_2("Calle Bracamonte, Ávila","","","ov_mapa_ruta_madrugada_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_madrugada_3">Plaza de Fuente el Sol</span>
+			<script>
+				$("#ov_place_madrugada_3").click(function(e){
+					show_route_2("Plaza Fuente el Sol, Ávila","","","ov_mapa_ruta_madrugada_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_madrugada_4">Ronda Vieja</span>
+			<script>
+				$("#ov_place_madrugada_4").click(function(e){
+					show_route_2("Carretera Ronda Vieja, 1, Ávila","","","ov_mapa_ruta_madrugada_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_madrugada_5">Plaza San Vicente</span>
+			<script>
+				$("#ov_place_madrugada_5").click(function(e){
+					show_route_2("Plaza San Vicente, 1, Ávila","","","ov_mapa_ruta_madrugada_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_madrugada_6">Calle San Segundo</span>
+			<script>
+				$("#ov_place_madrugada_6").click(function(e){
+					show_route_2("Calle San Segundo, 40, Ávila","","","ov_mapa_ruta_madrugada_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_madrugada_7">Plaza Catedral</span>
+			<script>
+				$("#ov_place_madrugada_7").click(function(e){
+					show_route_2("Plaza Catedral, Ávila","","","ov_mapa_ruta_madrugada_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_madrugada_8">Calle Tomás Luis de Victoria</span>
+			<script>
+				$("#ov_place_madrugada_8").click(function(e){
+					show_route_2("Calle Tomás Luis de Victoria, Ávila","","","ov_mapa_ruta_madrugada_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_madrugada_9">Plaza Zurraquín</span>
+			<script>
+				$("#ov_place_madrugada_9").click(function(e){
+					show_route_2("Plaza Zurraquín, 1, Ávila","","","ov_mapa_ruta_madrugada_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_madrugada_10">Calle Marqués de Benavites</span>
+			<script>
+				$("#ov_place_madrugada_10").click(function(e){
+					show_route_2("Calle Marqués de Benavites, 2, Ávila","","","ov_mapa_ruta_madrugada_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_madrugada_11">Plaza Mosén Rubí</span>
+			<script>
+				$("#ov_place_madrugada_11").click(function(e){
+					show_route_2("Plaza Mosén Rubí, Ávila","","","ov_mapa_ruta_madrugada_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>									
+		</div>
+	</div>
+</div>	
+

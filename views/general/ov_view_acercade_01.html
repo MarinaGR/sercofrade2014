@@ -1,0 +1,75 @@
+<script>
+	//ov_view_info_01 se carga en container_01
+	$("#ov_view_container_01").css("background-color","#801669");	
+</script>
+
+<div id="ov_zone_09_1" class="ov_zone_09">
+	
+	<div id="ov_box_06_1" class="ov_box_06">
+		<div id="ov_text_08_1" class="ov_text_08">
+			<img src="styles/images/f_blanca.png" id="ov_image_07_1" class="ov_image_07" alt="arrow_03"/> volver
+		</div>
+		<script>
+			$("#ov_text_08_1").click(function(e){
+				$('#ov_view_container_02').load("./views/ov_view_main_menu_01.html",function(){
+					$('#ov_view_container_02').show('slide',{direction: "left"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "right"},500);				
+				});	
+			});
+		</script>
+	</div>
+	
+	<div id="ov_box_07_1" class="ov_box_07">
+		<div id="ov_box_08_1" class="ov_box_08">
+			<div id="ov_text_06_1" class="ov_text_06">
+				 - Acerca de esta App -
+			</div>
+			<div id="ov_text_07_1" class="ov_text_07">
+				<p>
+				Esta aplicación para dispositivos móviles ha sido desarrollada por Ovnyline Comunicación para CADENA SER ÁVILA con el objetivo de 
+				difundir y permitir el acceso rápido a toda la información relacionada con la celebración de la SEMANA SANTA ABULENSE, en este año 2014.	
+				</p>
+				<p>
+				Tanto Ovnyline Comunicación como CADENA SER ÁVILA agradecen a la Junta de Semana Santa de Ávila	su colaboración en el desarrollo de esta app,
+				facilitando información y medios visuales indispensables para la publicación de este proyecto.
+				</p>
+				<p>
+				Queremos agradecer también a todos los patrocinadores su colaboración en este proyecto.
+				</p>
+				<p>
+				Esperamos que os sea útil para disfrutar de la SEMANA SANTA ABULENSE y estar siempre informados. Desde Ovnyline Comunicación os pedimos que nos 
+				enviéis vuestros comentarios, críticas y propuestas para mejorar esta App para los próximos años y convertirla en lo que vosotros esperáis.
+				Podéis contactar con nosotros en info@ovnyline.com
+				</p>
+				<p>
+				<i>
+				Aplicación Compatible con Android 2.2 o superior, iPhone, iPad, y otros dispositivos móviles via webApp
+				<br>
+				Grupo Ovnyline Comunicacion S.L
+				<br>
+				Desarrollo, diseño y comunicación on-line integral.   	
+				</i>
+				</p>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="ov_clear_floats_01">&nbsp;</div>
+</div>
+<script>
+	$("#ov_zone_09_1").css("height",(viewport_height-60)+"px");
+	$("#ov_box_06_1").css("height",(viewport_height-60)+"px");
+	$("#ov_box_07_1").css("height",(viewport_height-60)+"px");
+	$("#ov_box_07_1").css("overflow","auto");		
+</script>
+
+<!-- Publi -->
+<div id="ov_zone_08_9" class="ov_zone_08">
+	
+</div>
+<script>	
+	load_ads("ov_zone_08_9");
+</script>
+
+

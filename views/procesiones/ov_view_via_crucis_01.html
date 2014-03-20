@@ -1,0 +1,361 @@
+<script>
+	$("#ov_view_container_02").css("background-color","#EBEBEB");	
+</script>
+
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_via_crucis" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_via_crucis").click(function(e){
+			if(referrer_from_herman=="")
+			{
+				$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
+					$('#ov_view_container_01').show('slide',{direction: "left"},500);
+					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
+				});
+			}
+			else
+			{
+				$('#ov_view_container_02').load(referrer_from_herman,function(){
+					$('#ov_view_container_02').show('slide',{direction: "right"},500);
+					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+					referrer_from_herman="";				
+				});
+			}
+				
+		});
+	</script>
+</div>
+
+<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_04">&nbsp;</div>
+
+<div id="ov_zone_13_via_crucis" class="ov_zone_13_b">
+		
+	<div id="ov_box_13_via_crucis" class="ov_box_13_b">
+		<div id="ov_box_14_via_crucis" class="ov_box_14">
+			<div id="ov_text_12_via_crucis" class="ov_text_12_b">
+				VÍA CRUCIS
+			</div>
+			<div id="ov_text_13_via_crucis" class="ov_text_13">
+				día 18<br>
+				Viernes Santo<br><br> 
+			</div>
+		</div>
+		<div id="ov_box_15_via_crucis" class="ov_box_15">
+			<div id="ov_text_15_via_crucis" class="ov_text_15">
+				Salida:
+			</div>
+			<div id="ov_text_14_via_crucis" class="ov_text_14">
+				05 30h<br>
+				S.A.I Catedral<br>
+				Plaza Catedral
+			</div>				
+		</div>
+		<div class="ov_clear_floats_01">&nbsp;</div>
+	</div>
+	
+</div>
+
+<div class="ov_vertical_space_01">&nbsp;</div>
+
+<div id="ov_zone_14_via_crucis" class="ov_zone_14">
+	<div id="ov_box_17_via_crucis" class="ov_box_17">
+		
+		<div id="ov_text_16_via_crucis" class="ov_text_16">
+			 Organizado por el Iltre. Patronato de la Santa Vera Cruz tuvo su origen en 1935. La gran acogida que tuvo, impulsó a convertirlo en un acto tradicional y su recorrido es el recinto amurallado.
+			 <br>
+			 Es impresionante este desfile , al que el pueblo acude en masa para acompañar a su Cristo de los Ajusticiados. Durante el recorrido alrededor de Las Murallas se representan las 14 estaciones del Vía Crucis, señaladas con
+			 una gran cruz enclavada en el monumento.
+		</div>
+		
+		<div id="ov_text_16_via_crucis_2" class="ov_text_16">
+			<span class="ov_span_02">Organiza.</span><br><br>
+			<div id="ov_text_17_via_crucis_1" class="ov_text_17">
+				Iltre. Patronato de la Santa Vera Cruz
+			</div>
+			<script>
+				$("#ov_text_17_via_crucis_1").click(function(e){
+					referrer_from_proce="./views/procesiones/ov_view_via_crucis_01.html";
+					$('#ov_view_container_02').load("./views/hermandades/ov_view_h_veracruz_01.html",function(){
+						$('#ov_view_container_02').show('slide',{direction: "right"},500);
+						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
+						$('body,html').scrollTop("0px");				
+					});	
+				});
+			</script>
+		</div>
+		
+		<div id="ov_text_16_via_crucis_3" class="ov_text_16">
+			<span class="ov_span_02">Hábito.</span><br><br>
+			Túnica, caperuza y capa de color morado, con cíngulo amarillo.
+			<br><br>
+			<img src="styles/images/habitos/pasos_1.png" class="ov_image_11"/>
+			<br>
+			Túnica y caperuza blanco, cíngulo verde y capa morada.
+			<br><br>
+			<img src="styles/images/habitos/pasos_2.png" class="ov_image_11"/>
+		</div>
+		
+		<div id="ov_text_16_via_crucis_4" class="ov_text_16">
+			<span class="ov_span_02">Pasos.</span><br><br>			
+			<div id="ov_text_18_via_crucis_9" class="ov_text_18">
+				<span class="ov_span_03">Santísimo Cristo de los Ajusticiados</span>
+				<div id="ov_text_19_pasos_9" class="ov_text_19">					
+				    Autor: Anónimo<br>
+				    Fecha: s. XVI<br>
+				    Es una talla esbelta de finales del siglo XVI o principios del XVII. y desconocemos el autor al que la Hermandad encargó sur realización. Recibió al principio el titulo de "Santísimo Cristo de la Buena Muerte"y muy pronto pasó a llamarse "Santísimo Cristo de los Ajusticiados" por la misión especial de acompañar a los reos en sus últimos momentos antes de la ejecución.Se venera en su Ermita del Humilladero.
+					<br><br>
+					<img src="styles/images/pasos/veracruz_ajusticiados.jpg" class="ov_image_12"/>
+					<br>
+				</div>
+			</div>															
+		</div>
+		
+		<div id="ov_text_16_via_crucis_7" class="ov_text_16">
+			<span class="ov_span_02">Estaciones.</span><br><br>			
+			<div id="ov_text_18_via_crucis_10" class="ov_text_18">
+				<span class="ov_span_03">JESÚS SENTENCIADO A MUERTE</span>
+				<div id="ov_text_19_via_crucis_10" class="ov_text_19">					
+				    Iniciamos las estaciones del Via Crucis. Cuando el alma llega a no prestar atención a los halagos, todavía presta menos atención a las críticas. La crítica fortalece al alma, la cual va adquiriendo un amor particular y tierno cada vez mayor hacia sus perseguidores
+				</div>
+			</div>
+			<div id="ov_text_18_via_crucis_11" class="ov_text_18">
+				<span class="ov_span_03">JESÚS CARGADO CON LA CRUZ</span>
+				<div id="ov_text_19_via_crucis_11" class="ov_text_19">					
+				    Jesús prodiga sus cruces como el signo más seguro de su ternura, porque desea hacerte semejante a Él. ¿Por qué tener miedo a no ser capaz de llevar la cruz sin desfallecer?
+				</div>
+			</div>
+			<div id="ov_text_18_via_crucis_12" class="ov_text_18">
+				<span class="ov_span_03">JESÚS CAE, POR PRIMERA VEZ, BAJO EL PESO DE LA CRUZ</span>
+				<div id="ov_text_19_via_crucis_12" class="ov_text_19">					
+				    La “scientia crucis” no se puede adquirir sino tras haber llegado a sentir radicalmente la cruz. La totalidad de los errores humanos puede ser eliminada por la expiación de la cruz
+				</div>
+			</div>
+			<div id="ov_text_18_via_crucis_13" class="ov_text_18">
+				<span class="ov_span_03">ENCUENTRO CON LA VIRGEN</span>
+				<div id="ov_text_19_via_crucis_13" class="ov_text_19">					
+				    El Evangelio no pone palabra alguna en boca de tu Madre que está al pie de la cruz. Tampoco tú, Jesús mío, pronuncias ni una sola palabra. Tu silencio es la palabra más elocuente
+				</div>
+			</div>
+			<div id="ov_text_18_via_crucis_14" class="ov_text_18">
+				<span class="ov_span_03">EL CIRINEO AYUDA AL SEÑOR A LLEVAR LA CRUZ</span>
+				<div id="ov_text_19_via_crucis_14" class="ov_text_19">					
+				    Cada uno tiene la cruz que ha de llevar, aunque cada cruz sea distinta de las otras. Si alguno desea conquistar la libertad de espíritu y no sentirse continuamente atribulado, debe empezar por no espantarse de la cruz. Entonces verá cómo el Señor lo ayuda a llevarla
+				</div>
+			</div>
+			<div id="ov_text_18_via_crucis_15" class="ov_text_18">
+				<span class="ov_span_03">LA VERÓNICA ENJUGA EL ROSTRO DE JESÚS</span>
+				<div id="ov_text_19_via_crucis_15" class="ov_text_19">					
+				     A lo largo del camino de la cruz no está Jesús solo. Hoy como entonces están también no solo los adversarios, sino las personas que lo ayudan. Representando a cuantos lo aman y desean ayudarlo está la Verónica
+				</div>
+			</div>
+			<div id="ov_text_18_via_crucis_16" class="ov_text_18">
+				<span class="ov_span_03">SEGUNDA CAÍDA EN EL CAMINO DE LA CRUZ</span>
+				<div id="ov_text_19_via_crucis_16" class="ov_text_19">					
+				     Cuando caminas en la noche oscura y en el vacío de la pobreza espiritual, piensas que te falta todo y todos -incluso Dios-. Sin embargo no te falta nada
+				</div>
+			</div>
+			<div id="ov_text_18_via_crucis_17" class="ov_text_18">
+				<span class="ov_span_03">JESÚS CONSUELA A LAS HIJAS DE JERUSALÉN</span>
+				<div id="ov_text_19_via_crucis_17" class="ov_text_19">					
+				     Oh Jesús, deja que yo llore por mí mismo, pues no soy sino un árbol seco, que sólo sirve para ser echado al fuego. Pero tú das nueva vida al árbol seco injertándolo en el árbol de la cruz
+				</div>
+			</div>
+			<div id="ov_text_18_via_crucis_19" class="ov_text_18">
+				<span class="ov_span_03">JESÚS CAE POR TERCERA VEZ</span>
+				<div id="ov_text_19_via_crucis_19" class="ov_text_19">					
+				     Aunque caigas cien veces, levántate cada vez con mayor presteza, demostrando así tu amor por Él
+				</div>
+			</div>
+			<div id="ov_text_18_via_crucis_20" class="ov_text_18">
+				<span class="ov_span_03">JESÚS DESPOJADO DE SUS VESTIDURAS</span>
+				<div id="ov_text_19_via_crucis_20" class="ov_text_19">					
+				     El alma despojada de sí misma y revestida de Jesucristo no ha de temer nada del mundo exterior. Por eso, yo renuncio cada día a mí misma, a fin de que Cristo pueda crecer en mí
+				</div>
+			</div>
+			<div id="ov_text_18_via_crucis_21" class="ov_text_18">
+				<span class="ov_span_03">JESÚS DESPOJADO DE SUS VESTIDURAS</span>
+				<div id="ov_text_19_via_crucis_21" class="ov_text_19">					
+				     El alma despojada de sí misma y revestida de Jesucristo no ha de temer nada del mundo exterior. Por eso, yo renuncio cada día a mí misma, a fin de que Cristo pueda crecer en mí
+				</div>
+			</div>
+			<div id="ov_text_18_via_crucis_22" class="ov_text_18">
+				<span class="ov_span_03">JESÚS CLAVADO EN LA CRUZ</span>
+				<div id="ov_text_19_via_crucis_22" class="ov_text_19">					
+				     Decidí permanecer en espíritu a los pies de la cruz para recibir allí el rocío divino, la sangre que caía a tierra, sin que nadie se apresurase a recogerla. Entonces comprendí que debía abocarla sobre las almas
+				</div>
+			</div>
+			<div id="ov_text_18_via_crucis_23" class="ov_text_18">
+				<span class="ov_span_03">JESÚS MUERE EN LA CRUZ</span>
+				<div id="ov_text_19_via_crucis_23" class="ov_text_19">					
+				     La muerte no puede resultar amarga para el alma que ama, ya que en ella encuentra toda la dulzura y el deleite del amor. El alma goza de la muerte como si estuviese pensando en su noviazgo o en su matrimonio, por eso anhela el día y la hora de su muerte
+				</div>
+			</div>
+			<div id="ov_text_18_via_crucis_24" class="ov_text_18">
+				<span class="ov_span_03">JESÚS EN BRAZOS DE SU MADRE</span>
+				<div id="ov_text_19_via_crucis_24" class="ov_text_19">					
+				     Siguiendo tus caminos no podrás llegar a donde deseas, ni siquiera a través de la más alta contemplación, sino sólo a través de una humildad grande y de una total disponibilidad del corazón
+				</div>
+			</div>
+			<div id="ov_text_18_via_crucis_25" class="ov_text_18">
+				<span class="ov_span_03">EL CADÁVER DE JESÚS PUESTO EN EL SEPULCRO</span>
+				<div id="ov_text_19_via_crucis_25" class="ov_text_19">					
+				     El alma ha de vaciarse de todo lo que no es Dios, a fin de poder ir hacia Dios… Por amor de Cristo debe desear entrar en una completa desnudez y pobreza respecto a todo
+				</div>
+			</div>															
+		</div>
+		
+		<div id="ov_text_16_via_crucis_6" class="ov_text_16">
+			<span class="ov_span_02">Música.</span><br><br>
+			Silencio.
+		</div>
+		
+		<div id="ov_text_16_via_crucis_5" class="ov_text_16">
+			<span class="ov_span_02">Ruta.</span>
+			
+			<br><br>
+			Con salida y llegada en el mismo lugar, <span class="ov_span_03">Plaza Catedral</span>, la ruta se realiza en sentido anti-horario alrededor de Las Murallas, durante el recorrido
+			se celebrarán las 14 estaciones.
+			<br><br>
+			
+			<div id="ov_mapa_ruta_via_crucis_1"  class="ov_mapa_ruta_01">
+				<div class="ov_text_18">Para acceder al mapa necesitas una conexión activa</div>
+			</div>
+			
+			
+			<br>
+			<script>
+				current_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza Catedral, 3, Ávila&destination=Plaza Catedral, 3, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle San Segundo, 36, Ávila|40.657584,-4.696786|40.658422,-4.699243|40.658658,-4.702987|40.65957,-4.705573|40.657494,-4.707386|40.655655,-4.707345|40.654988,-4.704405|40.654914,-4.703019|40.654459,-4.701024|40.654239,-4.699693|40.653929,-4.697505|40.654475,-4.697011|40.654963,-4.697022&language=es&zoom=14&center=40.661792,-4.700053";
+				draw_map(current_url,'ov_mapa_ruta_via_crucis_1');
+			</script>
+			<div class="ov_button_01" id="ov_button_01_via_crucis_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_via_crucis_1')">
+				Actualizar Mapa
+			</div>
+			<br>
+			
+			<span class="ov_span_03">Itinerario y Estaciones:</span>
+			<br>
+			<i>Pulsa sobre cualquier punto abajo para obtener una ruta desde tu ubicación actual</i>
+			
+			<div id="ov_geo_route_2" style="display:none">
+				<br><br>
+				<div id="ov_mapa_ruta_via_crucis_2" class="ov_mapa_ruta_01" style="background-color:#DDD">
+					<div class="ov_text_18">Espera, por favor...</div>
+				</div>
+				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
+					
+				</div>				
+				<div class="ov_button_01" id="ov_button_01_via_crucis_refresh_map" onclick="show_route_2(destination,'15',destination_center,destination_container,destination_big_container);">
+				Actualizar posición
+				</div>
+				<br>
+				<div class="ov_button_01" id="ov_button_01_via_crucis_hide_map" onclick="$('#ov_geo_route_2').hide()">
+				Ocultar
+				</div>					
+			</div>
+			
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_crucis_1">Plaza Catedral (1 Estación)</span>
+			<script>
+				$("#ov_place_via_crucis_1").click(function(e){
+					show_route_2("Plaza Catedral, 3, Ávila","","","ov_mapa_ruta_via_crucis_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_crucis_2">Calle San Segundo 36, (2 Estación)</span>
+			<script>
+				$("#ov_place_via_crucis_2").click(function(e){
+					show_route_2("Plaza San Segundo, 36, Ávila","","","ov_mapa_ruta_via_crucis_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_crucis_3">Plaza San Vicente 3, (3 Estación)</span>
+			<script>
+				$("#ov_place_via_crucis_3").click(function(e){
+					show_route_2("40.657584,-4.696786","","","ov_mapa_ruta_via_crucis_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_crucis_4">Plaza Fuente el Sol 1,  (4 Estación)</span>
+			<script>
+				$("#ov_place_via_crucis_4").click(function(e){
+					show_route_2("40.658422,-4.699243","","","ov_mapa_ruta_via_crucis_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_crucis_5">Plaza Concepción Arenal (5 Estación)</span>
+			<script>
+				$("#ov_place_via_crucis_5").click(function(e){
+					show_route_2("40.658658,-4.702987","","","ov_mapa_ruta_via_crucis_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_crucis_6">Calle Conde Don Ramón 55, (6 Estación)</span>
+			<script>
+				$("#ov_place_via_crucis_6").click(function(e){
+					show_route_2("40.657494,-4.707386","","","ov_mapa_ruta_via_crucis_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_crucis_7">Carretera Burgohondo 4, (7 Estación)</span>
+			<script>
+				$("#ov_place_via_crucis_7").click(function(e){
+					show_route_2("40.655655,-4.707345","","","ov_mapa_ruta_via_crucis_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_crucis_8">Paseo del Rastro (8 Estación)</span>
+			<script>
+				$("#ov_place_via_crucis_8").click(function(e){
+					show_route_2("40.654988,-4.704405","","","ov_mapa_ruta_via_crucis_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_crucis_9">Plaza La Santa 1, (9 Estación)</span>
+			<script>
+				$("#ov_place_via_crucis_9").click(function(e){
+					show_route_2("40.654914,-4.703019","","","ov_mapa_ruta_via_crucis_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_crucis_10">Paseo del Rastro, (10 Estación)</span>
+			<script>
+				$("#ov_place_via_crucis_10").click(function(e){
+					show_route_2("40.654459,-4.701024","","","ov_mapa_ruta_via_crucis_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_crucis_11">Paseo del Rastro, (11 Estación)</span>
+			<script>
+				$("#ov_place_via_crucis_11").click(function(e){
+					show_route_2("40.654239,-4.699693","","","ov_mapa_ruta_via_crucis_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_crucis_12">Paseo del Rastro, (12 Estación)</span>
+			<script>
+				$("#ov_place_via_crucis_12").click(function(e){
+					show_route_2("40.653929,-4.697505","","","ov_mapa_ruta_via_crucis_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_crucis_13">Paseo del Rastro, (13 Estación)</span>
+			<script>
+				$("#ov_place_via_crucis_13").click(function(e){
+					show_route_2("440.654475,-4.697011","","","ov_mapa_ruta_via_crucis_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>
+			<span class="ov_span_04" id="ov_place_via_crucis_14">Calle San Segundo 8, (14 Estación)</span>
+			<script>
+				$("#ov_place_via_crucis_14").click(function(e){
+					show_route_2("40.654963,-4.697022","","","ov_mapa_ruta_via_crucis_2","ov_geo_route_2");
+				});
+			</script>
+			<br><br>											
+		</div>
+	</div>
+</div>	
+

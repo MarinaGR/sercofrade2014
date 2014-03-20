@@ -101,6 +101,7 @@
     <gap:splash src="res/screen/windows-phone/screen-portrait.png" gap:platform="winphone" />
     -->
     <!-- Define access to external domains. -->
+    
     <access origin="*"/> 
 
 </widget>

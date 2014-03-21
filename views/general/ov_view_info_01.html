@@ -1,38 +1,39 @@
 <script>
 	//ov_view_info_01 se carga en container_01
-	$("#ov_view_container_01").css("background-color","#801669");	
+	$("#ov_view_container_01").css("background-color","#801669");
+	$("#ov_view_container_01").css("background-image","url()");
+	$(".ov_body_01").css("background-color","#801669");	
 </script>
-
-<script>
-	$("#ov_zone_09_1").css("margin-top","60px");
-	$("#ov_zone_09_1").css("height",(viewport_height-60)+"px");
-	$("#ov_box_06_1").css("height",(viewport_height-60)+"px");
-	$("#ov_box_07_1").css("height",(viewport_height-60)+"px");
-	$("#ov_box_07_1").css("overflow","auto");		
-</script>
-
 <!-- Publi -->
 <div id="ov_zone_08_2" class="ov_zone_08">
 	
 </div>
 <script>	
-	load_ads("ov_zone_08_2");
+	load_ads("ov_zone_08_2");	
 </script>
-
+<div class="ov_vertical_space_05">&nbsp;</div>
+<!-- Publi -->
+<!-- Volver -->
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_herman_list" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_herman_list").click(function(e){
+			$('#ov_view_container_02').load("./views/general/ov_view_main_menu_01.html",function(){
+				$('#ov_view_container_02').show('slide',{direction: "left"},500);
+				$('#ov_view_container_01').hide('slide',{direction: "right"},500);								
+			});	
+		});
+	</script>
+</div>
+<div class="ov_vertical_space_06">&nbsp;</div>
+<!-- Volver -->
+<!-- Contenido -->
 <div id="ov_zone_09_1" class="ov_zone_09">
 	
 	<div id="ov_box_06_1" class="ov_box_06">
-		<div id="ov_text_08_1" class="ov_text_08">
-			<img src="styles/images/f_blanca.png" id="ov_image_07_1" class="ov_image_07" alt="arrow_03"/> volver
-		</div>
-		<script>
-			$("#ov_text_08_1").click(function(e){
-				$('#ov_view_container_02').load("./views/general/ov_view_main_menu_01.html",function(){
-					$('#ov_view_container_02').show('slide',{direction: "left"},500);
-					$('#ov_view_container_01').hide('slide',{direction: "right"},500);				
-				});	
-			});
-		</script>
+		&nbsp;
 	</div>
 	
 	<div id="ov_box_07_1" class="ov_box_07">
@@ -62,3 +63,13 @@
 	
 	<div class="ov_clear_floats_01">&nbsp;</div>
 </div>
+<script>	
+	$("#ov_box_06_1").css("height",(viewport_height-100)+"px");
+	$("#ov_box_07_1").css("height",(viewport_height-100)+"px");
+	$("#ov_box_07_1").css("overflow","auto");		
+</script>
+<!-- Contenido -->
+
+
+
+

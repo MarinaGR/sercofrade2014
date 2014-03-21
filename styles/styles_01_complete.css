@@ -5,11 +5,9 @@
 
 .ov_curtain_1{position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:1200;opacity:0.95;background-color:#5E3656;background-image:url(./images/loader.gif);background-repeat:no-repeat;background-position:center center;}
 
-.ov_body_01{background-color:#5E3656;font-size:12px;margin:0px;background-repeat:no-repeat;background-position:center center;background-attachment:fixed;}
+.ov_body_01{background-color:#5E3656;font-size:12px;margin:0px;}
 
-.ov_view_container_01{margin:auto;width:100%;max-width:100%;min-height:0px;position:absolute;top:0px;left:0px;display:none;background-repeat:no-repeat;background-position:center center;background-image:url();background-size:cover;}
-
-.ov_view_container_02{margin:auto;width:100%;max-width:100%;min-height:0px;position:absolute;top:0px;left:0px;display:none;background-repeat:no-repeat;background-position:center center;background-image:url();background-size:cover;}
+.ov_view_container_01{margin:auto;width:100%;max-width:100%;height:100%;min-height:100px;position:absolute;top:0px;left:0px;display:none;background-repeat:no-repeat;background-position:center center;background-image:url();background-size:cover;}
 
 .ov_vertical_space_01{height:10px;min-height:10px;max-height:10px;overflow:hidden;}
 
@@ -20,6 +18,10 @@
 .ov_vertical_space_03_b{height:2px;min-height:2px;max-height:2px;overflow:hidden;background-color:#FFF}
 
 .ov_vertical_space_04{height:20px;min-height:20px;max-height:20px;overflow:hidden;}
+
+.ov_vertical_space_05{height:60px;min-height:60px;max-height:60px;overflow:hidden;}
+
+.ov_vertical_space_06{height:40px;min-height:40px;max-height:40px;overflow:hidden;}
 
 .ov_clear_floats_01{clear:both;height:0px;max-height:0px;min-height:0px;overflow:hidden;}
 
@@ -36,21 +38,23 @@
 .ov_zone_07{margin:auto;width:90%;max-width:500px;position:relative;background-color:#5E3656;height:40px;max-height:40px;overflow:hidden;cursor:pointer}
 .ov_zone_07:hover{background-color:#333;}
 
-.ov_zone_08{margin:auto;width:100%;max-width:100%;position:absolute;top:0px;background-color:#000;min-height:60px;height:60px;max-height:60px;overflow:hidden;background-image:url();background-repeat:no-repeat;background-position:center center;}
+.ov_zone_08{z-index:100;margin:auto;width:100%;max-width:100%;background-color:#000;min-height:60px;height:60px;max-height:60px;overflow:hidden;position:fixed}
 
-.ov_zone_09{margin:auto;width:100%;max-width:500px;position:relative;height:0px;}
+.ov_zone_09{margin:auto;width:100%;max-width:500px;position:relative;}
 
 .ov_zone_10{margin:auto;width:100%;max-width:500px;position:relative;background-color:#5E3656;}
 .ov_zone_11{margin:auto;width:100%;max-width:500px;position:relative;background-color:#FFF;border-bottom:1px solid #333}
-.ov_zone_11_b{margin:auto;width:100%;max-width:100%;background-color:#FFF;position:fixed;z-index:1000;border-bottom:1px solid #333}
-.ov_zone_12{margin:auto;width:100%;max-width:100%;position:absolute;height:0px;overflow:auto;background-color:#808080}
+
+.ov_zone_11_b{margin:auto;width:100%;max-width:100%;background-color:#FFF;position:fixed;z-index:1000;border-bottom:1px solid #333;height:40px;max-height:40px;min-height:40px;overflow:hidden}
+
+.ov_zone_12{margin:auto;width:100%;max-width:100%;}
 
 .ov_zone_13{margin:auto;width:100%;max-width:500px;position:relative;display:none}
 .ov_zone_13_b{margin:auto;width:100%;max-width:500px;position:relative;}
 
 .ov_zone_14{margin:auto;width:94%;max-width:500px;position:relative;background-color:#FFF}
 
-.ov_zone_15{margin:auto;width:100%;max-width:500px;position:relative;height:0px;overflow:auto;}
+.ov_zone_15{margin:auto;width:100%;max-width:500px;position:relative;}
 
 .ov_image_01{display:block;margin:auto;width:60%;max-width:500px;}
 .ov_image_02{display:block;margin:auto;width:100%;max-width:500px;}
@@ -78,8 +82,8 @@
 .ov_box_04{float:left;width:55%;max-width:275px;padding-bottom:9px;}
 .ov_box_05{float:left;width:35%;max-width:175px;position:relative}
 
-.ov_box_06{float:left;width:30%;max-width:150px;background-image:url(images/cristo2.png);background-repeat:no-repeat;background-position:top center;position:relative}
-.ov_box_07{float:left;width:70%;max-width:350px;background-color:#000;opacity:0.5;overflow:auto;}
+.ov_box_06{float:left;width:30%;max-width:150px;height:100px;background-image:url(images/cristo2.png);background-repeat:no-repeat;background-position:top right;position:relative}
+.ov_box_07{float:left;width:70%;max-width:350px;height:100px;background-color:#000;opacity:0.5;position:relative;overflow:auto}
 .ov_box_08{width:100%}
 
 .ov_box_09{width:90%;margin:auto;padding-top:10px;border-bottom:2px solid #FFF;}
@@ -113,11 +117,12 @@
 .ov_text_15{text-align:left;font-size:1.3em;font-family:"2";color:#FFF;padding:7px 15px;padding-bottom:0px;text-decoration:underline}
 .ov_text_16{text-align:justify;font-size:1.1em;font-family:"3";color:#333;line-height:18px;padding-bottom:15px;}
 .ov_text_17{text-align:center;font-size:1.0em;font-family:"3";color:#5E3656;line-height:15px;text-decoration:underline;cursor:pointer}
-.ov_text_18{text-align:justify;font-size:1.0em;font-family:"3";color:#333;line-height:15px;padding-left:10px;}
+.ov_text_18{text-align:justify;font-size:1.0em;font-family:"3";color:#333;line-height:15px;padding-left:10px;padding-right:10px}
 .ov_text_19{text-align:justify;font-size:0.9em;font-family:"3";color:#333;line-height:15px;padding:5px 0px;}
 .ov_text_20{text-align:center;font-size:1.2em;font-family:"3";color:#FFF;padding:10px 0px;}
+.ov_text_21{text-align:center;font-size:1.3em;font-family:"3";color:#333;padding:10px 0px;}
 
-.ov_mapa_ruta_01{width:100%;height:300px;min-height:300px;background-repeat:no-repeat;background-size:contain;background-position:top center;background-color:#DDD}
+.ov_mapa_ruta_01{width:100%;height:300px;background-color:#DDD}
 
 .ov_span_01{font-family:"1";color:#5E3656}
 

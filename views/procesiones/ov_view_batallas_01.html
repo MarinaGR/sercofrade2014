@@ -1,7 +1,16 @@
 <script>
 	$("#ov_view_container_02").css("background-color","#EBEBEB");	
 </script>
-
+<!-- Publi -->
+<div id="ov_zone_08_4" class="ov_zone_08">
+	
+</div>
+<script>	
+	load_ads("ov_zone_08_4");	
+</script>
+<div class="ov_vertical_space_05">&nbsp;</div>
+<!-- Publi -->
+<!-- Volver -->
 <div id="ov_zone_11_1" class="ov_zone_11_b">
 	<div id="ov_text_11_batallas" class="ov_text_11">
 		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
@@ -27,9 +36,8 @@
 		});
 	</script>
 </div>
-
-<div class="ov_vertical_space_04">&nbsp;</div>
-<div class="ov_vertical_space_04">&nbsp;</div>
+<div class="ov_vertical_space_06">&nbsp;</div>
+<!-- Volver -->
 
 <div id="ov_zone_13_batallas" class="ov_zone_13_b">
 		
@@ -122,19 +130,17 @@
 			Con salida y llegada en el mismo lugar, la <span class="ov_span_03">Plaza de Santa Teresa</span>, la ruta se realiza en sentido horario.
 			<br><br>
 			
-			<div id="ov_mapa_ruta_batallas_1"  class="ov_mapa_ruta_01">
-				<div class="ov_text_18">Para acceder al mapa necesitas una conexión activa</div>
-			</div>
+			<iframe id="ov_mapa_ruta_batallas_1" style="width:100%;height:300px;border:none"  src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza Santa Teresa, 11, Ávila&destination=Plaza Santa Teresa, 11, Ávila&avoid=tolls|highways&mode=walking&waypoints=40.654271,-4.700455|Calle Caballeros, Ávila|Plaza Mercado Chico, Ávila|Plaza Zurraquín, Ávila|Calle Esteban Domingo, Ávila|Calle López Núñez, Ávila|Plaza San Vicente, Ávila|Calle San Segundo, Ávila&language=es&zoom=15&center=40.65734,-4.699178">Para acceder al mapa necesitas una conexión activa</iframe>
 			
 			<br>
 			<script>
 				current_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza Santa Teresa, 11, Ávila&destination=Plaza Santa Teresa, 11, Ávila&avoid=tolls|highways&mode=walking&waypoints=40.654271,-4.700455|Calle Caballeros, Ávila|Plaza Mercado Chico, Ávila|Plaza Zurraquín, Ávila|Calle Esteban Domingo, Ávila|Calle López Núñez, Ávila|Plaza San Vicente, Ávila|Calle San Segundo, Ávila&language=es&zoom=15&center=40.65734,-4.699178";
 				draw_map(current_url,'ov_mapa_ruta_batallas_1');
 			</script>
-			<div class="ov_button_01" id="ov_button_01_batallas_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_batallas_1')">
+			<div class="ov_button_01" id="ov_button_01_batallas_1_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_batallas_1')">
 				Actualizar Mapa
 			</div>
-			<br>
+			<br>		
 			
 			<span class="ov_span_03">Itinerario:</span>
 			<br>
@@ -142,9 +148,9 @@
 			
 			<div id="ov_geo_route_2" style="display:none">
 				<br><br>
-				<div id="ov_mapa_ruta_batallas_2" class="ov_mapa_ruta_01" style="background-color:#DDD">
-					<div class="ov_text_18">Espera, por favor...</div>
-				</div>
+				
+				<iframe id="ov_mapa_ruta_batallas_2" style="width:100%;height:300px;border:none"  src="">Espera, por favor...</iframe>
+			
 				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
 					
 				</div>				
@@ -161,70 +167,70 @@
 			<span class="ov_span_04" id="ov_place_batallas_1">Plaza Santa Teresa</span>
 			<script>
 				$("#ov_place_batallas_1").click(function(e){
-					show_route_2("Plaza Santa Teresa, 11, Ávila","15","40.655316,-4.699778","ov_mapa_ruta_batallas_2","ov_geo_route_2");
+					show_route_2("Plaza Santa Teresa, 11, Ávila","","","ov_mapa_ruta_batallas_2","ov_geo_route_2");
 				});
 			</script>
 			<br><br>
 			<span class="ov_span_04" id="ov_place_batallas_2">Paseo del Rastro</span>
 			<script>
 				$("#ov_place_batallas_2").click(function(e){
-					show_route_2("40.654271,-4.700455","15","40.655316,-4.699778","ov_mapa_ruta_batallas_2","ov_geo_route_2");
+					show_route_2("40.654271,-4.700455","","","ov_mapa_ruta_batallas_2","ov_geo_route_2");
 				});
 			</script>			
 			<br><br>
 			<span class="ov_span_04" id="ov_place_batallas_4">Calle Caballeros</span>
 			<script>
 				$("#ov_place_batallas_4").click(function(e){
-					show_route_2("Calle Caballeros, Ávila","15","40.655316,-4.699778","ov_mapa_ruta_batallas_2","ov_geo_route_2");
+					show_route_2("Calle Caballeros, Ávila","","","ov_mapa_ruta_batallas_2","ov_geo_route_2");
 				});
 			</script>
 			<br><br>
 			<span class="ov_span_04" id="ov_place_batallas_5">Plaza del Mercado Chico</span>
 			<script>
 				$("#ov_place_batallas_5").click(function(e){
-					show_route_2("Plaza Mercado Chico, Ávila","15","40.655316,-4.699778","ov_mapa_ruta_batallas_2","ov_geo_route_2");
+					show_route_2("Plaza Mercado Chico, Ávila","","","ov_mapa_ruta_batallas_2","ov_geo_route_2");
 				});
 			</script>
 			<br><br>
 			<span class="ov_span_04" id="ov_place_batallas_6">Plaza Zurraquín</span>
 			<script>
 				$("#ov_place_batallas_6").click(function(e){
-					show_route_2("Plaza Zurraquín, Ávila","15","40.655316,-4.699778","ov_mapa_ruta_batallas_2","ov_geo_route_2");
+					show_route_2("Plaza Zurraquín, Ávila","","","ov_mapa_ruta_batallas_2","ov_geo_route_2");
 				});
 			</script>
 			<br><br>
 			<span class="ov_span_04" id="ov_place_batallas_7">Calle Esteban Domingo</span>
 			<script>
 				$("#ov_place_batallas_7").click(function(e){
-					show_route_2("Calle Esteban Domingo, Ávila","15","40.655316,-4.699778","ov_mapa_ruta_batallas_2","ov_geo_route_2");
+					show_route_2("Calle Esteban Domingo, Ávila","","","ov_mapa_ruta_batallas_2","ov_geo_route_2");
 				});
 			</script>
 			<br><br>
 			<span class="ov_span_04" id="ov_place_batallas_8">Calle López Nuñez</span>
 			<script>
 				$("#ov_place_batallas_8").click(function(e){
-					show_route_2("Calle López Núñez, Ávila","15","40.655316,-4.699778","ov_mapa_ruta_batallas_2","ov_geo_route_2");
+					show_route_2("Calle López Núñez, Ávila","","","ov_mapa_ruta_batallas_2","ov_geo_route_2");
 				});
 			</script>
 			<br><br>
 			<span class="ov_span_04" id="ov_place_batallas_9">Plaza San Vicente</span>
 			<script>
 				$("#ov_place_batallas_9").click(function(e){
-					show_route_2("Plaza San Vicente, Ávila","15","40.655316,-4.699778","ov_mapa_ruta_batallas_2","ov_geo_route_2");
+					show_route_2("Plaza San Vicente, Ávila","","","ov_mapa_ruta_batallas_2","ov_geo_route_2");
 				});
 			</script>
 			<br><br>
 			<span class="ov_span_04" id="ov_place_batallas_10">Calle San Segundo</span>
 			<script>
 				$("#ov_place_batallas_10").click(function(e){
-					show_route_2("Calle San Segundo, Ávila","15","40.655316,-4.699778","ov_mapa_ruta_batallas_2","ov_geo_route_2");
+					show_route_2("Calle San Segundo, Ávila","","","ov_mapa_ruta_batallas_2","ov_geo_route_2");
 				});
 			</script>
 			<br><br>
 			<span class="ov_span_04" id="ov_place_batallas_11">Plaza Santa Teresa</span>
 			<script>
 				$("#ov_place_batallas_11").click(function(e){
-					show_route_2("Plaza Santa Teresa, 11, Ávila","15","40.655316,-4.699778","ov_mapa_ruta_batallas_2","ov_geo_route_2");
+					show_route_2("Plaza Santa Teresa, 11, Ávila","","","ov_mapa_ruta_batallas_2","ov_geo_route_2");
 				});
 			</script>
 			<br><br>									

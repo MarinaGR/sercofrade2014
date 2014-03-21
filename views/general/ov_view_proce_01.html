@@ -1,33 +1,46 @@
 <script>
 	//ov_view_proce_01 se carga en container_01
 	$("#ov_view_container_01").css("background-color","#EBEBEB");
-	$("#ov_view_container_01").css("background-image","url()");	
+	$("#ov_view_container_01").css("background-image","url()");
+	$(".ov_body_01").css("background-color","#EBEBEB");	
 </script>
-
-<script>
-	$("#ov_zone_10_1").css("margin-top","60px");
-</script>
-
-
 <!-- Publi -->
 <div id="ov_zone_08_3" class="ov_zone_08">
 	
 </div>
 <script>	
-	load_ads("ov_zone_08_3");
+	load_ads("ov_zone_08_3");	
 </script>
+<div class="ov_vertical_space_05">&nbsp;</div>
+<!-- Publi -->
+<!-- Volver -->
+<div id="ov_zone_11_1" class="ov_zone_11_b">
+	<div id="ov_text_11_herman_list" class="ov_text_11">
+		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	</div>
+	<script>
+		$("#ov_text_11_herman_list").click(function(e){
+			$('#ov_view_container_02').load("./views/general/ov_view_main_menu_01.html",function(){
+				$('#ov_view_container_02').show('slide',{direction: "left"},500);
+				$('#ov_view_container_01').hide('slide',{direction: "right"},500);								
+			});	
+		});
+	</script>
+</div>
+<div class="ov_vertical_space_06">&nbsp;</div>
+<!-- Volver -->
 
 <div id="ov_zone_10_1" class="ov_zone_10">
 	
+	<!--Decorative -->
 	<div id="ov_box_09_1" class="ov_box_09">
 	
 	</div>
 	
 	<div class="ov_vertical_space_01">&nbsp;</div>
 	
-	<div class="ov_clear_floats_01">&nbsp;</div>
-	
-	<!-- -->
+	<div class="ov_clear_floats_01">&nbsp;</div>	
+	<!--Decorative -->
 	
 	<div id="ov_box_11_1" class="ov_box_11">	
 		
@@ -245,69 +258,21 @@
 			});
 		</script>
 		
-		<div class="ov_clear_floats_01">&nbsp;</div>
-		
-		<!-- -->
-		
-		<img src="styles/images/flechaup.png" class="ov_image_08" id="ov_image_08_1" alt="arrow_04"/>
-		<script>
-			
-			$("#ov_image_08_1").click(function(e){
-				if(deployed)
-				{
-					$('#ov_zone_10_1').animate({top: "-125px"},500,function(){});
-					$('#ov_zone_11_1').animate({top: "-125px"},500,function(){});
-					$('#ov_zone_12_1').animate({top: "65px"},500,function(){});
-					//$('#ov_zone_12_1').css("height","360px");
-					$("#ov_zone_12_1").css("height",(viewport_height-125)+"px");
-					//$('#ov_zone_10_1').css("top","-130px");
-					$(this).attr("src","styles/images/flechadown.png");
-					deployed=false;
-				}
-				else
-				{
-					$('#ov_zone_10_1').animate({top: "0px"},500,function(){});
-					$('#ov_zone_11_1').animate({top: "0px"},500,function(){});
-					$('#ov_zone_12_1').animate({top: "190px"},500,function(){});
-					//$('#ov_zone_12_1').css("height","215px");
-					$("#ov_zone_12_1").css("height",(viewport_height-250)+"px");
-					//$('#ov_zone_10_1').css("top","-130px");
-					$(this).attr("src","styles/images/flechaup.png");
-					deployed=true;
-				}				
-			});
-			
-		</script>
-		
-		<!-- -->
-		
-		<div id="ov_box_12_1" class="ov_box_12"> </div>
-		
-		<!-- -->
+		<div class="ov_clear_floats_01">&nbsp;</div>		
 			
 	</div>
 	
-	<!-- -->
-
-</div>
-
-<!-- -->
-
-<div id="ov_zone_11_1" class="ov_zone_11">
-	<div id="ov_text_11_1" class="ov_text_11">
-		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
+	<!--Decorative -->
+	<div id="ov_box_09_2" class="ov_box_09">
+	
 	</div>
-	<script>
-		$("#ov_text_11_1").click(function(e){
-			$('#ov_view_container_02').load("./views/general/ov_view_main_menu_01.html",function(){
-				$('#ov_view_container_02').show('slide',{direction: "left"},500);
-				$('#ov_view_container_01').hide('slide',{direction: "right"},500);								
-			});	
-		});
-	</script>
-</div>
+	
+	<div class="ov_vertical_space_01">&nbsp;</div>
+	
+	<div class="ov_clear_floats_01">&nbsp;</div>	
+	<!--Decorative -->
 
-<!-- -->	
+</div>
 
 <div id="ov_zone_12_1" class="ov_zone_12">
 	
@@ -934,12 +899,8 @@
 </div>
 
 <script>
-	$("#ov_zone_12_1").css("height",(viewport_height-250)+"px");
-	$("#ov_zone_12_1").css("overflow","auto");
-</script>
-
-<!-- -->
-
-<script>
 	calculate_day();	
 </script>
+
+
+

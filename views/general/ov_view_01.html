@@ -21,8 +21,8 @@
 <script>
 	setTimeout(function(){	
 		$('#ov_view_container_02').load("./views/general/ov_view_main_menu_01.html",function(){
-			$('#ov_view_container_02').show('slide',{direction: "right"},500);
-			$('#ov_view_container_01').hide('slide',{direction: "left"},500);						
+			$('#ov_view_container_02').show('slide',{direction: "right", easing: "linear"},500);
+			$('#ov_view_container_01').hide('slide',{direction: "left", easing: "linear"},500);						
 		});		
 	},3000);
 </script>

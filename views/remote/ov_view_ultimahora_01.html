@@ -1,55 +1,39 @@
 <script>
 	//ov_view_proce_01 se carga en container_01
 	$("#ov_view_container_01").css("background-color","#EBEBEB");
-	$("#ov_view_container_01").css("background-image","url()");	
+	$("#ov_view_container_01").css("background-image","url()");
+	$(".ov_body_01").css("background-color","#EBEBEB");	
 </script>
-
+<!-- Publi -->
+<div id="ov_zone_08_5" class="ov_zone_08">
+	
+</div>
+<script>	
+	load_ads("ov_zone_08_5");	
+</script>
+<div class="ov_vertical_space_05">&nbsp;</div>
+<!-- Publi -->
+<!-- Volver -->
 <div id="ov_zone_11_1" class="ov_zone_11_b">
-	<div id="ov_text_11_seguimiento" class="ov_text_11">
+	<div id="ov_text_11_herman_list" class="ov_text_11">
 		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
 	</div>
 	<script>
-		$("#ov_text_11_seguimiento").click(function(e){
-			$('#ov_view_container_02').load("./views/ov_view_main_menu_01.html",function(){
+		$("#ov_text_11_herman_list").click(function(e){
+			$('#ov_view_container_02').load("./views/general/ov_view_main_menu_01.html",function(){
 				$('#ov_view_container_02').show('slide',{direction: "left"},500);
 				$('#ov_view_container_01').hide('slide',{direction: "right"},500);								
 			});	
 		});
 	</script>
 </div>
-
-<div class="ov_vertical_space_04">&nbsp;</div>
-<div class="ov_vertical_space_04">&nbsp;</div>
-
+<div class="ov_vertical_space_06">&nbsp;</div>
+<!-- Volver -->
 <div id="ov_zone_15_2" class="ov_zone_15">
-	
-	<div class="ov_vertical_space_01">&nbsp;</div>
-	
-	<div id="ov_zone_05_4" class="ov_zone_05_b">
-		
-		<div id="ov_box_02_4" class="ov_box_02_b" style="width:100%;overflow:auto;-webkit-overflow-scrolling: touch;">
-			<div id="ov_text_01_4" class="ov_text_01" style="text-decoration:none;text-align:center">Ahora mismo no hay ninguna noticia.</div>			
-		</div>
-		<script>	
-			load_news("ov_box_02_4");
-		</script>
-		
-		<div class="ov_clear_floats_01">&nbsp;</div>
-		
+	<div id="ov_text_21_1" class="ov_text_21">
+		Para ver las últimas noticias necesitas una conexión a Internet.
 	</div>
-	
-		
 </div>
-<script>
-	$("#ov_zone_15_2").css("height",(viewport_height-60)+"px");
-	$("#ov_box_02_4").css("height",(viewport_height-140)+"px");
-	$("#ov_box_02_4").css("overflow","auto");
-</script>
-
-<div id="ov_zone_08_5" class="ov_zone_08">
-	
-</div>		
 <script>	
-	load_ads("ov_zone_08_5");
+	load_news("ov_zone_15_2");	
 </script>
-

@@ -132,11 +132,13 @@
 	
 	function draw_map(url,container)
 	{
-		var url_web="http://sercofradeavila.com/server/maps/load_map.php?url="+encodeURIComponent(url);
+	//	var url_web="http://sercofradeavila.com/server/maps/load_map.php?url="+encodeURIComponent(url);
 		
-		$("#"+container).html('<iframe style="width:100%;height:300px;border:none;" seamless="seamless" src="'+url_web+'"></iframe>');
-		
-		// $("#"+container).html('<iframe style="width:100%;height:300px;border:none" seamless="seamless" src="'+url+'"></iframe>');
+	//	$("#"+container).html('<iframe style="width:100%;height:300px;border:none;" seamless="seamless" src="'+url_web+'"></iframe>');
+	
+		$("#"+container).load(url);
+	
+		//$("#"+container).html('<iframe style="width:100%;height:300px;border:none" seamless="seamless" src="'+url+'"></iframe>');
 	}
 	
 	function show_route_2(dest,zoom,center,container,big_container)

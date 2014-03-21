@@ -36,7 +36,7 @@
 .ov_zone_07{margin:auto;width:90%;max-width:500px;position:relative;background-color:#5E3656;height:40px;max-height:40px;overflow:hidden;cursor:pointer}
 .ov_zone_07:hover{background-color:#333;}
 
-.ov_zone_08{margin:auto;width:100%;max-width:100%;position:absolute;bottom:0px;background-color:#000;min-height:60px;height:60px;max-height:60px;overflow:hidden;background-image:url();background-repeat:no-repeat;background-position:center center;}
+.ov_zone_08{margin:auto;width:100%;max-width:100%;position:absolute;top:0px;background-color:#000;min-height:60px;height:60px;max-height:60px;overflow:hidden;background-image:url();background-repeat:no-repeat;background-position:center center;}
 
 .ov_zone_09{margin:auto;width:100%;max-width:500px;position:relative;height:0px;}
 

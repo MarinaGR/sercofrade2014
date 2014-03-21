@@ -132,7 +132,7 @@
 	
 	function draw_map(url,container)
 	{
-		 $("#"+container).html('<iframe style="width:100%;height:300px;border:none" seamless="seamless" src="'+url+'"></iframe>');
+		// $("#"+container).html('<iframe style="width:100%;height:300px;border:none" seamless="seamless" src="'+url+'"></iframe>');
 	}
 	
 	function show_route_2(dest,zoom,center,container,big_container)

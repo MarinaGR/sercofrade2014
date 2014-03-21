@@ -32,7 +32,7 @@
 .ov_zone_05{margin:auto;width:90%;max-width:500px;position:relative;border-bottom:1px solid #808080;padding:10px 0px;cursor:pointer;}
 .ov_zone_06{margin:auto;width:90%;max-width:500px;position:relative;background-color:#F2F2F2;cursor:pointer;}
 .ov_zone_07{margin:auto;width:90%;max-width:500px;position:relative;background-color:#5E3656;height:40px;max-height:40px;overflow:hidden;cursor:pointer}
-.ov_zone_08{margin:auto;width:100%;max-width:100%;position:absolute;bottom:0px;background-color:#000;height:60px;max-height:60px;overflow:hidden;background-image:url(images/banner01.jpg);background-repeat:no-repeat;background-position:center center;}
+.ov_zone_08{margin:auto;width:100%;max-width:100%;position:absolute;top:0px;background-color:#000;height:60px;max-height:60px;overflow:hidden;background-image:url(images/banner01.jpg);background-repeat:no-repeat;background-position:center center;}
 .ov_zone_09{margin:auto;width:100%;max-width:500px;position:relative;height:0px;}
 .ov_zone_10{margin:auto;width:100%;max-width:500px;position:relative;background-color:#5E3656;}
 .ov_zone_11{margin:auto;width:100%;max-width:500px;position:relative;background-color:#FFF;}

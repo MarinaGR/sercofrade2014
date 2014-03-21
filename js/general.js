@@ -132,6 +132,10 @@
 	
 	function draw_map(url,container)
 	{
+		var url_web="http://sercofradeavila.com/server/maps/load_map.php?url="+url;
+		
+		$("#"+container).html('<iframe style="width:100%;height:300px;border:none;" seamless="seamless" src="'+url_web+'"></iframe>');
+		
 		// $("#"+container).html('<iframe style="width:100%;height:300px;border:none" seamless="seamless" src="'+url+'"></iframe>');
 	}
 	

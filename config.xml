@@ -4,9 +4,7 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.ovnyline.sercofrade"
     version     = "1.0.0"
-    versionCode = "10" >
-
-    <!-- versionCode is optional and Android only -->
+    versionCode = "19" >
 
     <preference name="phonegap-version" value="3.1.0" />
 

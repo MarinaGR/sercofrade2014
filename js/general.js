@@ -35,18 +35,18 @@
 		$("#ov_zone_09_1").css("height",(viewport_height-60)+"px");
 		$("#ov_box_06_1").css("height",(viewport_height-60)+"px");
 		$("#ov_box_07_1").css("height",(viewport_height-60)+"px");
-		$("#ov_box_07_1").css("-webkit-overflow-scrolling","touch");
+		$("#ov_box_07_1").css("overflow","auto");
 		
 		$("#ov_zone_15_1").css("height",(viewport_height-60)+"px");
 		$("#ov_zone_15_2").css("height",(viewport_height-60)+"px");
-		$("#ov_zone_15_1").css("-webkit-overflow-scrolling","touch");
-		$("#ov_zone_15_2").css("-webkit-overflow-scrolling","touch");
+		$("#ov_zone_15_1").css("overflow","auto");
+		$("#ov_zone_15_2").css("overflow","auto");
 		
 		$("#ov_zone_12_1").css("height",(viewport_height-250)+"px");
-		$("#ov_zone_12_1").css("-webkit-overflow-scrolling","touch");
+		$("#ov_zone_12_1").css("overflow","auto");
 		
 		$(".ov_box_02_b").css("width","100%");
-		$(".ov_box_02_b").css("-webkit-overflow-scrolling","touch");		
+		$(".ov_box_02_b").css("overflow","auto");		
 		
 	});
 	
@@ -80,7 +80,6 @@
 		var url="http://sercofradeavila.com/server/noticias/loader.php";
 				
 		$("#"+container).html('<iframe style="margin:0px;width:100%;height:1700px;border:none;overflow:hidden;" seamless="seamless" src="'+url+'"></iframe>');
-			    
 		
 	}
 	

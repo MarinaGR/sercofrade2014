@@ -143,6 +143,9 @@
 	
 	function show_route_2(dest,zoom,center,container,big_container)
 	{
+		
+		alert(dest);
+		
 		$("#"+big_container).show();
 		destination=dest;		
 		destination_zoom=zoom;

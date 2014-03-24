@@ -154,7 +154,7 @@
 		{
 			alert(destination);
 			
-			navigator.geolocation.getCurrentPosition(show_position_2,error_position_2,{enableHighAccuracy:true, maximumAge:30000, timeout:27000});
+			navigator.geolocation.getCurrentPosition(show_position_2,error_position_2,{enableHighAccuracy:true, maximumAge:90000, timeout:50000});
 		}
 		else
 		{
@@ -175,7 +175,6 @@
   		
   		alert(latlong);
   		alert(destination);
-  		alert(destination_container);
   		
   		$("#"+destination_container).attr('src', url);
 				

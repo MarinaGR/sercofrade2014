@@ -167,7 +167,6 @@
 	function show_position_2(position)
 	{
 		alert("GEOLOCALIZACION");
-		alert(position);
 		
 		var latitude = position.coords.latitude;
   		var longitude = position.coords.longitude;
@@ -185,7 +184,7 @@
 	
 	function error_position_2(error)
 	{
-		alert("Fallo en la geolocalización");
+		alert("Fallo en la geolocalización "+error.code);
 		
 		$("#"+destination_container).html('<div class="ov_text_18"><br>La geolocalización de tu posición ha fallado.</div>');		
 	}

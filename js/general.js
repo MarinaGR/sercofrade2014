@@ -167,7 +167,7 @@
   		var latlong = latitude+","+longitude;
   		var url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin="+latlong+"&destination="+destination+"&avoid=tolls|highways&mode=walking&language=es";
   		
-  		alert(destination);
+  		alert("Destino: "+destination+" Contenedor: "+destination_container);
   		
   		$("#"+destination_container).attr('src', url);
 				

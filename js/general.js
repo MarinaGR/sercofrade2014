@@ -152,29 +152,23 @@
 							
 		if (navigator.geolocation)
 		{
-			alert(destination);
-			
 			navigator.geolocation.getCurrentPosition(show_position_2,error_position_2,{enableHighAccuracy:true, maximumAge:90000, timeout:50000});
+			$("#"+destination_big_container+"_text").html("Calculando ruta...");
 		}
 		else
 		{
-			alert("No geolocalizacion");
-			
+
 			$("#"+container).html('<div class="ov_text_18"><br>Lo sentimos, pero tu dispositivo no permite geolocalización.</div>');			
 		}
 	}
 	
 	function show_position_2(position)
 	{
-		alert("GEOLOCALIZACION");
-		
 		var latitude = position.coords.latitude;
   		var longitude = position.coords.longitude;
   		var latlong = latitude+","+longitude;
   		var url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin="+latlong+"&destination="+destination+"&avoid=tolls|highways&mode=walking&language=es";
-  		
-  		alert(latlong);
-  		alert(destination);
+ 
   		
   		$("#"+destination_container).attr('src', url);
 				
@@ -183,7 +177,5 @@
 	
 	function error_position_2(error)
 	{
-		alert("ERROR #"+error.code+": "+error.message);
-		
 		$("#"+destination_big_container).html('<div class="ov_text_18"><br>La geolocalización de tu posición ha fallado.</div>');		
 	}

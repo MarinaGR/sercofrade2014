@@ -152,10 +152,14 @@
 							
 		if (navigator.geolocation)
 		{
+			alert(destination);
+			
 			navigator.geolocation.getCurrentPosition(show_position_2,error_position_2,{enableHighAccuracy:true, maximumAge:30000, timeout:27000});
 		}
 		else
 		{
+			alert("No geolocalizacion");
+			
 			$("#"+container).html('<div class="ov_text_18"><br>Lo sentimos, pero tu dispositivo no permite geolocalización.</div>');			
 		}
 	}
@@ -167,7 +171,9 @@
   		var latlong = latitude+","+longitude;
   		var url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin="+latlong+"&destination="+destination+"&avoid=tolls|highways&mode=walking&language=es";
   		
-  		alert("Destino: "+destination+" Contenedor: "+destination_container);
+  		alert(latlong);
+  		alert(destination);
+  		alert(destination_container);
   		
   		$("#"+destination_container).attr('src', url);
 				

@@ -185,5 +185,7 @@
 	
 	function error_position_2(error)
 	{
+		alert("Fallo en la geolocalización");
+		
 		$("#"+destination_container).html('<div class="ov_text_18"><br>La geolocalización de tu posición ha fallado.</div>');		
 	}

@@ -166,6 +166,9 @@
 	
 	function show_position_2(position)
 	{
+		alert("GEOLOCALIZACION");
+		alert(position);
+		
 		var latitude = position.coords.latitude;
   		var longitude = position.coords.longitude;
   		var latlong = latitude+","+longitude;

@@ -143,9 +143,6 @@
 	
 	function show_route_2(dest,zoom,center,container,big_container)
 	{
-		
-		alert(dest);
-		
 		$("#"+big_container).show();
 		destination=dest;		
 		destination_zoom=zoom;
@@ -169,6 +166,8 @@
   		var longitude = position.coords.longitude;
   		var latlong = latitude+","+longitude;
   		var url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin="+latlong+"&destination="+destination+"&avoid=tolls|highways&mode=walking&language=es";
+  		
+  		alert(destination);
   		
   		$("#"+destination_container).attr('src', url);
 				

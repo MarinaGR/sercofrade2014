@@ -1,160 +1,160 @@
-<script>
-	$("#ov_view_container_02").css("background-color","#EBEBEB");	
-</script>
-
-<!-- Publi -->
-<div id="ov_zone_08_5" class="ov_zone_08">
+<!-- Volver -->
+<div style="display: block;" class="ov_back_button_container">
 	
-</div>
-<script>	
-	load_ads("ov_zone_08_5");	
-</script>
-<div class="ov_vertical_space_05">&nbsp;</div>
-<!-- Publi -->
-<!-- Volver -->
-<div id="ov_zone_11_1" class="ov_zone_11_b">
-	<div id="ov_text_11_h_batallas" class="ov_text_11">
-		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
-	</div>
-	<script>
-		$("#ov_text_11_h_batallas").click(function(e){
-			if(referrer_from_proce=="")
-			{
-				$('#ov_view_container_01').load("./views/general/ov_view_herman_01.html",function(){
-					$('#ov_view_container_01').show('slide',{direction: "left"},500);
-					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
-				});
-			}
-			else
-			{
-				$('#ov_view_container_02').load(referrer_from_proce,function(){
-					$('#ov_view_container_02').show('slide',{direction: "right"},500);
-					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-					referrer_from_proce="";				
-				});
-			}	
-		});
-	</script>
-</div>
-<div class="ov_vertical_space_06">&nbsp;</div>
-<!-- Volver -->
-
-<div id="ov_zone_13_h_batallas" class="ov_zone_13_b">
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_5" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"> Volver
+		</div>
 		
-	<div id="ov_box_13_h_batallas" class="ov_box_13_b">
-		<div id="ov_box_14_h_batallas" class="ov_box_14">
-			<img src="styles/images/escudos/batallas.JPG" id="ov_image_03_4" class="ov_image_03" alt="circle_04"/>
+		<div id="ov_back_button_6" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"> Menú
 		</div>
-		<div id="ov_box_15_h_batallas" class="ov_box_15">
-			<div id="ov_text_15_h_batallas" class="ov_text_15">
-				<br>			
-				Hermandad del Stmo. Cristo de las Batallas
-			</div>
-						
-		</div>
-		<div class="ov_clear_floats_01">&nbsp;</div>
 	</div>
 	
 </div>
-
-<div class="ov_vertical_space_01">&nbsp;</div>
-
-
-
-<div id="ov_zone_14_h_batallas" class="ov_zone_14">
-	<div id="ov_box_17_h_batallas" class="ov_box_17">
-		<div id="ov_text_16_h_batallas" class="ov_text_16">
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_5").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_6").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div style="padding:10px;background-color:#5E3656">
+			
+			<div id="ov_large_menu_item_1" class="ov_large_menu_item">
+			
+				<div class="ov_box_circle_images">
+					
+					<img src="./resources/escudos/batallas.JPG" class="ov_image_circle" alt=" ">
+					
+				</div>
+				
+				<div class="ov_box_large_menu_item_title">
+					
+					<div class="ov_text_large_menu_item_01" style="color:#FFF">Hermandad del Stmo. Cristo de las Batallas</div>				
+					
+				</div>
+				
+				<div class="ov_clear_floats"> </div>
+				
+			</div>
+			
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			La Hermandad del Santísimo Cristo de las Batallas fue creada en el año 1952. La devoción popular que suscitó esta imagen a lo largo de su historia, y dado su origen de haber acompañado en sus batallas a los Reyes Católicos, se hizo una convocatoria a los caballeros abulenses para crear una Hermandad de cara a la Semana Santa abulense. En la reunión para la fundación de la Hermandad se acordó que la misma mantuviese una trayectoria castrense a la vez que se distinguiera por su carácter penitencial. La Hermandad fue constituida en el convento de Mosén Rubio donde se encuentra la referida imagen.
 			<br>
 			En 1962 la Hermandad decidió sustituir la imagen primitiva por otra más moderna y de mayores dimensiones para su salida en la procesión.
 			<br>
-			En 1987, la Hermandad decide organizar su procesión con las dos imágenes y así lo hace durante dos años. Ya en la Semana santa de 1989 la Hermandad decide organizar dos procesiones una con la imagen moderna desde la iglesia de San Pedro y otra horas más tarde con la imagen antigua desde el convento de Mosén Rubi.
+			En 1987, la Hermandad decide organizar su procesión con las dos imágenes y así lo hace durante dos años. Ya en la Semana santa de 1989 la Hermandad decide organizar dos procesiones una con la imagen moderna desde la iglesia de San Pedro y otra horas más tarde con la imagen antigua desde el convento de Mosén Rubi.	
 		</div>
 		
-		<div id="ov_text_16_h_batallas_3" class="ov_text_16">
-			<span class="ov_span_02">Datos.</span><br><br>
-			<span class="ov_span_01">Hábito:</span><br>Túnica y capucho negro, cíngulo de esparto
-			<br><br>
-			<img src="styles/images/habitos/batallas.png" class="ov_image_11"/>
-			<br><br>
-			<span class="ov_span_01">Templo de Residencia Canónica:</span><br>Iglesia de San Pedro Apóstol - Iglesia de Mosén Rubí
-			<br><br>
-			<span class="ov_span_01">Fundación:</span><br>1952
-			<br><br>
-			<span class="ov_span_01">Hermanos:</span><br>480
-			<br><br>
-			<span class="ov_span_01">Nazarenos:</span><br>350 en la procesión del Míercoles Santo y 250 en la procesión del Jueves Santo.
-			<br><br>
-			<span class="ov_span_01">Atributos de los Hermanos:</span><br>Farol con luz eléctrica
-			<br><br>
-			<span class="ov_span_01">Culto(s) organizados:</span><br>Triduo en honor al Santísimo Cristo de las Batallas los días 12, 13 y 14 de Septiembre en la iglesia de Mosén Rubi.
-			<br><br>
-			<span class="ov_span_01">Cofradías con que está hermanada:</span><br>Hermandad del Santísimo Cristo de las Batallas de Cáceres.
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			DATOS
 		</div>
-		<div id="ov_text_16_h_batallas_6" class="ov_text_16">
-			<span class="ov_span_02">Contacto.</span><br><br>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			<b>Hábito:</b><br>Túnica y capucho negro, cíngulo de esparto
+			<img src="./resources/habitos/batallas.png" style="display:block">
+			<b>Templo de Residencia Canónica:</b><br>Iglesia de San Pedro Apóstol - Iglesia de Mosén Rubí
+			<br><br>
+			<b>Fundación:</b><br>1952.
+			<br><br>
+			<b>Hermanos:</b><br>480.
+			<br><br>
+			<b>Nazarenos:</b><br>350 en la procesión del Míercoles Santo y 250 en la procesión del Jueves Santo.
+			<br><br>
+			<b>Atributos de los Hermanos:</b><br>Farol con luz eléctrica
+			<br><br>
+			<b>Culto(s) organizados:</b>
+				<br>Triduo en honor al Santísimo Cristo de las Batallas los días 12, 13 y 14 de Septiembre en la iglesia de Mosén Rubi.
+				<br><br>
+			<b>Cofradías con que está hermanada:</b><br>Hermandad del Santísimo Cristo de las Batallas de Cáceres.
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			CONTACTO
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			Parroquia de San Pedro Apostol de Ávila<br>
 			Pza. de Santa Teresa<br>
 			05001 Ávila<br>
 			Tf: 920 229328 / 920 213249<br>
 			cristodelasbatallas@cristodelasbatallas.es<br>
 		</div>
-		<div id="ov_text_16_h_batallas_2" class="ov_text_16">
-			<span class="ov_span_02">Procesiones.</span><br><br>
-			<div id="ov_text_17_h_batallas_1" class="ov_text_17">
-				Procesión del Cristo de Las Batallas (16 de Abril, Miércoles Santo)
-			</div>
-			<script>
-				$("#ov_text_17_h_batallas_1").click(function(e){
-					referrer_from_herman="./views/hermandades/ov_view_h_batallas_01.html";
-					$('#ov_view_container_02').load("./views/procesiones/ov_view_batallas_01.html",function(){
-						$('#ov_view_container_02').show('slide',{direction: "right"},500);
-						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-						$('body,html').scrollTop("0px");				
-					});	
-				});
-			</script>
-			<br>
-			<div id="ov_text_17_h_batallas_2" class="ov_text_17">
-				Procesión de La Madrugada (17 de Abril, Jueves Santo)
-			</div>
-			<script>
-				$("#ov_text_17_h_batallas_2").click(function(e){
-					referrer_from_herman="./views/hermandades/ov_view_h_batallas_01.html";
-					$('#ov_view_container_02').load("./views/procesiones/ov_view_madrugada_01.html",function(){
-						$('#ov_view_container_02').show('slide',{direction: "right"},500);
-						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-						$('body,html').scrollTop("0px");				
-					});	
-				});
-			</script>
-		</div>	
-		<div id="ov_text_16_h_batallas_4" class="ov_text_16">
-			<span class="ov_span_02">Pasos.</span><br><br>			
-			<div id="ov_text_18_h_batallas_1" class="ov_text_18">
-				<span class="ov_span_03">Santísimo Cristo de las Batallas (nueva)</span>
-				<div id="ov_text_19_h_batallas_1" class="ov_text_19">					
-				    Autor: D. Plácido Martín San Pedro<br>
-				    Fecha:   1963<br>
-				    Realizada en 1963 es una imagen esbelta de 2,15 m. de altura, que nos Santísimo Cristo de las Batallasmuestra la presencia de un hombre vigoroso, caminando encorvado por el peso de la cruz, a la vez que decidido y firme a cumplir la voluntad del Padre y completar la obra	 que le ha traído a la tierra.
-					<br><br>
-					<img src="styles/images/pasos/batallas_nuevo.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_h_batallas_2" class="ov_text_18">
-				<span class="ov_span_03">Santísimo Cristo de las Batallas (antigua)</span>
-				<div id="ov_text_19_h_batallas_2" class="ov_text_19">					
-				    Autor: Lucca della Robbia<br>
-				    Fecha:    s. XV<br>
-				    La imagen del Santísimo Cristo de las Batallas es una imagen pequeña, de sesenta centímetros de altura, de barro cocido y artísticamente moldeado de la época de los Reyes Católicos. Representa el busto de Cristo con la cruz a cuesta, camino del Calvario. Está enmarcada por cuatro columnas, que apoyan en una base cuadrada, dispuesta para recibir los prensiles, que permitan su transporte; la parte superior está rematada por una cúpula, bajo la cual se sitúa la imagen. Esta imagen , era llevada consigo por los Reyes Católicos en todas sus campañas bélicas, lo que le dio este título de "Cristo de las Batallas"
-					<br><br>
-					<img src="styles/images/pasos/batallas_viejo.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>			
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PROCESIONES
+		</div>
+		
+		<div id="ov_to_herman" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Procesión del Cristo de Las Batallas (16 de Abril, Miércoles Santo)
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_batallas_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div id="ov_to_herman_02" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Procesión de La Madrugada (17 de Abril, Jueves Santo)
+		</div>
+		<script>
+			$("#ov_to_herman_02").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_madrugada_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+				
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+				
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Santísimo Cristo de las Batallas (nueva)
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: D. Plácido Martín San Pedro<br>
+		    Fecha:   1963<br>
+		    Realizada en 1963 es una imagen esbelta de 2,15 m. de altura, que nos Santísimo Cristo de las Batallasmuestra la presencia de un hombre vigoroso, caminando encorvado por el peso de la cruz, a la vez que decidido y firme a cumplir la voluntad del Padre y completar la obra	 que le ha traído a la tierra.
+			<br><br>
+			<img src="./resources/pasos/batallas_nuevo.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Santísimo Cristo de las Batallas (antigua)
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Lucca della Robbia<br>
+		    Fecha:    s. XV<br>
+		    La imagen del Santísimo Cristo de las Batallas es una imagen pequeña, de sesenta centímetros de altura, de barro cocido y artísticamente moldeado de la época de los Reyes Católicos. Representa el busto de Cristo con la cruz a cuesta, camino del Calvario. Está enmarcada por cuatro columnas, que apoyan en una base cuadrada, dispuesta para recibir los prensiles, que permitan su transporte; la parte superior está rematada por una cúpula, bajo la cual se sitúa la imagen. Esta imagen , era llevada consigo por los Reyes Católicos en todas sus campañas bélicas, lo que le dio este título de "Cristo de las Batallas"
+			<br><br>
+			<img src="./resources/pasos/batallas_viejo.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
 		</div>
 			
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
 	</div>
+	
 </div>	
-

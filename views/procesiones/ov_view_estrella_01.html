@@ -1,285 +1,315 @@
-<script>
-	$("#ov_view_container_02").css("background-color","#EBEBEB");	
-</script>
-<!-- Publi -->
-<div id="ov_zone_08_4" class="ov_zone_08">
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
 	
 </div>
-<script>	
-	load_ads("ov_zone_08_4");	
-</script>
-<div class="ov_vertical_space_05">&nbsp;</div>
-<!-- Publi -->
-<!-- Volver -->
-<div id="ov_zone_11_1" class="ov_zone_11_b">
-	<div id="ov_text_11_estrella" class="ov_text_11">
-		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
-	</div>
-	<script>
-		$("#ov_text_11_estrella").click(function(e){
-			if(referrer_from_herman=="")
-			{
-				$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
-					$('#ov_view_container_01').show('slide',{direction: "left"},500);
-					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
-				});
-			}
-			else
-			{
-				$('#ov_view_container_02').load(referrer_from_herman,function(){
-					$('#ov_view_container_02').show('slide',{direction: "right"},500);
-					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-					referrer_from_herman="";				
-				});
-			}
-				
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
 		});
-	</script>
-</div>
-<div class="ov_vertical_space_06">&nbsp;</div>
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
 <!-- Volver -->
-
-<div id="ov_zone_13_estrella" class="ov_zone_13_b">
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
 		
-	<div id="ov_box_13_estrella" class="ov_box_13_b">
-		<div id="ov_box_14_estrella" class="ov_box_14">
-			<div id="ov_text_12_estrella" class="ov_text_12_b">
+		<div style="padding:10px;background-color:#5E3656">
+			
+			<div style="font-family:'3';font-size:1.7em;color:#FFF;padding-bottom:10px;text-align:left;">
 				PROCESIÓN DE LA ESTRELLA
 			</div>
-			<div id="ov_text_13_estrella" class="ov_text_13">
-				día 15<br>
-				Martes Santo<br><br> 
+			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
+				15 de Abril - Martes Santo
 			</div>
-		</div>
-		<div id="ov_box_15_estrella" class="ov_box_15">
-			<div id="ov_text_15_estrella" class="ov_text_15">
-				Salida:
+			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
+				Salida a las <b>16 15h</b> desde la Iglesia de Santa María de Jesús "Las Gordillas", en Cristo de la Luz
 			</div>
-			<div id="ov_text_14_estrella" class="ov_text_14">
-				16 15h<br>
-				Iglesia de Santa María de Jesús<br>
-				Calle Cristo de la Luz
-			</div>				
+			
 		</div>
-		<div class="ov_clear_floats_01">&nbsp;</div>
-	</div>
-	
-</div>
-
-<div class="ov_vertical_space_01">&nbsp;</div>
-
-<div id="ov_zone_14_estrella" class="ov_zone_14">
-	<div id="ov_box_17_estrella" class="ov_box_17">
 		
-		<div id="ov_text_16_estrella" class="ov_text_16">
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			La Procesión de La Estrella de Ávila, única de Castilla y León que lleva a sus pasos a costal, cuenta con los pasos de Ntro. Padre Jesús Redentor ante Caifás (misterio) y el de de Ntra. Sra. de la Estrella (palio).
 			<br>
 			Tiene su sede canónica en la iglesia de Santa María de Jesús, más conocida como "Las Gordillas" y comenzó a hacer estación de penintencia en 2006. La túnica de esta corporación es blanca, igual que el antifaz, ceñida con una ancho cinturón de esparto.
 		</div>
 		
-		<div id="ov_text_16_estrella_2" class="ov_text_16">
-			<span class="ov_span_02">Organiza.</span><br><br>
-			<div id="ov_text_17_estrella_1" class="ov_text_17">
-				Hermandad de Nazarenos Jesús Redentor ante Caifás y Ntra. Sra. de la Estrella
-			</div>
-			<script>
-				$("#ov_text_17_estrella_1").click(function(e){
-					referrer_from_proce="./views/procesiones/ov_view_estrella_01.html";
-					$('#ov_view_container_02').load("./views/hermandades/ov_view_h_estrella_01.html",function(){
-						$('#ov_view_container_02').show('slide',{direction: "right"},500);
-						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-						$('body,html').scrollTop("0px");				
-					});	
-				});
-			</script>
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			ORGANIZA.
 		</div>
 		
-		<div id="ov_text_16_estrella_3" class="ov_text_16">
-			<span class="ov_span_02">Hábito.</span><br><br>
+		<div id="ov_to_herman" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Hermandad de Nazarenos Jesús Redentor ante Caifás y Ntra. Sra. de la Estrella
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/ov_view_h_estrella_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			HÁBITO.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			Túnica y capucho blanco, cinturón de esparto.
+			<img src="./resources/habitos/estrella.png" style="display:block"/>
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Jesús Redentor
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: D. Juan Ventura
+			<br>
+			Fecha: 2006
 			<br><br>
-			<img src="styles/images/habitos/estrella.png" class="ov_image_11"/>
+			Paso de misterio que representa el juicio a Jesús y esta formado por Jesús Redentor, Caifás, Anás, José de Arimatea y un centurión romano.<br>
+			Jesús Redentor es obra del escultor sevillano Juan Ventura y el resto de imágenes son obras del escultor jerezano Ismael Márquez).
+			<br><br>			
+			<img src="./resources/pasos/estrella_redentor.JPG" style="display:block;margin:auto;width:80%;max-width:300px"/>			
 		</div>
 		
-		<div id="ov_text_16_estrella_4" class="ov_text_16">
-			<span class="ov_span_02">Pasos.</span><br><br>
-			<div id="ov_text_18_estrella_1" class="ov_text_18">
-				<span class="ov_span_03">Jesús Redentor</span>
-				<div id="ov_text_19_estrella_1" class="ov_text_19">					
-				    Autor: D. Juan Ventura<br>
-				    Fecha: 2006<br>
-				    Paso de misterio que representa el juicio a Jesús y esta formado por Jesús Redentor, Caifás, Anás, José de Arimatea y un centurión romano.<br>
-				    Jesús Redentor es obra del escultor sevillano Juan Ventura y el resto de imágenes son obras del escultor jerezano Ismael Márquez).
-					<br><br>
-					<img src="styles/images/pasos/estrella_redentor.JPG" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_estrella_2" class="ov_text_18">
-				<span class="ov_span_03">Nuestra Señora de la Estrella </span>
-				<div id="ov_text_19_estrella_2" class="ov_text_19">					
-				    Autor: D. Juan Ventura<br>
-				    Fecha: 2007<br>
-				    <br><br>
-					<img src="styles/images/pasos/estrella_estrella.jpg" class="ov_image_12"/>
-					<br>				   
-				</div>
-			</div>								
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Nuestra Señora de la Estrella
 		</div>
 		
-		<div id="ov_text_16_estrella_6" class="ov_text_16">
-			<span class="ov_span_02">Música.</span><br><br>
-			Banda de Música Ciudad de Tormes de Salamanca.<br>
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: D. Juan Ventura
+			<br>
+			Fecha: 2007
+			<br><br>
+			<img src="./resources/pasos/estrella_estrella.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>			
+		</div>
+								
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			MÚSICA.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Banda de Música Ciudad de Tormes de Salamanca.
+			<br><br>
 			Banda de Cornetas y Tambores del Stmo. Cristo a la Columna "El Amarrado". 
 		</div>
 		
-		<div id="ov_text_16_estrella_5" class="ov_text_16">
-			<span class="ov_span_02">Ruta.</span>
-			
-			<br><br>
-			Con salida y llegada en <span class="ov_span_03">Calle Cristo de la Luz</span>, la ruta se recorre en sentido anti-horario.
-			<br><br>
-
-			<iframe id="ov_mapa_ruta_estrella_1" style="width:100%;height:300px;border:none"  src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Calle Cristo de la Luz, Ávila&destination=Calle Cristo de la Luz, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle San Joaquín, Ávila|Calle San Juan de la Cruz, Ávila|Calle Las Madres, Ávila|Calle Padre Silverio, Ávila|Calle Duque de Alba, Ávila|Calle Don Ferreol Hernández, Ávila|Plaza de Italia, Ávila|Calle Los Leales, Ávila|Calle San Segundo, Ávila|Plaza Santa Teresa, Ávila|Plaza Ejército, Ávila|Calle San Juan de La Cruz, Ávila|Calle San Joaquín, Ávila&language=es&zoom=15&center=40.656664,-4.693685">Para acceder al mapa necesitas una conexión activa</iframe>				
-						
-			<br>
-			<script>
-				current_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Calle Cristo de la Luz, Ávila&destination=Calle Cristo de la Luz, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle San Joaquín, Ávila|Calle San Juan de la Cruz, Ávila|Calle Las Madres, Ávila|Calle Padre Silverio, Ávila|Calle Duque de Alba, Ávila|Calle Don Ferreol Hernández, Ávila|Plaza de Italia, Ávila|Calle Los Leales, Ávila|Calle San Segundo, Ávila|Plaza Santa Teresa, Ávila|Plaza Ejército, Ávila|Calle San Juan de La Cruz, Ávila|Calle San Joaquín, Ávila&language=es&zoom=15&center=40.656664,-4.693685";
-				draw_map(current_url,'ov_mapa_ruta_estrella_1');
-			</script>
-			<div class="ov_button_01" id="ov_button_01_estrella_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_estrella_1')">
-				Actualizar Mapa
-			</div>
-			<br>
-			
-			<span class="ov_span_03">Itinerario:</span>
-			<br>
-			<i>Pulsa sobre cualquier punto abajo para obtener una ruta desde tu ubicación actual</i>
-			
-			<div id="ov_geo_route_2" style="display:none">
-				<br><br>
-				
-				<iframe id="ov_mapa_ruta_estrella_2" style="width:100%;height:300px;border:none"  src="">Espera, por favor...</iframe>
-
-				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
-					
-				</div>				
-				<div class="ov_button_01" id="ov_button_01_estrella_refresh_map" onclick="show_route_2(destination,'15',destination_center,destination_container,destination_big_container);">
-				Actualizar posición
-				</div>
-				<br>
-				<div class="ov_button_01" id="ov_button_01_estrella_hide_map" onclick="$('#ov_geo_route_2').hide()">
-				Ocultar
-				</div>					
-			</div>
-			
-			<br><br>
-			<span class="ov_span_04" id="ov_place_estrella_1">Calle Cristo de la Luz</span>
-			<script>
-				$("#ov_place_estrella_1").click(function(e){
-					show_route_2("Calle Cristo de la Luz, Ávila","","","ov_mapa_ruta_estrella_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_estrella_2">Calle San Joaquín</span>
-			<script>
-				$("#ov_place_estrella_2").click(function(e){
-					show_route_2("Calle San Joaquín, Ávila","","","ov_mapa_ruta_estrella_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_estrella_3">Calle San Juan de La Cruz</span>
-			<script>
-				$("#ov_place_estrella_3").click(function(e){
-					show_route_2("Calle San Juan de la Cruz, Ávila","","","ov_mapa_ruta_estrella_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_estrella_4">Calle Las Madres</span>
-			<script>
-				$("#ov_place_estrella_4").click(function(e){
-					show_route_2("Calle Las Madres, Ávila","","","ov_mapa_ruta_estrella_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_estrella_5">Calle Padre Silverio</span>
-			<script>
-				$("#ov_place_estrella_5").click(function(e){
-					show_route_2("Calle Padre Silverio, Ávila","","","ov_mapa_ruta_estrella_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_estrella_6">Calle Duque de Alba</span>
-			<script>
-				$("#ov_place_estrella_6").click(function(e){
-					show_route_2("Calle Duque de Alba, Ávila","","","ov_mapa_ruta_estrella_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_estrella_7">Calle Don Ferreol Hernández</span>
-			<script>
-				$("#ov_place_estrella_7").click(function(e){
-					show_route_2("Calle Don Ferreol Hernández, Ávila","","","ov_mapa_ruta_estrella_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_estrella_8">Plaza Italia</span>
-			<script>
-				$("#ov_place_estrella_8").click(function(e){
-					show_route_2("Plaza Italia, Ávila","","","ov_mapa_ruta_estrella_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_estrella_9">Calle Los Leales</span>
-			<script>
-				$("#ov_place_estrella_9").click(function(e){
-					show_route_2("Calle Los Leales, Ávila","","","ov_mapa_ruta_estrella_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_estrella_10">Calle San Segundo</span>
-			<script>
-				$("#ov_place_estrella_10").click(function(e){
-					show_route_2("Calle San Segundo, Ávila","","","ov_mapa_ruta_estrella_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_estrella_11">Plaza Santa Teresa</span>
-			<script>
-				$("#ov_place_estrella_11").click(function(e){
-					show_route_2("Plaza Santa Teresa, Ávila","","","ov_mapa_ruta_estrella_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_estrella_12">Plaza del Ejército</span>
-			<script>
-				$("#ov_place_estrella_12").click(function(e){
-					show_route_2("Plaza Ejército, Ávila","","","ov_mapa_ruta_estrella_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_estrella_13">Calle San Juan de la Cruz</span>
-			<script>
-				$("#ov_place_estrella_13").click(function(e){
-					show_route_2("Calle San Juan de la Cruz, Ávila","","","ov_mapa_ruta_estrella_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_estrella_14">Calle San Joaquín</span>
-			<script>
-				$("#ov_place_estrella_14").click(function(e){
-					show_route_2("Calle San Joaquín, Ávila","","","ov_mapa_ruta_estrella_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_estrella_15">Calle Cristo de la Luz</span>
-			<script>
-				$("#ov_place_estrella_15").click(function(e){
-					show_route_2("Calle Cristo de la Luz, Ávila","","","ov_mapa_ruta_estrella_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>							
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			MAPA DE LA RUTA.
 		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Con salida y llegada en la Iglesia de Santa María de Jesús "Las Gordillas", en Cristo de la Luz, la ruta se recorre en sentido anti-horario.
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<iframe id="route_map" style="background-color:#5E3656;border:none;width:100%;height:400px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:center center;" seamless="seamless" src=""> 
+				
+			</iframe>
+			<script>
+				route_map_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Calle Cristo de la Luz, Ávila&destination=Calle Cristo de la Luz, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle San Joaquín, Ávila|Calle San Juan de la Cruz, Ávila|Calle Las Madres, Ávila|Calle Padre Silverio, Ávila|Calle Duque de Alba, Ávila|Calle Don Ferreol Hernández, Ávila|Plaza de Italia, Ávila|Calle Los Leales, Ávila|Calle San Segundo, Ávila|Plaza Santa Teresa, Ávila|Plaza Ejército, Ávila|Calle San Juan de La Cruz, Ávila|Calle San Joaquín, Ávila&language=es&zoom=15&center=40.656664,-4.693685";
+				setTimeout(function(){
+					$("#route_map").attr("src",route_map_url);
+				},2000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			ITINERARIO.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" style="background-color:#5E3656;border:none;width:100%;height:400px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:center center;" seamless="seamless" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Cristo de la Luz
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Calle Cristo de la Luz, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_2" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle San Joaquín
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Calle San Joaquín, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_3" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle San Juan de la Cruz
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Calle San Juan de la Cruz, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_4" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Las Madres
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Calle Las Madres, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_5" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Padre Silverio
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Calle Padre Silverio, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_6" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Duque de Alba
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Calle Duque de Alba, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_7" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Don Ferreol Hernández
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Calle Don Ferreol Hernández, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_8" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza de Italia
+		</div>
+		<script>
+			$("#ov_place_8").click(function(e){
+				show_geoloc("Plaza Italia, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_9" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Los Leales
+		</div>
+		<script>
+			$("#ov_place_9").click(function(e){
+				show_geoloc("Calle Los Leales, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_10" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle San Segundo
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Calle San Segundo, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_11" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza Santa Teresa
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Plaza Santa Teresa, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_12" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza del Ejército
+		</div>
+		<script>
+			$("#ov_place_12").click(function(e){
+				show_geoloc("Plaza Ejército, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_13" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle San Juan de la Cruz
+		</div>
+		<script>
+			$("#ov_place_13").click(function(e){
+				show_geoloc("Calle San Juan de la Cruz, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_14" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle San Joaquín
+		</div>
+		<script>
+			$("#ov_place_14").click(function(e){
+				show_geoloc("Calle San Joaquín, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_15" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Cristo de la Luz
+		</div>
+		<script>
+			$("#ov_place_15").click(function(e){
+				show_geoloc("Calle Cristo de la Luz, Ávila");
+			});
+		</script>					
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
 	</div>
+	
 </div>	
-

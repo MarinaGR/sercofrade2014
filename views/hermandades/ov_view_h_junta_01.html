@@ -1,69 +1,58 @@
-<script>
-	$("#ov_view_container_02").css("background-color","#EBEBEB");	
-</script>
-
-<!-- Publi -->
-<div id="ov_zone_08_5" class="ov_zone_08">
+<!-- Volver -->
+<div style="display: block;" class="ov_back_button_container">
 	
-</div>
-<script>	
-	load_ads("ov_zone_08_5");	
-</script>
-<div class="ov_vertical_space_05">&nbsp;</div>
-<!-- Publi -->
-<!-- Volver -->
-<div id="ov_zone_11_1" class="ov_zone_11_b">
-	<div id="ov_text_11_h_junta" class="ov_text_11">
-		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
-	</div>
-	<script>
-		$("#ov_text_11_h_junta").click(function(e){
-			if(referrer_from_proce=="")
-			{
-				$('#ov_view_container_01').load("./views/general/ov_view_herman_01.html",function(){
-					$('#ov_view_container_01').show('slide',{direction: "left"},500);
-					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
-				});
-			}
-			else
-			{
-				$('#ov_view_container_02').load(referrer_from_proce,function(){
-					$('#ov_view_container_02').show('slide',{direction: "right"},500);
-					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-					referrer_from_proce="";				
-				});
-			}	
-		});
-	</script>
-</div>
-<div class="ov_vertical_space_06">&nbsp;</div>
-<!-- Volver -->
-
-<div id="ov_zone_13_h_junta" class="ov_zone_13_b">
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_5" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"> Volver
+		</div>
 		
-	<div id="ov_box_13_h_junta" class="ov_box_13_b">
-		<div id="ov_box_14_h_junta" class="ov_box_14">
-			<img src="styles/images/escudos/junta.jpg" id="ov_image_03_4" class="ov_image_03" alt="circle_04"/>
+		<div id="ov_back_button_6" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"> Menú
 		</div>
-		<div id="ov_box_15_h_junta" class="ov_box_15">
-			<div id="ov_text_15_h_junta" class="ov_text_15">
-				<br>			
-				Junta de Semana Santa de Ávila
-			</div>
-						
-		</div>
-		<div class="ov_clear_floats_01">&nbsp;</div>
 	</div>
 	
 </div>
-
-<div class="ov_vertical_space_01">&nbsp;</div>
-
-
-
-<div id="ov_zone_14_h_junta" class="ov_zone_14">
-	<div id="ov_box_17_h_junta" class="ov_box_17">
-		<div id="ov_text_16_h_junta" class="ov_text_16">
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_5").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_6").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div style="padding:10px;background-color:#5E3656">
+			
+			<div id="ov_large_menu_item_1" class="ov_large_menu_item">
+			
+				<div class="ov_box_circle_images">
+					
+					<img src="./resources/escudos/junta.jpg" class="ov_image_circle" alt=" ">
+					
+				</div>
+				
+				<div class="ov_box_large_menu_item_title">
+					
+					<div class="ov_text_large_menu_item_01" style="color:#FFF">Junta de Semana Santa de Ávila</div>				
+					
+				</div>
+				
+				<div class="ov_clear_floats"> </div>
+				
+			</div>
+			
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			Fue en 1954 cuando el Ilmo. Sr. D. Castor García Robledo, Vicario General del Obispado de Ávila, reunió a un grupo de cofrades e instituyo la Junta de Semana Santa de Ávila.
 			<br>
 			Los cargos estarían desempeñados por miembros de las distintas Cofradías o Patronatos que formaban parte de la misma. La Presidencia de la primera Junta se encomendó al Patronato de la Santa Vera Cruz y la Secretaria al Patronato de las Angustias y Santo Sepulcro.
@@ -77,76 +66,84 @@
 			La Junta de Semana Santa abulense fue la encargada de organizar en el año 2007 el XVII Encuentro Nacional de Cofradías Penitenciales de Semana Santa.
 		</div>
 		
-		<div id="ov_text_16_h_junta_3" class="ov_text_16">
-			<span class="ov_span_02">Datos.</span><br><br>
-			<span class="ov_span_01">Hábito:</span><br>Túnica y capucho de terciopelo negro, capa color granate y cíngulo en colores rojo y negro
-			<br><br>
-			<img src="styles/images/habitos/junta.png" class="ov_image_11"/>
-			<br><br>
-			<span class="ov_span_01">Templo de Residencia Canónica:</span><br>Ermita del Humilladero - Iglesia de San Vicente - S.A.I Catedral
-			<br><br>
-			<span class="ov_span_01">Fundación:</span><br>1954
-			<br><br>
-			<span class="ov_span_01">Hermanos:</span><br>No tiene (es la representación de todas las cofradías, patronatos y hermandades) 
-			<br><br>
-			<span class="ov_span_01">Nazarenos:</span><br>5 (Presidiendo el trono del Santísimo Cristo de las Murallas
-			<br><br>
-			<span class="ov_span_01">Atributos de los Hermanos:</span><br>Insignia de la Junta de Semana Santa de Avila (Los miembros de la Junta Directiva)
-						
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			DATOS
 		</div>
-		<div id="ov_text_16_h_junta_6" class="ov_text_16">
-			<span class="ov_span_02">Contacto.</span><br><br>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			<b>Hábito:</b><br>Túnica y capucho de terciopelo negro, capa color granate y cíngulo en colores rojo y negro
+			<img src="./resources/habitos/junta.png" style="display:block">
+			<b>Templo de Residencia Canónica:</b><br>Ermita del Humilladero - Iglesia de San Vicente - S.A.I Catedral
+			<br><br>
+			<b>Fundación:</b><br>1954.
+			<br><br>
+			<b>Hermanos:</b><br>No tiene (es la representación de todas las cofradías, patronatos y hermandades).
+			<br><br>
+			<b>Nazarenos:</b><br>5 (Presidiendo el trono del Santísimo Cristo de las Murallas).
+			<br><br>
+			<b>Atributos de los Hermanos:</b><br>Insignia de la Junta de Semana Santa de Avila (Los miembros de la Junta Directiva)
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			CONTACTO
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			Junta de Semana Santa de Ávila<br>
 			C/ Zamora s/n (antiguo Matadero)<br>
-			05005Ávila<br>
+			05005 Ávila<br>
 			Tf / fax : 920 256968<br>
 			info@juntasemanasanta-avila.com<br>
 		</div>
-		<div id="ov_text_16_h_junta_2" class="ov_text_16">
-			<span class="ov_span_02">Procesiones / Actos.</span><br><br>
-			<div id="ov_text_17_h_junta_1" class="ov_text_17">
-				Sermón de las Siete Palabras (18 de Abril, Viernes Santo)
-			</div>
-			<script>
-				$("#ov_text_17_h_junta_1").click(function(e){
-					referrer_from_herman="./views/hermandades/ov_view_h_junta_01.html";
-					$('#ov_view_container_02').load("./views/procesiones/ov_view_sermon_01.html",function(){
-						$('#ov_view_container_02').show('slide',{direction: "right"},500);
-						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-						$('body,html').scrollTop("0px");				
-					});	
-				});
-			</script>
-			<br>
-			<div id="ov_text_17_h_junta_2" class="ov_text_17">
-				Procesion de la Pasión y Santo Entierro (18 de Abril, Viernes Santo)
-			</div>
-			<script>
-				$("#ov_text_17_h_junta_2").click(function(e){
-					referrer_from_herman="./views/hermandades/ov_view_h_junta_01.html";
-					$('#ov_view_container_02').load("./views/procesiones/ov_view_pasion_01.html",function(){
-						$('#ov_view_container_02').show('slide',{direction: "right"},500);
-						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-						$('body,html').scrollTop("0px");				
-					});	
-				});
-			</script>
-		</div>	
-		<div id="ov_text_16_h_junta_4" class="ov_text_16">
-			<span class="ov_span_02">Pasos.</span><br><br>			
-			<div id="ov_text_18_h_junta_3" class="ov_text_18">
-				<span class="ov_span_03">Santísimo Cristo de las Murallas</span>
-				<div id="ov_text_19_h_junta_3" class="ov_text_19">					
-				    Autor: D. Nicomedes García Piquero <br>
-				    Fecha: 2000<br>
-				    Este Cristo es el simbolo de la unión entre todas las cofradías y va acompañado siempre por la Junta de Semana Santa de Ávila				   
-					<br><br>
-					<img src="styles/images/pasos/cristo_murallas.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>			
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PROCESIONES / ACTOS
 		</div>
-			
+		
+		<div id="ov_to_herman" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Sermón de las Siete Palabras (18 de Abril, Viernes Santo)
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_sermon_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+				
+		<div id="ov_to_herman_02" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Procesion de la Pasión y Santo Entierro (18 de Abril, Viernes Santo)
+		</div>
+		<script>
+			$("#ov_to_herman_02").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_pasion_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+				
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Santísimo Cristo de las Murallas
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: D. Nicomedes García Piquero <br>
+		    Fecha: 2000<br>
+		    Este Cristo es el simbolo de la unión entre todas las cofradías y va acompañado siempre por la Junta de Semana Santa de Ávila				   
+			<br><br>
+			<img src="./resources/pasos/cristo_murallas.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
 	</div>
+	
 </div>	
-

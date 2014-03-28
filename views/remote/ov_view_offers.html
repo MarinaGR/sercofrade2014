@@ -1,0 +1,47 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_1" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_2" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_1").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_2").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+	
+	<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Presenta estos cupones a nuestros patrocinadores para obtener ventajas y descuentos.<br>
+			Para acceder a las ofertas necesitas una conexión a Internet.
+	</div>
+	
+	<iframe id="offers_frame" style="background-color:#5E3656;border:none;width:100%;height:2000px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:50% 20px;" seamless="seamless" src=""> </iframe>
+	<script>
+		var offers_url="http://sercofradeavila.com/server/publicidad/loader_offer.php?day="+current_day_of_month+"&month="+current_month;
+		setTimeout(function(){
+			$("#offers_frame").attr("src",offers_url);
+		},2000);
+	</script>		
+	
+	</div>
+</div>	

@@ -1,180 +1,182 @@
-<script>
-	$("#ov_view_container_02").css("background-color","#EBEBEB");	
-</script>
-<!-- Publi -->
-<div id="ov_zone_08_4" class="ov_zone_08">
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
 	
 </div>
-<script>	
-	load_ads("ov_zone_08_4");	
-</script>
-<div class="ov_vertical_space_05">&nbsp;</div>
-<!-- Publi -->
-<!-- Volver -->
-<div id="ov_zone_11_1" class="ov_zone_11_b">
-	<div id="ov_text_11_sermon" class="ov_text_11">
-		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
-	</div>
-	<script>
-		$("#ov_text_11_sermon").click(function(e){
-			if(referrer_from_herman=="")
-			{
-				$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
-					$('#ov_view_container_01').show('slide',{direction: "left"},500);
-					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
-				});
-			}
-			else
-			{
-				$('#ov_view_container_02').load(referrer_from_herman,function(){
-					$('#ov_view_container_02').show('slide',{direction: "right"},500);
-					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-					referrer_from_herman="";				
-				});
-			}
-				
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
 		});
-	</script>
-</div>
-<div class="ov_vertical_space_06">&nbsp;</div>
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
 <!-- Volver -->
-
-<div id="ov_zone_13_sermon" class="ov_zone_13_b">
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
 		
-	<div id="ov_box_13_sermon" class="ov_box_13_b">
-		<div id="ov_box_14_sermon" class="ov_box_14">
-			<div id="ov_text_12_sermon" class="ov_text_12_b">
+		<div style="padding:10px;background-color:#5E3656">
+			
+			<div style="font-family:'3';font-size:1.7em;color:#FFF;padding-bottom:10px;text-align:left;">
 				SERMÓN DE LAS SIETE PALABRAS
 			</div>
-			<div id="ov_text_13_sermon" class="ov_text_13">
-				día 18<br>
-				Viernes Santo<br><br> 
+			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
+				18 de Abril - Viernes Santo
 			</div>
-		</div>
-		<div id="ov_box_15_sermon" class="ov_box_15">
-			<div id="ov_text_15_sermon" class="ov_text_15">
-				Cuándo y Dónde:
+			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
+				A las <b>12 00h</b> en la Iglesia San Ignacio de Loyola en Plaza Teniente Arévalo
 			</div>
-			<div id="ov_text_14_sermon" class="ov_text_14">
-				12 00h<br>
-				Iglesia de San Ignacio de Loyola<br>
-				Plaza Teniente Arévalo
-			</div>				
-		</div>
-		<div class="ov_clear_floats_01">&nbsp;</div>
-	</div>
-	
-</div>
-
-<div class="ov_vertical_space_01">&nbsp;</div>
-
-<div id="ov_zone_14_sermon" class="ov_zone_14">
-	<div id="ov_box_17_sermon" class="ov_box_17">
-		
-		<div id="ov_text_16_sermon" class="ov_text_16">
-			 Organizado por la Junta de Semana Santa de Ávila, se celebraba tradicionalmente en el Mercado Chico presidido por el Paso de "la Tercera Palabra" del Iltre. Patronato de la Santa Vera Cruz.
-			 <br>
-			 Este año se celebrará en la Iglesia de S. Ignacio de Loyola.
+			
 		</div>
 		
-		<div id="ov_text_16_sermon_2" class="ov_text_16">
-			<span class="ov_span_02">Organiza.</span><br><br>
-			<div id="ov_text_17_sermon_1" class="ov_text_17">
-				Junta de Semana Santa de Ávila
-			</div>
-			<script>
-				$("#ov_text_17_sermon_1").click(function(e){
-					referrer_from_proce="./views/procesiones/ov_view_sermon_01.html";
-					$('#ov_view_container_02').load("./views/hermandades/ov_view_h_junta_01.html",function(){
-						$('#ov_view_container_02').show('slide',{direction: "right"},500);
-						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-						$('body,html').scrollTop("0px");				
-					});	
-				});
-			</script>
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Organizado por la Junta de Semana Santa de Ávila, se celebraba tradicionalmente en el Mercado Chico presidido por el Paso de "la Tercera Palabra" del Iltre. Patronato de la Santa Vera Cruz.
+			<br>
+			Este año se celebrará en la Iglesia de S. Ignacio de Loyola.
 		</div>
 		
-		<div id="ov_text_16_sermon_3" class="ov_text_16">
-			<span class="ov_span_02">Hábito.</span><br><br>
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Junta de Semana Santa de Ávila
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/ov_view_h_junta_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			HÁBITO.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			Túnica y capucho de terciopelo negro, capa color granate y cíngulo en colores rojo y negro.
+			<img src="./resources/habitos/junta.png" style="display:block"/>
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			La Tercera Palabra
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: "El Cristo de Anaya", atribuido a Juan Bautista Vazquez "El Viejo", San Juan y la Virgen anónimos
+			<br>
+			Fecha: "El Cristo de Anaya" 1580, San Juan y la Virgen mediados del s. XVIII
 			<br><br>
-			<img src="styles/images/habitos/junta.png" class="ov_image_11"/>
+			Paso de misterio compuesto por la figura de la Virgen y San Juan , de pie, junto a la Cruz, recibiendo el mensaje que Cristo le manifiesta en su Tercera Palabra; la figura de Cristo es una talla impresionante, de autor desconocido, aunque presenta unas características muy similares al Cristo de Burgos, que se venera en la Ciudad de Sevilla, cuyo autor es Juan Bautista Vázquez "El Viejo", escultor que trabajó en Ávila hasta 1561 en que se traslado a Sevilla, donde talló aquella imagen , que nos ha hecho pensar en que sea el autor de este Cristo de la Buena Muerte, que adquirió el Canonigo Anaya, para la capilla que edificó en el Claustro de la Catedral de Ávila
+			<br><br>
+			<img src="./resources/pasos/veracruz_palabra.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>			
+		</div>
+								
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			ORADOR.
 		</div>
 		
-		<div id="ov_text_16_sermon_4" class="ov_text_16">
-			<span class="ov_span_02">Pasos.</span><br><br>
-			<div id="ov_text_18_sermon_1" class="ov_text_18">
-				<span class="ov_span_03">La Tercera Palabra</span>
-				<div id="ov_text_19_pasos_8" class="ov_text_19">					
-				    Autor: "El Cristo de Anaya", atribuido a Juan Bautista Vazquez "El Viejo", San Juan y la Virgen anónimos<br>
-				    Fecha: "El Cristo de Anaya" 1580, San Juan y la Virgen mediados del s. XVIII<br>
-				    Paso de misterio compuesto por la figura de la Virgen y San Juan , de pie, junto a la Cruz, recibiendo el mensaje que Cristo le manifiesta en su Tercera Palabra; la figura de Cristo es una talla impresionante, de autor desconocido, aunque presenta unas características muy similares al Cristo de Burgos, que se venera en la Ciudad de Sevilla, cuyo autor es Juan Bautista Vázquez "El Viejo", escultor que trabajó en Ávila hasta 1561 en que se traslado a Sevilla, donde talló aquella imagen , que nos ha hecho pensar en que sea el autor de este Cristo de la Buena Muerte, que adquirió el Canonigo Anaya, para la capilla que edificó en el Claustro de la Catedral de Ávila
-					<br><br>
-					<img src="styles/images/pasos/veracruz_faz.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>																		
-		</div>
-		
-		<div id="ov_text_16_sermon_9" class="ov_text_16">
-			<span class="ov_span_02">Orador.</span><br><br>
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			P. David Jiménez Herrero, Prior del Convento de los Padres Carmelitas de la Santa
 		</div>
 		
-		<div id="ov_text_16_sermon_6" class="ov_text_16">
-			<span class="ov_span_02">Actuación.</span><br><br>
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			ACTÚA.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			Camerata Abulense
 		</div>
 		
-		<div id="ov_text_16_sermon_5" class="ov_text_16">
-			<span class="ov_span_02">Mapa.</span>
-			
-			<br><br>
-			La lectura del Sermón tendrá lugar en la <span class="ov_span_03">Iglesia de San Ignacio de Loyola</span>, Plaza Teniente Arévalo
-			<br><br>
-			
-			<iframe id="ov_mapa_ruta_sermon_1" style="width:100%;height:300px;border:none"  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&q=Plaza Teniente Arévalo, Ávila&language=es&zoom=15">Para acceder al mapa necesitas una conexión activa</iframe>
-								
-			<br>
-			<script>
-				current_url="https://www.google.com/maps/embed/v1/place?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&q=Plaza Teniente Arévalo, Ávila&language=es&zoom=15";
-				draw_map(current_url,'ov_mapa_ruta_sermon_1');
-			</script>
-			<div class="ov_button_01" id="ov_button_01_sermon_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_sermon_1')">
-				Actualizar Mapa
-			</div>
-			<br>
-			
-			<span class="ov_span_03">Donde:</span>
-			<br>
-			<i>Pulsa abajo para obtener una ruta desde tu ubicación actual</i>
-			
-			<div id="ov_geo_route_2" style="display:none">
-				<br><br>
-
-				<iframe id="ov_mapa_ruta_sermon_2" style="width:100%;height:300px;border:none"  src="">Espera, por favor...</iframe>
-			
-				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
-					
-				</div>				
-				<div class="ov_button_01" id="ov_button_01_sermon_refresh_map" onclick="show_route_2(destination,'15',destination_center,destination_container,destination_big_container);">
-				Actualizar posición
-				</div>
-				<br>
-				<div class="ov_button_01" id="ov_button_01_sermon_hide_map" onclick="$('#ov_geo_route_2').hide()">
-				Ocultar
-				</div>					
-			</div>
-			
-			<br><br>
-			<span class="ov_span_04" id="ov_place_sermon_1">Plaza Teniente Arévalo</span>
-			<script>
-				$("#ov_place_sermon_1").click(function(e){
-					show_route_2("Plaza Teniente Arévalo","","","ov_mapa_ruta_sermon_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>											
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			MAPA.
 		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			La lectura tendrá lugar en la Iglesia de San Ignacio de Loyola, en Plaza Teniente Arévalo.
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<iframe id="route_map" style="background-color:#5E3656;border:none;width:100%;height:400px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:center center;" seamless="seamless" src=""> 
+				
+			</iframe>
+			<script>
+				route_map_url="https://www.google.com/maps/embed/v1/place?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&q=Plaza Teniente Arévalo, Ávila&language=es&zoom=15";
+				setTimeout(function(){
+					$("#route_map").attr("src",route_map_url);
+				},2000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			DIRECCIÓN.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Pulsa sobre la dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" style="background-color:#5E3656;border:none;width:100%;height:400px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:center center;" seamless="seamless" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza Teniente Arévalo
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Plaza Teniente Arévalo, Ávila");
+			});
+		</script>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
 	</div>
+	
 </div>	
-

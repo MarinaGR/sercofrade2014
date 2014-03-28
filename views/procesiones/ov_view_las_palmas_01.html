@@ -1,77 +1,50 @@
-<script>
-	$("#ov_view_container_02").css("background-color","#EBEBEB");	
-</script>
-<!-- Publi -->
-<div id="ov_zone_08_4" class="ov_zone_08">
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
 	
 </div>
-<script>	
-	load_ads("ov_zone_08_4");	
-</script>
-<div class="ov_vertical_space_05">&nbsp;</div>
-<!-- Publi -->
-<!-- Volver -->
-<div id="ov_zone_11_1" class="ov_zone_11_b">
-	<div id="ov_text_11_las_palmas" class="ov_text_11">
-		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
-	</div>
-	<script>
-		$("#ov_text_11_las_palmas").click(function(e){
-			if(referrer_from_herman=="")
-			{
-				$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
-					$('#ov_view_container_01').show('slide',{direction: "left"},500);
-					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
-				});
-			}
-			else
-			{
-				$('#ov_view_container_02').load(referrer_from_herman,function(){
-					$('#ov_view_container_02').show('slide',{direction: "right"},500);
-					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-					referrer_from_herman="";				
-				});
-			}
-				
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
 		});
-	</script>
-</div>
-<div class="ov_vertical_space_06">&nbsp;</div>
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
 <!-- Volver -->
-
-<div id="ov_zone_13_las_palmas" class="ov_zone_13_b">
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
 		
-	<div id="ov_box_13_las_palmas" class="ov_box_13_b">
-		<div id="ov_box_14_las_palmas" class="ov_box_14">
-			<div id="ov_text_12_las_palmas" class="ov_text_12_b">
+		<div style="padding:10px;background-color:#5E3656">
+			
+			<div style="font-family:'3';font-size:1.7em;color:#FFF;padding-bottom:10px;text-align:left;">
 				PROCESIÓN DE "LAS PALMAS"
 			</div>
-			<div id="ov_text_13_las_palmas" class="ov_text_13">
-				día 13<br>
-				Domingo de Ramos<br><br> 
+			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
+				13 de Abril - Domingo de Ramos
 			</div>
-		</div>
-		<div id="ov_box_15_las_palmas" class="ov_box_15">
-			<div id="ov_text_15_las_palmas" class="ov_text_15">
-				Salida:
+			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
+				Salida al finalizar la Misa Mayor de las 11:00h en S.A.I Catedral, en Plaza de la Catedral, 9
 			</div>
-			<div id="ov_text_14_las_palmas" class="ov_text_14">
-				Salida al finalizar la Misa Mayor de las 11 00h<br>
-				S.A.I Catedral<br>
-				Plaza de la Catedral
-			</div>				
+			
 		</div>
-		<div class="ov_clear_floats_01">&nbsp;</div>
-	</div>
-	
-</div>
-
-<div class="ov_vertical_space_01">&nbsp;</div>
-
-<div id="ov_zone_14_las_palmas" class="ov_zone_14">
-	<div id="ov_box_17_las_palmas" class="ov_box_17">
 		
-		<div id="ov_text_16_las_palmas" class="ov_text_16">
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			La Procesión de la Borriquilla se inicia en 1944, fecha en la que la Juventud Católico Antoniana del Convento de San Antonio adquirió en la Casa Alsina de Madrid el paso con la figura de Cristo montado en la borriquilla en aptitud de bendecir.
 			<br>
 			Posteriormente los Padres Franciscanos asociaron a la procesión a los niños de los colegios y escuelas de la ciudad que desde entonces salen de la S.A.I. Catedral y desfilan jubilosos hasta la iglesia del convento de los P.P. Franciscanos.
@@ -79,184 +52,227 @@
 			Este paso a diferencia de otros no tiene Cofradía propia.
 		</div>
 		
-		<div id="ov_text_16_las_palmas_2" class="ov_text_16">
-			<span class="ov_span_02">Organiza.</span>
-			<br><br>
-			<div id="ov_text_17_las_palmas_1" class="ov_text_17">
-				Padres Franciscanos, Real e Il. Esclavitud de Ntro. Padre Jesús Nazareno "Medinaceli" y Juventud Antoniana
-			</div>
-			<script>
-				$("#ov_text_17_las_palmas_1").click(function(e){
-					referrer_from_proce="./views/procesiones/ov_view_las_palmas_01.html";
-					$('#ov_view_container_02').load("./views/hermandades/ov_view_h_franciscanos_01.html",function(){
-						$('#ov_view_container_02').show('slide',{direction: "right"},500);
-						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-						$('body,html').scrollTop("0px");				
-					});	
-				});
-			</script>
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			ORGANIZA.
 		</div>
 		
-		<div id="ov_text_16_las_palmas_3" class="ov_text_16">
-			<span class="ov_span_02">Hábito.</span><br><br>
-			Túnica de color morado; cíngulo, capa y esclavina en color blanco (Archicofradía de Jesús de Medinaceli).<br>
+		<div id="ov_to_herman" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Padres Franciscanos, Real e Il. Esclavitud de Ntro. Padre Jesús Nazareno "Medinaceli" y Juventud Antoniana
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/ov_view_h_franciscanos_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			HÁBITO.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Túnica de color morado; cíngulo, capa y esclavina en color blanco (Archicofradía de Jesús de Medinaceli).
+			<img src="./resources/habitos/las_palmas.png" style="display:block"/>
 			Túnica en color marrón franciscano, cíngulo blanco y capa en blanco con la Cruz de Jerusalén (Juventud Antoniana).
-			<br><br>
-			<img src="styles/images/habitos/las_palmas.png" class="ov_image_11"/>
-			<img src="styles/images/habitos/las_palmas_2.png" class="ov_image_11"/>
+			<img src="./resources/habitos/las_palmas_2.png" style="display:block"/>
 		</div>
 		
-		<div id="ov_text_16_las_palmas_4" class="ov_text_16">
-			<span class="ov_span_02">Pasos.</span>
-			<br><br>
-			<div id="ov_text_18_las_palmas_1" class="ov_text_18">
-				<span class="ov_span_03">Entrada de Jesús en Jerusalén</span>
-				<div id="ov_text_19_las_palmas_1" class="ov_text_19">					
-				    Autor: Talleres de Arte Cristiano de Olot. Adquirido en la Casa Alsina de Madrid<br>
-				    Fecha: 1944<br>
-				    Paso de misterio de 5 figuras
-				    <br><br>
-					<img src="styles/images/pasos/jesus_franciscanos.jpg" class="ov_image_12"/>
-					<br>					
-				</div>
-			</div>
-			<div id="ov_text_18_las_palmas_2" class="ov_text_18">
-				<span class="ov_span_03">Nuestra Señora de los Infantes</span>
-				<div id="ov_text_19_las_palmas_2" class="ov_text_19">					
-				    Autor: Anónimo<br>
-				    Fecha: Finales s. XIX
-				    <br><br>
-					<img src="styles/images/pasos/infante_franciscanos.jpg" class="ov_image_12"/>
-					<br>				    				
-				</div>
-			</div>					
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PASOS.
 		</div>
 		
-		<div id="ov_text_16_las_palmas_6" class="ov_text_16">
-			<span class="ov_span_02">Música.</span>
-			<br><br>
+		<div class="hollow_10px"> </div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Entrada de Jesús en Jerusalén
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Talleres de Arte Cristiano de Olot. Adquirido en la Casa Alsina de Madrid
+			<br>
+			Fecha: 1944
+			<br><br>			
+			<img src="./resources/pasos/jesus_franciscanos.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Nuestra Señora de los Infantes
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Anónimo
+			<br>
+			Fecha: Finales s. XIX
+			<br><br>			
+			<img src="./resources/pasos/infante_franciscanos.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>			
+		</div>
+				
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			MÚSICA.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			Banda de Cornetas y Tambores de la Oración en el Huerto de Medina del Campo.
 		</div>
 		
-		<div id="ov_text_16_las_palmas_5" class="ov_text_16">
-			<span class="ov_span_02">Ruta.</span>
-			
-			<br><br>
-			Con salida desde <span class="ov_span_03">Plaza de La Catedral</span> y llegada en <span class="ov_span_03">Plaza San Antonio</span>.
-			<br><br>
-			
-			<iframe id="ov_mapa_ruta_las_palmas_1" style="width:100%;height:300px;border:none"  src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza Santa Teresa, Ávila&destination=Plaza Santa Teresa, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle San Segundo, Ávila|Plaza Catedral, Ávila|Calle Alemania, Ávila|Plaza Teniente Arévalo, Ávila|Calle Cardenal Pla y Deniel, Ávila|Plaza Pedro Dávila, Ávila|Calle Caballeros, Ávila|Plaza Mercado Chico, Ávila|Plaza Zurraquín, Ávila|Calle Tomás Luis de Victoria, Ávila|Plaza Catedral, Ávila|Calle San Segundo, Ávila&language=es&zoom=15&center=40.656567,-4.698075">Para acceder al mapa necesitas una conexión activa</iframe>	
-						
-			<br>
-			<script>
-				current_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza Catedral, Ávila&destination=Plaza San Antonio, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle San Segundo, Ávila|Plaza Santa Teresa, Ávila|Calle Comandante Albarrán, Ávila|Calle Duque de Alba, Ávila|Calle Isaac Peral, Ávila|Plaza Santa Ana, Ávila|Paseo de la Estacion, Ávila|Calle Ferrocarril, Ávila|Calle La Sierpe, Ávila&language=es&zoom=14&center=40.660164,-4.692457";
-				draw_map(current_url,'ov_mapa_ruta_las_palmas_1');
-			</script>
-			<div class="ov_button_01" id="ov_button_01_las_palmas_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_las_palmas_1')">
-				Actualizar Mapa
-			</div>
-			<br>
-			
-			<span class="ov_span_03">Itinerario:</span>
-			<br>
-			<i>Pulsa sobre cualquier punto abajo para obtener una ruta desde tu ubicación actual</i>
-			
-			<div id="ov_geo_route_2" style="display:none">
-				<br><br>
-				
-				<iframe id="ov_mapa_ruta_las_palmas_2" style="width:100%;height:300px;border:none"  src="">Espera, por favor...</iframe>
-
-				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
-					
-				</div>				
-				<div class="ov_button_01" id="ov_button_01_las_palmas_refresh_map" onclick="show_route_2(destination,'15',destination_center,destination_container,destination_big_container);">
-				Actualizar posición
-				</div>
-				<br>
-				<div class="ov_button_01" id="ov_button_01_las_palmas_hide_map" onclick="$('#ov_geo_route_2').hide()">
-				Ocultar
-				</div>					
-			</div>
-			
-			<br><br>
-			<span class="ov_span_04" id="ov_place_las_palmas_1">Plaza de La Catedral</span>
-			<script>
-				$("#ov_place_las_palmas_1").click(function(e){
-					show_route_2("Plaza Catedral, Ávila","","","ov_mapa_ruta_las_palmas_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_las_palmas_2">Calle San Segundo</span>
-			<script>
-				$("#ov_place_las_palmas_2").click(function(e){
-					show_route_2("Calle San Segundo, Ávila","","","ov_mapa_ruta_las_palmas_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_las_palmas_3">Plaza Santa Teresa</span>
-			<script>
-				$("#ov_place_las_palmas_3").click(function(e){
-					show_route_2("Plaza Santa Teresa, Ávila","","","ov_mapa_ruta_las_palmas_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>			
-			<span class="ov_span_04" id="ov_place_las_palmas_4">Calle Comandante Albarrán</span>
-			<script>
-				$("#ov_place_las_palmas_4").click(function(e){
-					show_route_2("Calle Comandante Albarrán, Ávila","","","ov_mapa_ruta_las_palmas_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>			
-			<span class="ov_span_04" id="ov_place_las_palmas_5">Calle Duque de Alba</span>
-			<script>
-				$("#ov_place_las_palmas_5").click(function(e){
-					show_route_2("Calle Duque de Alba, Ávila","","","ov_mapa_ruta_las_palmas_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_las_palmas_6">Calle Isaac Peral</span>
-			<script>
-				$("#ov_place_las_palmas_6").click(function(e){
-					show_route_2("Calle Isaac Peral, Ávila","","","ov_mapa_ruta_las_palmas_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_las_palmas_7">Plaza Santa Ana</span>
-			<script>
-				$("#ov_place_las_palmas_7").click(function(e){
-					show_route_2("Plaza Santa Ana, Ávila","","","ov_mapa_ruta_las_palmas_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_las_palmas_8">Paseo de la Estación</span>
-			<script>
-				$("#ov_place_las_palmas_8").click(function(e){
-					show_route_2("Paseo de la Estacion, Ávila","","","ov_mapa_ruta_las_palmas_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_las_palmas_9">Calle Ferrocarril</span>
-			<script>
-				$("#ov_place_las_palmas_9").click(function(e){
-					show_route_2("Calle Ferrocarril, Ávila","","","ov_mapa_ruta_las_palmas_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_las_palmas_10">Calle La Sierpe</span>
-			<script>
-				$("#ov_place_las_palmas_10").click(function(e){
-					show_route_2("Calle La Sierpe, Ávila","","","ov_mapa_ruta_las_palmas_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_las_palmas_11">Plaza San Antonio</span>
-			<script>
-				$("#ov_place_las_palmas_11").click(function(e){
-					show_route_2("Plaza San Antonio, Ávila","","","ov_mapa_ruta_las_palmas_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>							
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			MAPA DE LA RUTA.
 		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Con salida en S.A.I Catedral, en Plaza de la Catedral, 9 y llegada en la Iglesia de San Antonio, en Plaza San Antonio.
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<iframe id="route_map" style="background-color:#5E3656;border:none;width:100%;height:400px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:center center;" seamless="seamless" src=""> 
+				
+			</iframe>
+			<script>
+				route_map_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza Catedral, Ávila&destination=Plaza San Antonio, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle San Segundo, Ávila|Plaza Santa Teresa, Ávila|Calle Comandante Albarrán, Ávila|Calle Duque de Alba, Ávila|Calle Isaac Peral, Ávila|Plaza Santa Ana, Ávila|Paseo de la Estacion, Ávila|Calle Ferrocarril, Ávila|Calle La Sierpe, Ávila&language=es&zoom=14&center=40.660164,-4.692457";
+				setTimeout(function(){
+					$("#route_map").attr("src",route_map_url);
+				},2000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			ITINERARIO.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" style="background-color:#5E3656;border:none;width:100%;height:400px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:center center;" seamless="seamless" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza Catedral
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Plaza Catedral, 9, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_2" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle San Segundo
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Calle San Segundo, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_3" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza de Santa Teresa
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Plaza Santa Teresa, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_4" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Comandante Albarrán
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Calle Comandante Albarrán, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_5" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Duque de Alba
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Calle Duque de Alba, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_6" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Isaac Peral
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Calle Isaac Peral, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_7" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza Santa Ana
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Plaza Santa Ana, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_8" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Paseo de la Estación
+		</div>
+		<script>
+			$("#ov_place_8").click(function(e){
+				show_geoloc("Paseo de la Estacion, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_9" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Ferrocarril
+		</div>
+		<script>
+			$("#ov_place_9").click(function(e){
+				show_geoloc("Calle Ferrocarril, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_10" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle La Sierpe
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Calle la Sierpe, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_11" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza San Antonio
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Plaza San Antonio, Ávila");
+			});
+		</script>		
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
 	</div>
+	
 </div>	
-

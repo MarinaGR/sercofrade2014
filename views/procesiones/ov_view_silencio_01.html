@@ -1,256 +1,278 @@
-<script>
-	$("#ov_view_container_02").css("background-color","#EBEBEB");	
-</script>
-<!-- Publi -->
-<div id="ov_zone_08_4" class="ov_zone_08">
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
 	
 </div>
-<script>	
-	load_ads("ov_zone_08_4");	
-</script>
-<div class="ov_vertical_space_05">&nbsp;</div>
-<!-- Publi -->
-<!-- Volver -->
-<div id="ov_zone_11_1" class="ov_zone_11_b">
-	<div id="ov_text_11_silencio" class="ov_text_11">
-		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
-	</div>
-	<script>
-		$("#ov_text_11_silencio").click(function(e){
-			if(referrer_from_herman=="")
-			{
-				$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
-					$('#ov_view_container_01').show('slide',{direction: "left"},500);
-					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
-				});
-			}
-			else
-			{
-				$('#ov_view_container_02').load(referrer_from_herman,function(){
-					$('#ov_view_container_02').show('slide',{direction: "right"},500);
-					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-					referrer_from_herman="";				
-				});
-			}
-				
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
 		});
-	</script>
-</div>
-<div class="ov_vertical_space_06">&nbsp;</div>
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
 <!-- Volver -->
-
-<div id="ov_zone_13_silencio" class="ov_zone_13_b">
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
 		
-	<div id="ov_box_13_silencio" class="ov_box_13_b">
-		<div id="ov_box_14_silencio" class="ov_box_14">
-			<div id="ov_text_12_silencio" class="ov_text_12_b">
+		<div style="padding:10px;background-color:#5E3656">
+			
+			<div style="font-family:'3';font-size:1.7em;color:#FFF;padding-bottom:10px;text-align:left;">
 				PROCESIÓN DEL SILENCIO
 			</div>
-			<div id="ov_text_13_silencio" class="ov_text_13">
-				día 16<br>
-				Miércoles Santo<br><br> 
+			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
+				16 de Abril - Miércoles Santo
 			</div>
-		</div>
-		<div id="ov_box_15_silencio" class="ov_box_15">
-			<div id="ov_text_15_silencio" class="ov_text_15">
-				Salida:
+			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
+				Salida a las <b>20 30h</b> desde la Iglesia de San Nicolás, en Plaza de San Nicolás
 			</div>
-			<div id="ov_text_14_silencio" class="ov_text_14">
-				20 30h<br>
-				Iglesia de San Nicolás<br>
-				Plaza de San Nicolás
-			</div>				
-		</div>
-		<div class="ov_clear_floats_01">&nbsp;</div>
-	</div>
-	
-</div>
-
-<div class="ov_vertical_space_01">&nbsp;</div>
-
-<div id="ov_zone_14_silencio" class="ov_zone_14">
-	<div id="ov_box_17_silencio" class="ov_box_17">
-		
-		<div id="ov_text_16_silencio" class="ov_text_16">
-			 El Miércoles Santo sale la procesión del Silencio, organizada por la Cofradía de Ntra. Sra. de las Angustias.
-			 <br>
-			 Acompaña tres pasos entre los que destaca la Virgen de las Angustias, de la Escuela Castellana del siglo XVI, una 'piedad' que sostiene en su regazo el cuerpo inerte de su Hijo recién bajado de la Cruz.
-			 <br>
-			 La Madre de Dios va precedida en el cortejo por el Santo Cristo Arrodillado (Nazareno con la Cruz al hombro a punto de caer) y el Stmo. Cristo de la Agonía, un crucificado adquirido en la madrileña Casa Garín a principios de los años 80 del S.XX.
+			
 		</div>
 		
-		<div id="ov_text_16_silencio_2" class="ov_text_16">
-			<span class="ov_span_02">Organiza.</span><br><br>
-			<div id="ov_text_17_silencio_1" class="ov_text_17">
-				Cofradía de Ntra. Sra. de las Angustias
-			</div>
-			<script>
-				$("#ov_text_17_silencio_1").click(function(e){
-					referrer_from_proce="./views/procesiones/ov_view_silencio_01.html";
-					$('#ov_view_container_02').load("./views/hermandades/ov_view_h_angustias_01.html",function(){
-						$('#ov_view_container_02').show('slide',{direction: "right"},500);
-						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-						$('body,html').scrollTop("0px");				
-					});	
-				});
-			</script>
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			El Miércoles Santo sale la procesión del Silencio, organizada por la Cofradía de Ntra. Sra. de las Angustias.
+			<br>
+			Acompaña tres pasos entre los que destaca la Virgen de las Angustias, de la Escuela Castellana del siglo XVI, una 'piedad' que sostiene en su regazo el cuerpo inerte de su Hijo recién bajado de la Cruz.
+			<br>
+			La Madre de Dios va precedida en el cortejo por el Santo Cristo Arrodillado (Nazareno con la Cruz al hombro a punto de caer) y el Stmo. Cristo de la Agonía, un crucificado adquirido en la madrileña Casa Garín a principios de los años 80 del S.XX.
 		</div>
 		
-		<div id="ov_text_16_silencio_3" class="ov_text_16">
-			<span class="ov_span_02">Hábito.</span><br><br>
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Cofradía de Ntra. Sra. de las Angustias
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/ov_view_h_angustias_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			HÁBITO.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			Túnica de color azul, con la capa y el antifaz blancos.
+			<img src="./resources/habitos/silencio.png" style="display:block"/>
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Nuestra Señora de las Angustias
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Escuela Abulense
+			<br>
+			Fecha: s.XVI
 			<br><br>
-			<img src="styles/images/habitos/silencio.png" class="ov_image_11"/>
+			Constituye una muestra de la expresión dolorosa de una Madre con el corazón traspasado, que apenas puede sostener en sus brazos el cuerpo muerto de su Hijo, recien bajado de la Cruz.
+			<br><br>			
+			<img src="./resources/pasos/silencio_angustias.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>			
 		</div>
 		
-		<div id="ov_text_16_silencio_4" class="ov_text_16">
-			<span class="ov_span_02">Pasos.</span><br><br>
-			<div id="ov_text_18_silencio_1" class="ov_text_18">
-				<span class="ov_span_03">Nuestra Señora de las Angustias</span>
-				<div id="ov_text_19_silencio_1" class="ov_text_19">					
-				    Autor: Escuela Abulense<br>
-				    Fecha:   s.XVI<br>
-				    Constituye una muestra de la expresión dolorosa de una Madre con el corazón traspasado, que apenas puede sostener en sus brazos el cuerpo muerto de su Hijo, recien bajado de la Cruz.
-					<br><br>
-					<img src="styles/images/pasos/silencio_angustias.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_silencio_2" class="ov_text_18">
-				<span class="ov_span_03">Cristo de la Agonía</span>
-				<div id="ov_text_19_silencio_2" class="ov_text_19">					
-				    Autor: Casa Garín de Madrid<br>
-				    Fecha:   1984<br>
-				    La Cofradía adquirió en la casa "Garín" de Madrid una nueva imagen de Cristo en la Cruz, que le representa en el momento de su muerte, por lo que ha recibido el título de Cristo de la Agonía
-					<br><br>
-					<img src="styles/images/pasos/silencio_agonia.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_silencio_3" class="ov_text_18">
-				<span class="ov_span_03">Santísimo Cristo Arrodillado</span>
-				<div id="ov_text_19_silencio_3" class="ov_text_19">					
-				    Autor: D. José Francisco Javier Díaz Pintor<br>
-				    Fecha:   1993<br>
-				    Imagen con la figura de Cristo en el momento de caer al suelo, bajo la cruz, que le dio el nombre de Cristo arrodillado, talla de madera, obra del escultor D.José Francisco Javier Díaz Pintor, natural del pueblo abulense de San Esteban del Valle.
-					<br><br>
-					<img src="styles/images/pasos/silencio_arrodillado.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>												
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Cristo de la Agonía
 		</div>
 		
-		<div id="ov_text_16_silencio_6" class="ov_text_16">
-			<span class="ov_span_02">Música.</span><br><br>
-			Banda de Cornetas y Tambores Santísimo Cristo a la Columna "El Amarrado".<br>
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Casa Garín de Madrid
+			<br>
+			Fecha: 1984
+			<br><br>
+			La Cofradía adquirió en la casa "Garín" de Madrid una nueva imagen de Cristo en la Cruz, que le representa en el momento de su muerte, por lo que ha recibido el título de Cristo de la Agonía
+			<br><br>			
+			<img src="./resources/pasos/silencio_agonia.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Santísimo Cristo Arrodillado
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: D. José Francisco Javier Díaz Pintor
+			<br>
+			Fecha: 1993
+			<br><br>
+			Imagen con la figura de Cristo en el momento de caer al suelo, bajo la cruz, que le dio el nombre de Cristo arrodillado, talla de madera, obra del escultor D.José Francisco Javier Díaz Pintor, natural del pueblo abulense de San Esteban del Valle.
+			<br><br>			
+			<img src="./resources/pasos/silencio_arrodillado.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>			
+		</div>
+								
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			MÚSICA.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Banda de Cornetas y Tambores Santísimo Cristo a la Columna "El Amarrado".
+			<br><br>
 			Banda de Cornetas y Tambores Cristo del Despojo de  Valladolid.
 		</div>
 		
-		<div id="ov_text_16_silencio_5" class="ov_text_16">
-			<span class="ov_span_02">Ruta.</span>
-			
-			<br><br>
-			Con salida en la <span class="ov_span_03">Plaza de San Nicolás</span> y llegada en <span class="ov_span_03">Plaza de La Catedral</span>.
-			<br><br>
-			
-			<iframe id="ov_mapa_ruta_silencio_1" style="width:100%;height:300px;border:none"  src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza San Nicolás, Ávila&destination=Plaza Catedral, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle Burgohondo, Ávila|Plaza Rollo, 15, Ávila|Calle Las Damas, Ávila|Calle Nuestra Señora de Sonsoles, 50, Ávila|Calle Francisco Gallego, Ávila|Paseo Rastro, Ávila|Calle San Segundo, Ávila&language=es&zoom=15&center=40.654336,-4.70097">Para acceder al mapa necesitas una conexión activa</iframe>
-									
-			<br>
-			<script>
-				current_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza San Nicolás, Ávila&destination=Plaza Catedral, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle Burgohondo, Ávila|Plaza Rollo, 15, Ávila|Calle Las Damas, Ávila|Calle Nuestra Señora de Sonsoles, 50, Ávila|Calle Francisco Gallego, Ávila|Paseo Rastro, Ávila|Calle San Segundo, Ávila&language=es&zoom=15&center=40.654336,-4.70097";
-				draw_map(current_url,'ov_mapa_ruta_silencio_1');
-			</script>
-			<div class="ov_button_01" id="ov_button_01_silencio_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_silencio_1')">
-				Actualizar Mapa
-			</div>
-			<br>
-			
-			<span class="ov_span_03">Itinerario:</span>
-			<br>
-			<i>Pulsa sobre cualquier punto abajo para obtener una ruta desde tu ubicación actual</i>
-			
-			<div id="ov_geo_route_2" style="display:none">
-				<br><br>
-
-				<iframe id="ov_mapa_ruta_silencio_2" style="width:100%;height:300px;border:none"  src="">Espera, por favor...</iframe>
-			
-				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
-					
-				</div>				
-				<div class="ov_button_01" id="ov_button_01_silencio_refresh_map" onclick="show_route_2(destination,'15',destination_center,destination_container,destination_big_container);">
-				Actualizar posición
-				</div>
-				<br>
-				<div class="ov_button_01" id="ov_button_01_silencio_hide_map" onclick="$('#ov_geo_route_2').hide()">
-				Ocultar
-				</div>					
-			</div>
-			
-			<br><br>
-			<span class="ov_span_04" id="ov_place_silencio_1">Plaza San Nicolás</span>
-			<script>
-				$("#ov_place_silencio_1").click(function(e){
-					show_route_2("Plaza San Nicolás, Ávila","","","ov_mapa_ruta_silencio_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_silencio_2">Calle Burgohondo</span>
-			<script>
-				$("#ov_place_silencio_2").click(function(e){
-					show_route_2("Calle Burgohondo, Ávila","","","ov_mapa_ruta_silencio_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_silencio_3">Plaza del Rollo</span>
-			<script>
-				$("#ov_place_silencio_3").click(function(e){
-					show_route_2("Plaza Rollo, 15, Ávila","","","ov_mapa_ruta_silencio_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_silencio_4">Calle Las Damas</span>
-			<script>
-				$("#ov_place_silencio_4").click(function(e){
-					show_route_2("Calle Las Damas, Ávila","","","ov_mapa_ruta_silencio_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_silencio_5">Calle Nuestra Señora de Sonsoles</span>
-			<script>
-				$("#ov_place_silencio_5").click(function(e){
-					show_route_2("Calle Nuestra Señora de Sonsoles, 50, Ávila","","","ov_mapa_ruta_silencio_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_silencio_6">Calle Francisco Gallego</span>
-			<script>
-				$("#ov_place_silencio_6").click(function(e){
-					show_route_2("Calle Francisco Gallego, Ávila","","","ov_mapa_ruta_silencio_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_silencio_7">Paseo del Rastro</span>
-			<script>
-				$("#ov_place_silencio_7").click(function(e){
-					show_route_2("Paseo Rastro, Ávila","","","ov_mapa_ruta_silencio_2","ov_geo_route_2");
-				});
-			</script>			
-			<br><br>
-			<span class="ov_span_04" id="ov_place_silencio_9">Calle San Segundo</span>
-			<script>
-				$("#ov_place_silencio_9").click(function(e){
-					show_route_2("Calle San Segundo, Ávila","","","ov_mapa_ruta_silencio_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_silencio_10">Plaza Catedral</span>
-			<script>
-				$("#ov_place_silencio_10").click(function(e){
-					show_route_2("Plaza Catedral, Ávila","","","ov_mapa_ruta_silencio_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>										
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			MAPA DE LA RUTA.
 		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Con salida en la Iglesia de San Nicolás, en Plaza de San Nicolás, y llegada en S.A.I Catedral, en Plaza de la Catedral.			
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<iframe id="route_map" style="background-color:#5E3656;border:none;width:100%;height:400px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:center center;" seamless="seamless" src=""> 
+				
+			</iframe>
+			<script>
+				route_map_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza San Nicolás, Ávila&destination=Plaza Catedral, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle Burgohondo, Ávila|Plaza Rollo, 15, Ávila|Calle Las Damas, Ávila|Calle Nuestra Señora de Sonsoles, 50, Ávila|Calle Francisco Gallego, Ávila|Paseo Rastro, Ávila|Calle San Segundo, Ávila&language=es&zoom=15&center=40.654336,-4.70097";
+				setTimeout(function(){
+					$("#route_map").attr("src",route_map_url);
+				},2000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			ITINERARIO.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" style="background-color:#5E3656;border:none;width:100%;height:400px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:center center;" seamless="seamless" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza San Nicolás
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Plaza San Nicolás, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_2" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Burgohondo
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Calle Burgohondo, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_3" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza del Rollo
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Plaza Rollo, 15, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_4" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Las Damas
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Calle Las Damas, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_5" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Nuestra Señora de Sonsoles
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Calle Nuestra Señora de Sonsoles, 50, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_6" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Francisco Gallego
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Calle Francisco Gallego, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_7" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Paseo Rastro
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Paseo Rastro, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_8" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle San Segundo
+		</div>
+		<script>
+			$("#ov_place_8").click(function(e){
+				show_geoloc("Calle San Segundo, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_9" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza Catedral
+		</div>
+		<script>
+			$("#ov_place_9").click(function(e){
+				show_geoloc("Plaza Catedral, Ávila");
+			});
+		</script>
+				
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
 	</div>
+	
 </div>	
-

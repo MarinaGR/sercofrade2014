@@ -1,70 +1,58 @@
-<script>
-	$("#ov_view_container_02").css("background-color","#EBEBEB");	
-</script>
-
-<!-- Publi -->
-<div id="ov_zone_08_5" class="ov_zone_08">
+<!-- Volver -->
+<div style="display: block;" class="ov_back_button_container">
 	
-</div>
-<script>	
-	load_ads("ov_zone_08_5");	
-</script>
-<div class="ov_vertical_space_05">&nbsp;</div>
-<!-- Publi -->
-<!-- Volver -->
-<div id="ov_zone_11_1" class="ov_zone_11_b">
-	<div id="ov_text_11_h_concepcion" class="ov_text_11">
-		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
-	</div>
-	<script>
-		$("#ov_text_11_h_concepcion").click(function(e){
-			if(referrer_from_proce=="")
-			{
-				$('#ov_view_container_01').load("./views/general/ov_view_herman_01.html",function(){
-					$('#ov_view_container_01').show('slide',{direction: "left"},500);
-					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
-				});
-			}
-			else
-			{
-				$('#ov_view_container_02').load(referrer_from_proce,function(){
-					$('#ov_view_container_02').show('slide',{direction: "right"},500);
-					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-					referrer_from_proce="";				
-				});
-			}	
-		});
-	</script>
-</div>
-<div class="ov_vertical_space_06">&nbsp;</div>
-<!-- Volver -->
-
-
-<div id="ov_zone_13_h_concepcion" class="ov_zone_13_b">
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_5" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"> Volver
+		</div>
 		
-	<div id="ov_box_13_h_concepcion" class="ov_box_13_b">
-		<div id="ov_box_14_h_concepcion" class="ov_box_14">
-			<img src="styles/images/escudos/magdalena.JPG" id="ov_image_03_4" class="ov_image_03" alt="circle_04"/>
+		<div id="ov_back_button_6" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"> Menú
 		</div>
-		<div id="ov_box_15_h_concepcion" class="ov_box_15">
-			<div id="ov_text_15_h_concepcion" class="ov_text_15">
-				<br>				
-				Iltre. Patronato de la Purísima Concepción, Santa María Magdalena y ánimas del Purgatorio
-			</div>
-						
-		</div>
-		<div class="ov_clear_floats_01">&nbsp;</div>
 	</div>
 	
 </div>
-
-<div class="ov_vertical_space_01">&nbsp;</div>
-
-
-
-<div id="ov_zone_14_h_concepcion" class="ov_zone_14">
-	<div id="ov_box_17_h_concepcion" class="ov_box_17">
-		<div id="ov_text_16_h_concepcion" class="ov_text_16">
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_5").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_6").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div style="padding:10px;background-color:#5E3656">
+			
+			<div id="ov_large_menu_item_1" class="ov_large_menu_item">
+			
+				<div class="ov_box_circle_images">
+					
+					<img src="./resources/escudos/magdalena.JPG" class="ov_image_circle" alt=" ">
+					
+				</div>
+				
+				<div class="ov_box_large_menu_item_title">
+					
+					<div class="ov_text_large_menu_item_01" style="color:#FFF">Iltre. Patronato de la Purísima Concepción, Santa María Magdalena y ánimas del Purgatorio</div>				
+					
+				</div>
+				
+				<div class="ov_clear_floats"> </div>
+				
+			</div>
+			
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			Aunque fundado en el siglo XIV, no es hasta el año 1993 cuando un grupo de abulenses decidió organizar una procesión penitencial, al estilo de aquellas que organizaban nuestros antepasados en el siglo XVI.
 			<br>
 			Eligieron para ello una imagen de Santa María Magdalena, vinculada al Patronato de Ánimas, y organizaron una procesión que evocara el recuerdo de aquellos tiempos, en que se vivía por emoción el sentido cristiano de la Semana Santa y tomaron como hora de salida las 12 de la noche.
@@ -73,67 +61,79 @@
 			<br>
 			El encuentro entre ambos Patronatos, es un encuentro de amistad, de desagravio, por las disputas que en siglos anteriores mantuvieron por defender cada uno sus derechos a la hora de enterrar a los muertos, que incluso les llevo a pleitear entre ellos.
 			<br>
-			Esta cofradía contempla en sus estatutos un máximo de 100 hermanos en su procesión más los anderos necesarios.
+			Esta cofradía contempla en sus estatutos un máximo de 100 hermanos en su procesión más los anderos necesarios.	
 		</div>
 		
-		<div id="ov_text_16_h_concepcion_3" class="ov_text_16">
-			<span class="ov_span_02">Datos.</span><br><br>
-			<span class="ov_span_01">Hábito:</span><br>Túnica de color blanco, fajín azul, capa y verdugo negro
-			<br><br>
-			<img src="styles/images/habitos/magdalena.png" class="ov_image_11"/>
-			<br><br>
-			<span class="ov_span_01">Templo de Residencia Canónica:</span><br>Iglesia de la Magdalena
-			<br><br>
-			<span class="ov_span_01">Fundación:</span><br>s. XIV, pero no se incorpora a Semana Santa hasta 1993
-			<br><br>
-			<span class="ov_span_01">Hermanos:</span><br>90
-			<br><br>
-			<span class="ov_span_01">Nazarenos:</span><br>90
-			<br><br>
-			<span class="ov_span_01">Atributos de los Hermanos:</span><br>Cruz de madera
-			<br><br>
-			<span class="ov_span_01">Culto(s) organizados:</span><br>Eucaristía el día de "Todos los Santos" y el día de la Inmaculada
-			
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			DATOS
 		</div>
-		<div id="ov_text_16_h_concepcion_6" class="ov_text_16">
-			<span class="ov_span_02">Contacto.</span><br><br>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			<b>Hábito:</b><br>Túnica de color blanco, fajín azul, capa y verdugo negro
+			<img src="./resources/habitos//magdalena.png" style="display:block">
+			<b>Templo de Residencia Canónica:</b><br>Iglesia de la Magdalena
+			<br><br>
+			<b>Fundación:</b><br>s. XIV, pero no se incorpora a Semana Santa hasta 1993.
+			<br><br>
+			<b>Hermanos:</b><br>90.
+			<br><br>
+			<b>Nazarenos:</b><br>90.
+			<br><br>
+			<b>Atributos de los Hermanos:</b><br>Cruz de madera
+			<br><br>
+			<b>Culto(s) organizados:</b>
+				<br>Eucaristía el día de "Todos los Santos" y el día de la Inmaculada
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			CONTACTO
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			Il. Patr. Purísima Concepción, S. María Magdalena y ánimas del Purgatorio<br>
 			Iglesia de Santa María Magdalena<br>
 			Pza. Santa Teresa 15<br>
 			05001 Ávila<br>			
 			patronato.magdalena@gmail.com
 		</div>
-		<div id="ov_text_16_h_concepcion_2" class="ov_text_16">
-			<span class="ov_span_02">Procesiones.</span><br><br>
-			<div id="ov_text_17_h_concepcion_1" class="ov_text_17">
-				Procesión del Miserere (15 de Abril, Martes Santo)
-			</div>
-			<script>
-				$("#ov_text_17_h_concepcion_1").click(function(e){
-					referrer_from_herman="./views/hermandades/ov_view_h_concepcion_01.html";
-					$('#ov_view_container_02').load("./views/procesiones/ov_view_miserere_01.html",function(){
-						$('#ov_view_container_02').show('slide',{direction: "right"},500);
-						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-						$('body,html').scrollTop("0px");				
-					});	
-				});
-			</script>
-		</div>	
-		<div id="ov_text_16_h_concepcion_4" class="ov_text_16">
-			<span class="ov_span_03">Pasos.</span><br><br>			
-			<div id="ov_text_18_h_concepcion_1" class="ov_text_18">
-				<span class="ov_span_02">La Magdalena</span>
-				<div id="ov_text_19_h_concepcion_1" class="ov_text_19">					
-				    Autor: Anónimo<br>
-				    Fecha:   s.XVI<br>
-				    La imagen elegida para procesionar fue la de Santa María Magdalena, mujer que no dudó en buscar a Cristo y arrodillarse ante Él y pedirle perdón. Es una talla de madera policromada del s. XVI de autor desconocido. En su mano izquierda sostiene el tarro de los perfumes, que ofrecerá al Maestro.
-					<br><br>
-					<img src="styles/images/pasos/magdalena_magdalena.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>			
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PROCESIONES
+		</div>
+		
+		<div id="ov_to_herman" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Procesión del Miserere (15 de Abril, Martes Santo)
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_miserere_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+				
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+				
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			La Magdalena
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Anónimo<br>
+		    Fecha:   s.XVI<br>
+		    La imagen elegida para procesionar fue la de Santa María Magdalena, mujer que no dudó en buscar a Cristo y arrodillarse ante Él y pedirle perdón. Es una talla de madera policromada del s. XVI de autor desconocido. En su mano izquierda sostiene el tarro de los perfumes, que ofrecerá al Maestro.
+			<br><br>
+			<img src="./resources/pasos/magdalena_magdalena.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
 		</div>
 			
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
 	</div>
+	
 </div>	
-

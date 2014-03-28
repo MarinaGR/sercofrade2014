@@ -1,204 +1,213 @@
+<!-- Volver -->
+<div style="display: block;" class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_5" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"> Volver
+		</div>
+		
+		<div id="ov_back_button_6" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
 <script>
-	$("#ov_view_container_02").css("background-color","#EBEBEB");	
-</script>
-
-<!-- Publi -->
-<div id="ov_zone_08_5" class="ov_zone_08">
-	
-</div>
-<script>	
-	load_ads("ov_zone_08_5");	
-</script>
-<div class="ov_vertical_space_05">&nbsp;</div>
-<!-- Publi -->
-<!-- Volver -->
-<div id="ov_zone_11_1" class="ov_zone_11_b">
-	<div id="ov_text_11_h_medinaceli" class="ov_text_11">
-		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
-	</div>
-	<script>
-		$("#ov_text_11_h_medinaceli").click(function(e){
-			if(referrer_from_proce=="")
-			{
-				$('#ov_view_container_01').load("./views/general/ov_view_herman_01.html",function(){
-					$('#ov_view_container_01').show('slide',{direction: "left"},500);
-					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
-				});
-			}
-			else
-			{
-				$('#ov_view_container_02').load(referrer_from_proce,function(){
-					$('#ov_view_container_02').show('slide',{direction: "right"},500);
-					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-					referrer_from_proce="";				
-				});
-			}	
-		});
-	</script>
-</div>
-<div class="ov_vertical_space_06">&nbsp;</div>
-<!-- Volver -->
-
-<div id="ov_zone_13_h_medinaceli" class="ov_zone_13_b">
-		
-	<div id="ov_box_13_h_medinaceli" class="ov_box_13_b">
-		<div id="ov_box_14_h_medinaceli" class="ov_box_14">
-			<img src="styles/images/escudos/medinaceli.JPG" id="ov_image_03_4" class="ov_image_03" alt="circle_04"/>
-		</div>
-		<div id="ov_box_15_h_medinaceli" class="ov_box_15">
-			<div id="ov_text_15_h_medinaceli" class="ov_text_15">
-				<br>				
-				Archicofradía de la Real e Ilustre Esclavitud de Ntro. Padre Jesús Nazareno "Medinaceli"
-			</div>
+		$("#ov_back_button_5").click(function(e){
+			
+			onBackKeyDown();
 						
-		</div>
-		<div class="ov_clear_floats_01">&nbsp;</div>
-	</div>
+		});
+		$("#ov_back_button_6").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
 	
-</div>
-
-<div class="ov_vertical_space_01">&nbsp;</div>
-
-
-
-<div id="ov_zone_14_h_medinaceli" class="ov_zone_14">
-	<div id="ov_box_17_h_medinaceli" class="ov_box_17">
-		<div id="ov_text_16_h_medinaceli" class="ov_text_16">
-			La Archicofradía fue fundada en el año 1947 por el P. Francisco Fray Victoriano Rodriguez Germain. Los primeros años salió en solitario y desde 1954 acompañada de la cofradía de la Juventud Católico Antoniana, Cofradía de Ferroviarios de San Antonio y Orden Tercera Seglar Franciscana, todas ellas con sede en el Convento de San Antonio. En 1966 desaparecen estas cofradías, refundándose la de Nuestro Padre Jesús de Medinaceli en 1988, agrupando los pasos de las anteriores e incorporando otros nuevos.
-			<br>En el año 1995 la Archicofradía de Jesús de Medinaceli fue la encargada de organizar el I Congreso Nacional de Cofradías de Jesús de Medinaceli, Cautivo y Rescatado.
-			<br>En el año 1997 pidió su inscripción como cofrade de la misma el Cuerpo Nacional de Policía representado por la Comisaría de Policía de Ávila, dando escolta desde esa fecha a la imagen de Nuestro Padre Jesús de Medinaceli, durante su estación de penitencia el Martes y Viernes Santo.
-		</div>
+	<div class="ov_zone_limited_2">
 		
-		<div id="ov_text_16_h_medinaceli_3" class="ov_text_16">
-			<span class="ov_span_02">Datos.</span><br><br>
-			<span class="ov_span_01">Hábito:</span><br>Túnica morada con cíngulo amarillo, capa amarilla, capucho morado con cruces trinitarias.
-			<br><br>
-			<img src="styles/images/habitos/medinaceli.png" class="ov_image_11"/>
-			<br><br>
-			<span class="ov_span_01">Templo de Residencia Canónica:</span><br>Convento de San Antonio
-			<br><br>
-			<span class="ov_span_01">Fundación:</span><br>1947 
-			<br><br>
-			<span class="ov_span_01">Hermanos:</span><br>1072
-			<br><br>
-			<span class="ov_span_01">Nazarenos:</span><br>1400
-			<br><br>
-			<span class="ov_span_01">Atributos de los Hermanos:</span><br>Vela eléctrica con farol de metal y cristal con los colores trinitarios
-			<br><br>
-			<span class="ov_span_01">Culto(s) organizados:</span><br>Triduo a Nuestro Padre Jesús de Medinaceli, coincidiendo con el primer viernes de Marzo.<br>Eucaristía con motivo del aniversario de la bendición de la imagen del Nazareno del Perdón, el sábado más próximo al 20 de Noviembre. 
-			<br><br>
-			<span class="ov_span_01">Cofradías con que está hermanada:</span><br>Cofradía de la Resurrección del Señor (Segovia)
-			<br>Cofradía de la Soledad (San Pedro del Arroyo - Ávila)
-			<br>Muy Ilustre y Antiquísima Esclavitud de Nuestro Padre Jesús Nazareno y Conversión de Santa Maria Magdalena "Vulgo Medinaceli" (Zaragoza)
-			<br>Cofradía de Jesús de Medinaceli (El Grao - Valencia)
-			<br>Cofradía de Nuestro Padre Jesús Rescatado "Vulgo Medinaceli" (Elche - Alicante)
+		<div style="padding:10px;background-color:#5E3656">
+			
+			<div id="ov_large_menu_item_1" class="ov_large_menu_item">
+			
+				<div class="ov_box_circle_images">
+					
+					<img src="./resources/escudos/medinaceli.JPG" class="ov_image_circle" alt=" ">
+					
+				</div>
+				
+				<div class="ov_box_large_menu_item_title">
+					
+					<div class="ov_text_large_menu_item_01" style="color:#FFF">Archicofradía de la Real e Ilustre Esclavitud de Ntro. Padre Jesús Nazareno "Medinaceli"</div>				
+					
+				</div>
+				
+				<div class="ov_clear_floats"> </div>
+				
+			</div>
 			
 		</div>
-		<div id="ov_text_16_h_medinaceli_6" class="ov_text_16">
-			<span class="ov_span_02">Contacto.</span><br><br>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			La Archicofradía fue fundada en el año 1947 por el P. Francisco Fray Victoriano Rodriguez Germain. Los primeros años salió en solitario y desde 1954 acompañada de la cofradía de la Juventud Católico Antoniana, Cofradía de Ferroviarios de San Antonio y Orden Tercera Seglar Franciscana, todas ellas con sede en el Convento de San Antonio. En 1966 desaparecen estas cofradías, refundándose la de Nuestro Padre Jesús de Medinaceli en 1988, agrupando los pasos de las anteriores e incorporando otros nuevos.
+			<br>En el año 1995 la Archicofradía de Jesús de Medinaceli fue la encargada de organizar el I Congreso Nacional de Cofradías de Jesús de Medinaceli, Cautivo y Rescatado.
+			<br>En el año 1997 pidió su inscripción como cofrade de la misma el Cuerpo Nacional de Policía representado por la Comisaría de Policía de Ávila, dando escolta desde esa fecha a la imagen de Nuestro Padre Jesús de Medinaceli, durante su estación de penitencia el Martes y Viernes Santo.	
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			DATOS
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			<b>Hábito:</b><br>Túnica morada con cíngulo amarillo, capa amarilla, capucho morado con cruces trinitarias.
+			<img src="./resources/habitos/medinaceli.png" style="display:block">
+			<b>Templo de Residencia Canónica:</b><br>Convento de San Antonio
+			<br><br>
+			<b>Fundación:</b><br>1947.
+			<br><br>
+			<b>Hermanos:</b><br>1072.
+			<br><br>
+			<b>Nazarenos:</b><br>1400.
+			<br><br>
+			<b>Atributos de los Hermanos:</b><br>Vela eléctrica con farol de metal y cristal con los colores trinitarios
+			<br><br>
+			<b>Culto(s) organizados:</b>
+				<br>Triduo a Nuestro Padre Jesús de Medinaceli, coincidiendo con el primer viernes de Marzo.
+				<br>Eucaristía con motivo del aniversario de la bendición de la imagen del Nazareno del Perdón, el sábado más próximo al 20 de Noviembre. 
+				<br><br>
+			<b>Cofradías con que está hermanada:</b>
+				<br>Cofradía de la Resurrección del Señor (Segovia)
+				<br>Cofradía de la Soledad (San Pedro del Arroyo - Ávila)
+				<br>Muy Ilustre y Antiquísima Esclavitud de Nuestro Padre Jesús Nazareno y Conversión de Santa Maria Magdalena "Vulgo Medinaceli" (Zaragoza)
+				<br>Cofradía de Jesús de Medinaceli (El Grao - Valencia)
+				<br>Cofradía de Nuestro Padre Jesús Rescatado "Vulgo Medinaceli" (Elche - Alicante)
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			CONTACTO
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			Archicofradía de la Real e Il. Esclavitud de Ntro. P. Jesús Nazareno Medinaceli<br>
 			Convento de San Antonio<br>
 			Plaza de San Antonio, nº 1<br>
 			AVILA 05005<br>
 			archicofradiamedinaceliavila@gmail.com 
 		</div>
-		<div id="ov_text_16_h_medinaceli_2" class="ov_text_16">
-			<span class="ov_span_02">Procesiones.</span><br><br>
-			<div id="ov_text_17_h_medinaceli_1" class="ov_text_17">
-				Procesión de Medinaceli (15 de Abril, Martes Santo)
-			</div>
-			<script>
-				$("#ov_text_17_h_medinaceli_1").click(function(e){
-					referrer_from_herman="./views/hermandades/ov_view_h_medinaceli_01.html";
-					$('#ov_view_container_02').load("./views/procesiones/ov_view_medinaceli_01.html",function(){
-						$('#ov_view_container_02').show('slide',{direction: "right"},500);
-						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-						$('body,html').scrollTop("0px");				
-					});	
-				});
-			</script>
-		</div>	
-		<div id="ov_text_16_h_medinaceli_4" class="ov_text_16">
-			<span class="ov_span_02">Pasos.</span><br><br>
-			<div id="ov_text_18_h_medinaceli_1" class="ov_text_18">
-				<span class="ov_span_03">Lágrimas de San Pedro</span>
-				<div id="ov_text_19_h_medinaceli_1" class="ov_text_19">					
-				    Autor: Escuela Castellana<br>
-				    Fecha:  s. XV<br>
-				    Se conserva en la Basílica de San Vicente, en uno de los altares de la Cripta.
-				    <br><br>
-					<img src="styles/images/pasos/medinaceli_san_pedro.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_h_medinaceli_2" class="ov_text_18">
-				<span class="ov_span_03">Jesús de Medinaceli</span>
-				<div id="ov_text_19_h_medinaceli_2" class="ov_text_19">					
-				    Autor: D.  Gerardo Morante <br>
-				    Fecha: 1947<br>
-				    La imagen fue donada a la Archicofradia por D. Florentino Rodriguez Germán, hermano del Padre Victoriano y fue bendecida el jueves día 4 de marzo de 1948, en la iglesia de San Antonio, por el Excmo y Rvdmo. Sr. Obispo de la Diócesis D. Santos Moro Briz.Es una replica de Jesús de Medinaceli de Madrid.				   
-					<br><br>
-					<img src="styles/images/pasos/medinaceli_jesus.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_h_medinaceli_3" class="ov_text_18">
-				<span class="ov_span_03">Nazareno del Perdón</span>
-				<div id="ov_text_19_h_medinaceli_3" class="ov_text_19">					
-				    Autor: D. Victor Gonzalez Gil <br>
-				    Fecha: 1992<br>
-				    Adquirida en 1992, y posteriormente policromada por el sacerdote abulense D. Juan Manuel Aranda. Actualmente se encuentra en el Museo del Convento de San Antonio. 
-					<br><br>
-					<img src="styles/images/pasos/medinaceli_nazareno.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_h_medinaceli_4" class="ov_text_18">
-				<span class="ov_span_03">El Calvario</span>
-				<div id="ov_text_19_h_medinaceli_4" class="ov_text_19">					
-				    Autor: Casa Alsina de Madrid<br>
-				    Fecha: 1946<br>
-				    Paso de misterio formado por el Cristo de la Salud, María Santísima, la Magdalena, San Juan y un soldado romano en actitud de trapasar con su lanza el costado del Señor. 
-					<br><br>
-					<img src="styles/images/pasos/medinaceli_calvario.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_h_medinaceli_5" class="ov_text_18">
-				<span class="ov_span_03">Virgen del Mayor Dolor</span>
-				<div id="ov_text_19_h_medinaceli_5" class="ov_text_19">					
-				    Autor: Talleres de Arte Cristiano de Olot (Gerona)<br>
-				    Fecha: 1947<br>
-				    La Virgen del Mayor Dolor es un grupo escultorico de gran realismo humano; adquirida por la Juventud Catolico Antoniana, llegó a Ávila en el mes de Marzo de 1947. Representa a la Madre, ante quien han bajado de una cruz a su hijo muerto y lo han depositado en el suelo para prepararle el sudario
-					<br><br>
-					<img src="styles/images/pasos/medinaceli_dolor.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_h_medinaceli_6" class="ov_text_18">
-				<span class="ov_span_03">Cristo Yacente </span>
-				<div id="ov_text_19_h_medinaceli_6" class="ov_text_19">					
-				    Autor: D. Ricardo Granada<br>
-				    Fecha: 1942<br>
-				    El Cristo Yacente es una imagen de 1,70 mts. Es una talla de madera pulida y encerada, que fue adquirida por los P. Franciscanos del Convento de San Antonio. Sustituyó en el desfile procesional a la imagen del Cristo Yacante de Niharra. 
-					<br><br>
-					<img src="styles/images/pasos/medinaceli_yacente.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_h_medinaceli_7" class="ov_text_18">
-				<span class="ov_span_03">Virgen de las Lágrimas</span>
-				<div id="ov_text_19_h_medinaceli_7" class="ov_text_19">					
-				    Autor: Casa Alsina de Madrid<br>
-				    Fecha: 1950<br>
-				    Respecto a la Virgen de las Lagrimas es donación de una señora anonima y está inspirada en el "Stabar Mater", himno liturgico atribuido al franciscano poeta Fray Copone de Trodi. Es copia de las Virgenes talladas por Salcillo. Hasta el año 1967 iba acompañada de señoras y señoritas de la Venerable Orden Tercera de San Francisco, ataviadas con traje y velos negros
-					<br><br>
-					<img src="styles/images/pasos/medinaceli_lagrimas.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>			
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PROCESIONES
+		</div>
+		
+		<div id="ov_to_herman" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Procesión de Medinaceli (15 de Abril, Martes Santo)
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_medinaceli_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+				
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+				
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Lágrimas de San Pedro
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Escuela Castellana<br>
+		    Fecha:  s. XV<br>
+		    Se conserva en la Basílica de San Vicente, en uno de los altares de la Cripta.
+		    <br><br>
+			<img src="./resources/pasos/medinaceli_san_pedro.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Jesús de Medinaceli
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: D.  Gerardo Morante <br>
+		    Fecha: 1947<br>
+		    La imagen fue donada a la Archicofradia por D. Florentino Rodriguez Germán, hermano del Padre Victoriano y fue bendecida el jueves día 4 de marzo de 1948, en la iglesia de San Antonio, por el Excmo y Rvdmo. Sr. Obispo de la Diócesis D. Santos Moro Briz.Es una replica de Jesús de Medinaceli de Madrid.				   
+			<br><br>
+			<img src="./resources/pasos/medinaceli_jesus.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Nazareno del Perdón
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: D. Victor Gonzalez Gil <br>
+		    Fecha: 1992<br>
+		    Adquirida en 1992, y posteriormente policromada por el sacerdote abulense D. Juan Manuel Aranda. Actualmente se encuentra en el Museo del Convento de San Antonio. 
+			<br><br>
+			<img src="./resources/pasos/medinaceli_nazareno.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			El Calvario
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Casa Alsina de Madrid<br>
+		    Fecha: 1946<br>
+		    Paso de misterio formado por el Cristo de la Salud, María Santísima, la Magdalena, San Juan y un soldado romano en actitud de trapasar con su lanza el costado del Señor. 
+			<br><br>
+			<img src="./resources/pasos/medinaceli_calvario.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Virgen del Mayor Dolor
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Talleres de Arte Cristiano de Olot (Gerona)<br>
+		    Fecha: 1947<br>
+		    La Virgen del Mayor Dolor es un grupo escultorico de gran realismo humano; adquirida por la Juventud Catolico Antoniana, llegó a Ávila en el mes de Marzo de 1947. Representa a la Madre, ante quien han bajado de una cruz a su hijo muerto y lo han depositado en el suelo para prepararle el sudario
+			<br><br>
+			<img src="./resources/pasos/medinaceli_dolor.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Cristo Yacente
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: D. Ricardo Granada<br>
+		    Fecha: 1942<br>
+		    El Cristo Yacente es una imagen de 1,70 mts. Es una talla de madera pulida y encerada, que fue adquirida por los P. Franciscanos del Convento de San Antonio. Sustituyó en el desfile procesional a la imagen del Cristo Yacante de Niharra. 
+			<br><br>
+			<img src="./resources/pasos/medinaceli_yacente.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Virgen de las Lágrimas
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Casa Alsina de Madrid<br>
+		    Fecha: 1950<br>
+		    Respecto a la Virgen de las Lagrimas es donación de una señora anonima y está inspirada en el "Stabar Mater", himno liturgico atribuido al franciscano poeta Fray Copone de Trodi. Es copia de las Virgenes talladas por Salcillo. Hasta el año 1967 iba acompañada de señoras y señoritas de la Venerable Orden Tercera de San Francisco, ataviadas con traje y velos negros
+			<br><br>
+			<img src="./resources/pasos/medinaceli_lagrimas.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
 		</div>
 			
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
 	</div>
+	
 </div>	
-

@@ -1,69 +1,58 @@
-<script>
-	$("#ov_view_container_02").css("background-color","#EBEBEB");	
-</script>
-
-<!-- Publi -->
-<div id="ov_zone_08_5" class="ov_zone_08">
+<!-- Volver -->
+<div style="display: block;" class="ov_back_button_container">
 	
-</div>
-<script>	
-	load_ads("ov_zone_08_5");	
-</script>
-<div class="ov_vertical_space_05">&nbsp;</div>
-<!-- Publi -->
-<!-- Volver -->
-<div id="ov_zone_11_1" class="ov_zone_11_b">
-	<div id="ov_text_11_h_veracruz" class="ov_text_11">
-		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
-	</div>
-	<script>
-		$("#ov_text_11_h_veracruz").click(function(e){
-			if(referrer_from_proce=="")
-			{
-				$('#ov_view_container_01').load("./views/general/ov_view_herman_01.html",function(){
-					$('#ov_view_container_01').show('slide',{direction: "left"},500);
-					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
-				});
-			}
-			else
-			{
-				$('#ov_view_container_02').load(referrer_from_proce,function(){
-					$('#ov_view_container_02').show('slide',{direction: "right"},500);
-					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-					referrer_from_proce="";				
-				});
-			}	
-		});
-	</script>
-</div>
-<div class="ov_vertical_space_06">&nbsp;</div>
-<!-- Volver -->
-
-<div id="ov_zone_13_h_veracruz" class="ov_zone_13_b">
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_5" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"> Volver
+		</div>
 		
-	<div id="ov_box_13_h_veracruz" class="ov_box_13_b">
-		<div id="ov_box_14_h_veracruz" class="ov_box_14">
-			<img src="styles/images/escudos/veracruz.jpg" id="ov_image_03_4" class="ov_image_03" alt="circle_04"/>
+		<div id="ov_back_button_6" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"> Menú
 		</div>
-		<div id="ov_box_15_h_veracruz" class="ov_box_15">
-			<div id="ov_text_15_h_veracruz" class="ov_text_15">
-				<br>			
-				Iltre. Patronato de la Santa Vera Cruz
-			</div>
-						
-		</div>
-		<div class="ov_clear_floats_01">&nbsp;</div>
 	</div>
 	
 </div>
-
-<div class="ov_vertical_space_01">&nbsp;</div>
-
-
-
-<div id="ov_zone_14_h_veracruz" class="ov_zone_14">
-	<div id="ov_box_17_h_veracruz" class="ov_box_17">
-		<div id="ov_text_16_h_veracruz" class="ov_text_16">
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_5").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_6").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div style="padding:10px;background-color:#5E3656">
+			
+			<div id="ov_large_menu_item_1" class="ov_large_menu_item">
+			
+				<div class="ov_box_circle_images">
+					
+					<img src="./resources/escudos/veracruz.jpg" class="ov_image_circle" alt=" ">
+					
+				</div>
+				
+				<div class="ov_box_large_menu_item_title">
+					
+					<div class="ov_text_large_menu_item_01" style="color:#FFF">Iltre. Patronato de la Santa Vera Cruz</div>				
+					
+				</div>
+				
+				<div class="ov_clear_floats"> </div>
+				
+			</div>
+			
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			Es la más antigua de todas las cofradías de la Semana Santa abulense. Inicia su primera procesión en el año 1540, cuando meses antes un grupo de abulenses había decido crear una hermandad en el convento de San Francisco.
 			<br>
 			La primera imagen de esta Hermandad fue el Santísimo Cristo de los Ajusticiados, entonces conocido por "Cristo de la Buena Muerte" y en años sucesivos fueron incorporando el resto de imágenes que forman la actual "procesión de los pasos".
@@ -73,165 +62,183 @@
 			Transcurría el año 1935, cuando los jóvenes de Acción Católica deciden organizar un Vía Crucis Penitencial de la madrugada del Viernes Santo, para lo que contaron con la colaboración del Patronato de la Santa Vera Cruz entidad encargada de organizarlo en la actualidad, siendo este uno de los actos más multitudinarios de la Semana Santa abulense, al acuden más de 12.000 personas. 
 		</div>
 		
-		<div id="ov_text_16_h_veracruz_3" class="ov_text_16">
-			<span class="ov_span_02">Datos.</span><br><br>
-			<span class="ov_span_01">Hábito:</span><br>Túnica, caperuza y capa de color morado, con cíngulo amarillo.<br><br>
-			<img src="styles/images/habitos/pasos_1.png" class="ov_image_11"/><br>
-				Túnica y caperuza blanco, cíngulo verde y capa morada.
-				<br><br>
-			<img src="styles/images/habitos/pasos_2.png" class="ov_image_11"/>
-			<br><br>
-			<span class="ov_span_01">Templo de Residencia Canónica:</span><br>Ermita del Humilladero - Iglesia de San Vicente - S.A.I Catedral
-			<br><br>
-			<span class="ov_span_01">Fundación:</span><br>1540
-			<br><br>
-			<span class="ov_span_01">Hermanos:</span><br>372
-			<br><br>
-			<span class="ov_span_01">Nazarenos:</span><br>270
-			<br><br>
-			<span class="ov_span_01">Atributos de los Hermanos:</span><br>Hachones con luz eléctrica.
-			<br><br>
-			<span class="ov_span_01">Culto(s) organizados:</span><br>Encuentro con los jóvenes del Patronato todos los sábados. 			
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			DATOS
 		</div>
-		<div id="ov_text_16_h_veracruz_6" class="ov_text_16">
-			<span class="ov_span_02">Contacto.</span><br><br>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			<b>Hábito:</b><br>Túnica, caperuza y capa de color morado, con cíngulo amarillo.
+				<img src="./resources/habitos/pasos_1.png" style="display:block">
+				<br>Túnica y caperuza blanco, cíngulo verde y capa morada.
+				<img src="./resources/habitos/pasos_2.png" style="display:block">
+			<b>Templo de Residencia Canónica:</b><br>Ermita del Humilladero - Iglesia de San Vicente - S.A.I Catedral
+			<br><br>
+			<b>Fundación:</b><br>1540.
+			<br><br>
+			<b>Hermanos:</b><br>372.
+			<br><br>
+			<b>Nazarenos:</b><br>270.
+			<br><br>
+			<b>Atributos de los Hermanos:</b><br>Hachones con luz eléctrica
+			<br><br>
+			<b>Culto(s) organizados:</b>
+				<br>Encuentro con los jóvenes del Patronato todos los sábados. 	
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			CONTACTO
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			Iltre. Patronato de la Santa Vera Cruz<br>
 			Ermita del Humilladero<br>
 			Plaza del Humilladero, s/n<br>
 			05001 Ávila<br>
 		</div>
-		<div id="ov_text_16_h_veracruz_2" class="ov_text_16">
-			<span class="ov_span_02">Procesiones.</span><br><br>
-			<div id="ov_text_17_h_veracruz_1" class="ov_text_17">
-				Procesión de Los Pasos (17 de Abril, Jueves Santo)
-			</div>
-			<script>
-				$("#ov_text_17_h_veracruz_1").click(function(e){
-					referrer_from_herman="./views/hermandades/ov_view_h_veracruz_01.html";
-					$('#ov_view_container_02').load("./views/procesiones/ov_view_pasos_01.html",function(){
-						$('#ov_view_container_02').show('slide',{direction: "right"},500);
-						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-						$('body,html').scrollTop("0px");				
-					});	
-				});
-			</script>
-			<br>
-			<div id="ov_text_17_h_veracruz_2" class="ov_text_17">
-				Vía Crucis (18 de Abril, Viernes Santo)
-			</div>
-			<script>
-				$("#ov_text_17_h_veracruz_2").click(function(e){
-					referrer_from_herman="./views/hermandades/ov_view_h_veracruz_01.html";
-					$('#ov_view_container_02').load("./views/procesiones/ov_view_via_crucis_01.html",function(){
-						$('#ov_view_container_02').show('slide',{direction: "right"},500);
-						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-						$('body,html').scrollTop("0px");				
-					});	
-				});
-			</script>
-		</div>	
-		<div id="ov_text_16_h_veracruz_4" class="ov_text_16">
-			<span class="ov_span_02">Pasos.</span><br><br>			
-			<div id="ov_text_18_h_veracruz_1" class="ov_text_18">
-				<span class="ov_span_03">Santa Cruz </span>
-				<div id="ov_text_19_h_veracruz_1" class="ov_text_19">					
-				    Autor: Anónimo<br>
-				    Fecha: s.XVI<br>
-				    Constituye el simbolo de la Hermandad, llamada por ello de la "Santa Vera Cruz". Desde su fundación abrió siempre este desfile procesional y se la llamó Cruz Verde, porque aparece desnuda, sin que penda de ella el cuerpo de Cristo; fue elemento esencial en esta Procesión de penitencia, instituida para conmemorar la Pasión del Redentor
-					<br><br>
-					<img src="styles/images/pasos/veracruz_cruz.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_h_veracruz_2" class="ov_text_18">
-				<span class="ov_span_03">La Cena</span>
-				<div id="ov_text_19_h_veracruz_2" class="ov_text_19">					
-				    Autor: D. Manuel Sanchez Araciel<br>
-				    Fecha: 1904
-					<br><br>
-					<img src="styles/images/pasos/veracruz_cena.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_h_veracruz_3" class="ov_text_18">
-				<span class="ov_span_03">La Oración en el Huerto</span>
-				<div id="ov_text_19_h_veracruz_3" class="ov_text_19">					
-				    Autor: Cristo - Juan Leal, el Ángel - Antonio Arenas Martinez<br>
-				    Fecha: Cristo - 1612 / el Ángel - 1952<br>
-				    No es una talla completa, sino solamente cabeza y manos, realizada para ser vestida en el resto de su cuerpo
-				    <br><br>
-					<img src="styles/images/pasos/veracruz_huerto.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_h_veracruz_4" class="ov_text_18">
-				<span class="ov_span_03">El Prendimiento</span>
-				<div id="ov_text_19_h_veracruz_4" class="ov_text_19">					
-				    Autor: D. Manuel Sánchez Araciel<br>
-				    Fecha: 1919<br>
-				    Paso de misterio compuesto por las imágenes de Jesús, Judas, San Pedro, Malco y un soldado
-				    <br><br>
-					<img src="styles/images/pasos/veracruz_prendimiento.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_h_veracruz_5" class="ov_text_18">
-				<span class="ov_span_03">Cristo amarrado a la Columna</span>
-				<div id="ov_text_19_h_veracruz_5" class="ov_text_19">					
-				    Autor: Escuela Castellana<br>
-				    Fecha: s. XVII<br>
-				    Se conserva en la Iglesia de los Mártires Vicente, Sabina y Cristeta de nuestra Ciudad de Ávila
-				    <br><br>
-					<img src="styles/images/pasos/veracruz_amarrado.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_h_veracruz_6" class="ov_text_18">
-				<span class="ov_span_03">La Caída</span>
-				<div id="ov_text_19_h_veracruz_6" class="ov_text_19">					
-				    Autor: D. Manuel Sánchez Araciel<br>
-				    Fecha: 1914<br>
-				    Paso de misterio compuesto por las imágenes de Jesús, El Cirineo, 2 esbirros y un soldado romano
-				    <br><br>
-					<img src="styles/images/pasos/veracruz_caida.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_h_veracruz_7" class="ov_text_18">
-				<span class="ov_span_03">La Santa Faz</span>
-				<div id="ov_text_19_h_veracruz_7" class="ov_text_19">					
-				    Autor: Anónimo<br>
-				    Fecha: s.XVIII<br>
-				    Comprende la figura de la Verónica, sosteniendo en sus manos el lienzo con el que ha enjugado el rostro de Jesús, cuya imagen ha quedado impresa en él, y, con ella , el Nazareno en el momento de recibir la atención de la mujer.
-					<br><br>
-					<img src="styles/images/pasos/veracruz_faz.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_h_veracruz_8" class="ov_text_18">
-				<span class="ov_span_03">La Tercera Palabra</span>
-				<div id="ov_text_19_h_veracruz_8" class="ov_text_19">					
-				    Autor: "El Cristo de Anaya", atribuido a Juan Bautista Vazquez "El Viejo", San Juan y la Virgen anónimos<br>
-				    Fecha: "El Cristo de Anaya" 1580, San Juan y la Virgen mediados del s. XVIII<br>
-				    Paso de misterio compuesto por la figura de la Virgen y San Juan , de pie, junto a la Cruz, recibiendo el mensaje que Cristo le manifiesta en su Tercera Palabra; la figura de Cristo es una talla impresionante, de autor desconocido, aunque presenta unas características muy similares al Cristo de Burgos, que se venera en la Ciudad de Sevilla, cuyo autor es Juan Bautista Vázquez "El Viejo", escultor que trabajó en Ávila hasta 1561 en que se traslado a Sevilla, donde talló aquella imagen , que nos ha hecho pensar en que sea el autor de este Cristo de la Buena Muerte, que adquirió el Canonigo Anaya, para la capilla que edificó en el Claustro de la Catedral de Ávila
-					<br><br>
-					<img src="styles/images/pasos/veracruz_faz.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_h_veracruz_9" class="ov_text_18">
-				<span class="ov_span_03">Santísimo Cristo de los Ajusticiados</span>
-				<div id="ov_text_19_h_veracruz_9" class="ov_text_19">					
-				    Autor: Anónimo<br>
-				    Fecha: s. XVI<br>
-				    Es una talla esbelta de finales del siglo XVI o principios del XVII. y desconocemos el autor al que la Hermandad encargó sur realización. Recibió al principio el titulo de "Santísimo Cristo de la Buena Muerte"y muy pronto pasó a llamarse "Santísimo Cristo de los Ajusticiados" por la misión especial de acompañar a los reos en sus últimos momentos antes de la ejecución.Se venera en su Ermita del Humilladero.
-					<br><br>
-					<img src="styles/images/pasos/veracruz_ajusticiados.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>			
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PROCESIONES
+		</div>
+		
+		<div id="ov_to_herman" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Procesión de Los Pasos (17 de Abril, Jueves Santo)
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_pasos_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div id="ov_to_herman_02" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Vía Crucis (18 de Abril, Viernes Santo)
+		</div>
+		<script>
+			$("#ov_to_herman_02").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_crucis_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+				
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+				
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Santa Cruz
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Anónimo<br>
+		    Fecha: s.XVI<br>
+		    Constituye el simbolo de la Hermandad, llamada por ello de la "Santa Vera Cruz". Desde su fundación abrió siempre este desfile procesional y se la llamó Cruz Verde, porque aparece desnuda, sin que penda de ella el cuerpo de Cristo; fue elemento esencial en esta Procesión de penitencia, instituida para conmemorar la Pasión del Redentor
+			<br><br>
+			<img src="./resources/pasos/veracruz_cruz.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			La Cena
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: D. Manuel Sanchez Araciel<br>
+		    Fecha: 1904
+			<br><br>
+			<img src="./resources/pasos/veracruz_cena.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			La Oración en el Huerto
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Cristo - Juan Leal, el Ángel - Antonio Arenas Martinez<br>
+		    Fecha: Cristo - 1612 / el Ángel - 1952<br>
+		    No es una talla completa, sino solamente cabeza y manos, realizada para ser vestida en el resto de su cuerpo
+		    <br><br>
+			<img src="./resources/pasos/veracruz_huerto.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			El Prendimiento
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: D. Manuel Sánchez Araciel<br>
+		    Fecha: 1919<br>
+		    Paso de misterio compuesto por las imágenes de Jesús, Judas, San Pedro, Malco y un soldado
+		    <br><br>
+			<img src="./resources/pasos/veracruz_prendimiento.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Cristo amarrado a la Columna
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			 Autor: Escuela Castellana<br>
+		    Fecha: s. XVII<br>
+		    Se conserva en la Iglesia de los Mártires Vicente, Sabina y Cristeta de nuestra Ciudad de Ávila
+		    <br><br>
+			<img src="./resources/pasos/veracruz_amarrado.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			La Caída
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: D. Manuel Sánchez Araciel<br>
+		    Fecha: 1914<br>
+		    Paso de misterio compuesto por las imágenes de Jesús, El Cirineo, 2 esbirros y un soldado romano
+		    <br><br>
+			<img src="./resources/pasos/veracruz_caida.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			La Santa Faz
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Anónimo<br>
+		    Fecha: s.XVIII<br>
+		    Comprende la figura de la Verónica, sosteniendo en sus manos el lienzo con el que ha enjugado el rostro de Jesús, cuya imagen ha quedado impresa en él, y, con ella , el Nazareno en el momento de recibir la atención de la mujer.
+			<br><br>
+			<img src="./resources/pasos/veracruz_faz.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			La Tercera Palabra
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: "El Cristo de Anaya", atribuido a Juan Bautista Vazquez "El Viejo", San Juan y la Virgen anónimos<br>
+		    Fecha: "El Cristo de Anaya" 1580, San Juan y la Virgen mediados del s. XVIII<br>
+		    Paso de misterio compuesto por la figura de la Virgen y San Juan , de pie, junto a la Cruz, recibiendo el mensaje que Cristo le manifiesta en su Tercera Palabra; la figura de Cristo es una talla impresionante, de autor desconocido, aunque presenta unas características muy similares al Cristo de Burgos, que se venera en la Ciudad de Sevilla, cuyo autor es Juan Bautista Vázquez "El Viejo", escultor que trabajó en Ávila hasta 1561 en que se traslado a Sevilla, donde talló aquella imagen , que nos ha hecho pensar en que sea el autor de este Cristo de la Buena Muerte, que adquirió el Canonigo Anaya, para la capilla que edificó en el Claustro de la Catedral de Ávila
+			<br><br>
+			<img src="./resources/pasos/veracruz_palabra.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Santísimo Cristo de los Ajusticiados
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			 Autor: Anónimo<br>
+		    Fecha: s. XVI<br>
+		    Es una talla esbelta de finales del siglo XVI o principios del XVII. y desconocemos el autor al que la Hermandad encargó sur realización. Recibió al principio el titulo de "Santísimo Cristo de la Buena Muerte"y muy pronto pasó a llamarse "Santísimo Cristo de los Ajusticiados" por la misión especial de acompañar a los reos en sus últimos momentos antes de la ejecución.Se venera en su Ermita del Humilladero.
+			<br><br>
+			<img src="./resources/pasos/veracruz_ajusticiados.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
 		</div>
 			
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
 	</div>
+	
 </div>	
-

@@ -1,78 +1,50 @@
-<script>
-	$("#ov_view_container_02").css("background-color","#EBEBEB");	
-</script>
-<!-- Publi -->
-<div id="ov_zone_08_4" class="ov_zone_08">
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
 	
 </div>
-<script>	
-	load_ads("ov_zone_08_4");	
-</script>
-<div class="ov_vertical_space_05">&nbsp;</div>
-<!-- Publi -->
-<!-- Volver -->
-<div id="ov_zone_11_1" class="ov_zone_11_b">
-	<div id="ov_text_11_medinaceli" class="ov_text_11">
-		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
-	</div>
-	<script>
-		$("#ov_text_11_medinaceli").click(function(e){
-			if(referrer_from_herman=="")
-			{
-				$('#ov_view_container_01').load("./views/general/ov_view_proce_01.html",function(){
-					$('#ov_view_container_01').show('slide',{direction: "left"},500);
-					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
-				});
-			}
-			else
-			{
-				$('#ov_view_container_02').load(referrer_from_herman,function(){
-					$('#ov_view_container_02').show('slide',{direction: "right"},500);
-					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-					referrer_from_herman="";				
-				});
-			}
-				
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
 		});
-	</script>
-</div>
-<div class="ov_vertical_space_06">&nbsp;</div>
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
 <!-- Volver -->
-
-<div id="ov_zone_13_medinaceli" class="ov_zone_13_b">
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
 		
-	<div id="ov_box_13_medinaceli" class="ov_box_13_b">
-		<div id="ov_box_14_medinaceli" class="ov_box_14">
-			<div id="ov_text_12_medinaceli" class="ov_text_12_b">
+		<div style="padding:10px;background-color:#5E3656">
+			
+			<div style="font-family:'3';font-size:1.7em;color:#FFF;padding-bottom:10px;text-align:left;">
 				PROCESIÓN DE MEDINACELI
 			</div>
-			<div id="ov_text_13_medinaceli" class="ov_text_13">
-				día 15<br>
-				Martes Santo<br><br> 
+			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
+				15 de Abril - Martes Santo
 			</div>
-		</div>
-		<div id="ov_box_15_medinaceli" class="ov_box_15">
-			<div id="ov_text_15_medinaceli" class="ov_text_15">
-				Salida:
+			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
+				Salida a las <b>21 00h</b> desde S.A.I Catedral, en Plaza de la Catedral
 			</div>
-			<div id="ov_text_14_medinaceli" class="ov_text_14">
-				21 00h<br>
-				S.A.I Catedral<br>
-				Plaza Catedral
-			</div>				
+			
 		</div>
-		<div class="ov_clear_floats_01">&nbsp;</div>
-	</div>
-	
-</div>
-
-<div class="ov_vertical_space_01">&nbsp;</div>
-
-
-<div id="ov_zone_14_medinaceli" class="ov_zone_14">
-	<div id="ov_box_17_medinaceli" class="ov_box_17">
 		
-		<div id="ov_text_16_medinaceli" class="ov_text_16">
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			En Martes Santo tiene lugar la Procesión de Ntro. Padre Jesús de Medinaceli, un desfile que cuenta con siete pasos que reproducen las escenas principales de la Pasión de Cristo.
 			<br>
 			En primer lugar desfila la imagen de las Lágrimas de San Pedro. En ella, el apóstol aparece en actitud de arrepentimiento después de haber negado por tercera vez al Señor. Es de autor anónimo de la Escuela castellana del S. XVI, está policromada con la técnica del estofado y se custodia en la cripta de la Basílica de San Vicente.
@@ -84,237 +56,303 @@
 			Completan el cortejo de la procesión el Nazareno del Perdón (Jesús con la Cruz al hombro, obra de Víctor González Gil), el Calvario -configurado por el Cristo de la Salud, la Virgen, San Juan, María Magdalena y el centurión romano-, la Virgen del Mayor Dolor (una 'piedad' que sostiene el cadáver de Cristo salida de los Talleres de Arte Cristiano de Olot), el Cristo Yacente y María Santísima de las Lágrimas (imagen de candelero).
 		</div>
 		
-		<div id="ov_text_16_medinaceli_2" class="ov_text_16">
-			<span class="ov_span_02">Organiza.</span><br><br>
-			<div id="ov_text_17_medinaceli_1" class="ov_text_17">
-				Archicofradía de la Real e Ilustre Esclavitud de Ntro. Padre Jesús Nazareno "Medinaceli"
-			</div>
-			<script>
-				$("#ov_text_17_medinaceli_1").click(function(e){
-					referrer_from_proce="./views/procesiones/ov_view_medinaceli_01.html";
-					$('#ov_view_container_02').load("./views/hermandades/ov_view_h_medinaceli_01.html",function(){
-						$('#ov_view_container_02').show('slide',{direction: "right"},500);
-						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-						$('body,html').scrollTop("0px");				
-					});	
-				});
-			</script>
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			ORGANIZA.
 		</div>
 		
-		<div id="ov_text_16_medinaceli_3" class="ov_text_16">
-			<span class="ov_span_02">Hábito.</span><br><br>
+		<div id="ov_to_herman" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Archicofradía de la Real e Ilustre Esclavitud de Ntro. Padre Jesús Nazareno "Medinaceli"
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/ov_view_h_medinaceli_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			HÁBITO.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			Túnica morada con cíngulo amarillo, capa amarilla, capucho morado con cruces trinitarias.
-			<br><br>
-			<img src="styles/images/habitos/medinaceli.png" class="ov_image_11"/>
+			<img src="./resources/habitos/medinaceli.png" style="display:block"/>
 		</div>
 		
-		<div id="ov_text_16_medinaceli_4" class="ov_text_16">
-			<span class="ov_span_02">Pasos.</span><br><br>
-			<div id="ov_text_18_medinaceli_1" class="ov_text_18">
-				<b>Lágrimas de San Pedro</b>
-				<div id="ov_text_19_medinaceli_1" class="ov_text_19">					
-				    Autor: Escuela Castellana<br>
-				    Fecha:  s. XV<br>
-				    Se conserva en la Basílica de San Vicente, en uno de los altares de la Cripta.
-				    <br><br>
-					<img src="styles/images/pasos/medinaceli_san_pedro.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_medinaceli_2" class="ov_text_18">
-				<span class="ov_span_03">Jesús de Medinaceli</span>
-				<div id="ov_text_19_medinaceli_2" class="ov_text_19">					
-				    Autor: D.  Gerardo Morante <br>
-				    Fecha: 1947<br>
-				    La imagen fue donada a la Archicofradia por D. Florentino Rodriguez Germán, hermano del Padre Victoriano y fue bendecida el jueves día 4 de marzo de 1948, en la iglesia de San Antonio, por el Excmo y Rvdmo. Sr. Obispo de la Diócesis D. Santos Moro Briz.Es una replica de Jesús de Medinaceli de Madrid.				   
-					<br><br>
-					<img src="styles/images/pasos/medinaceli_jesus.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_medinaceli_3" class="ov_text_18">
-				<span class="ov_span_03">Nazareno del Perdón</span>
-				<div id="ov_text_19_medinaceli_3" class="ov_text_19">					
-				    Autor: D. Victor Gonzalez Gil <br>
-				    Fecha: 1992<br>
-				    Adquirida en 1992, y posteriormente policromada por el sacerdote abulense D. Juan Manuel Aranda. Actualmente se encuentra en el Museo del Convento de San Antonio. 
-					<br><br>
-					<img src="styles/images/pasos/medinaceli_nazareno.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_medinaceli_4" class="ov_text_18">
-				<span class="ov_span_03">El Calvario</span>
-				<div id="ov_text_19_medinaceli_4" class="ov_text_19">					
-				    Autor: Casa Alsina de Madrid<br>
-				    Fecha: 1946<br>
-				    Paso de misterio formado por el Cristo de la Salud, María Santísima, la Magdalena, San Juan y un soldado romano en actitud de trapasar con su lanza el costado del Señor. 
-					<br><br>
-					<img src="styles/images/pasos/medinaceli_calvario.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_medinaceli_5" class="ov_text_18">
-				<span class="ov_span_03">Virgen del Mayor Dolor</span>
-				<div id="ov_text_19_medinaceli_5" class="ov_text_19">					
-				    Autor: Talleres de Arte Cristiano de Olot (Gerona)<br>
-				    Fecha: 1947<br>
-				    La Virgen del Mayor Dolor es un grupo escultorico de gran realismo humano; adquirida por la Juventud Catolico Antoniana, llegó a Ávila en el mes de Marzo de 1947. Representa a la Madre, ante quien han bajado de una cruz a su hijo muerto y lo han depositado en el suelo para prepararle el sudario
-					<br><br>
-					<img src="styles/images/pasos/medinaceli_dolor.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_medinaceli_6" class="ov_text_18">
-				<span class="ov_span_03">Cristo Yacente</span>
-				<div id="ov_text_19_medinaceli_6" class="ov_text_19">					
-				    Autor: D. Ricardo Granada<br>
-				    Fecha: 1942<br>
-				    El Cristo Yacente es una imagen de 1,70 mts. Es una talla de madera pulida y encerada, que fue adquirida por los P. Franciscanos del Convento de San Antonio. Sustituyó en el desfile procesional a la imagen del Cristo Yacante de Niharra. 
-					<br><br>
-					<img src="styles/images/pasos/medinaceli_yacente.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>
-			<div id="ov_text_18_medinaceli_7" class="ov_text_18">
-				<span class="ov_span_03">Virgen de las Lágrimas</span>
-				<div id="ov_text_19_medinaceli_7" class="ov_text_19">					
-				    Autor: Casa Alsina de Madrid<br>
-				    Fecha: 1950<br>
-				    Respecto a la Virgen de las Lagrimas es donación de una señora anonima y está inspirada en el "Stabar Mater", himno liturgico atribuido al franciscano poeta Fray Copone de Trodi. Es copia de las Virgenes talladas por Salcillo. Hasta el año 1967 iba acompañada de señoras y señoritas de la Venerable Orden Tercera de San Francisco, ataviadas con traje y velos negros
-					<br><br>
-					<img src="styles/images/pasos/medinaceli_lagrimas.jpg" class="ov_image_12"/>
-					<br>
-				</div>
-			</div>									
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PASOS.
 		</div>
 		
-		<div id="ov_text_16_medinaceli_6" class="ov_text_16">
-			<span class="ov_span_02">Música.</span><br><br>
-			Banda de Cornetas y Tambores de la Oración en el Huerto de Medina del Campo.<br>
-			Banda de Cornetas y Tambores del Santo Sepulcro de Medina del Campo.<br>
-			Banda de Cornetas y Tambores del Stmo. Cristo a la Columna "El Amarrado". 
+		<div class="hollow_10px"> </div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Lágrimas de San Pedro
 		</div>
 		
-		<div id="ov_text_16_medinaceli_5" class="ov_text_16">
-			<span class="ov_span_02">Ruta.</span>
-			
-			<br><br>
-			Con salida y llegada en <span class="ov_span_03">Plaza de la Catedral</span>, la ruta se recorre en sentido horario.
-			<br><br>
-			
-			<iframe id="ov_mapa_ruta_medinaceli_1" style="width:100%;height:300px;border:none"  src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza Catedral, Ávila&destination=Plaza Catedral, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle Tomás Luis de Victoria, Ávila|Plaza Mercado Chico, Ávila|Calle Vallespín, 9, Ávila|Calle Ramón y Cajal, Ávila|Plaza Concepción Arenal, Ávila|Carretera Ronda Vieja, Ávila|Plaza San Vicente, Ávila|Calle San Segundo, 40, Ávila&language=es&zoom=15&center=40.658496,-4.698535">Para acceder al mapa necesitas una conexión activa</iframe>
-			
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Escuela Castellana
 			<br>
+			Fecha: s. XV
+			<br><br>
+			Se conserva en la Basílica de San Vicente, en uno de los altares de la Cripta.
+			<br><br>			
+			<img src="./resources/pasos/medinaceli_san_pedro.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Jesús de Medinaceli
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: D. Gerardo Morante
+			<br>
+			Fecha: 1947
+			<br><br>
+			La imagen fue donada a la Archicofradia por D. Florentino Rodriguez Germán, hermano del Padre Victoriano y fue bendecida el jueves día 4 de marzo de 1948, en la iglesia de San Antonio, por el Excmo y Rvdmo. Sr. Obispo de la Diócesis D. Santos Moro Briz.Es una replica de Jesús de Medinaceli de Madrid.				   
+			<br><br>			
+			<img src="./resources/pasos/medinaceli_jesus.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Nazareno del Perdón
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: D. Víctor Gonzalez Gil
+			<br>
+			Fecha: 1992
+			<br><br>
+			Adquirida en 1992, y posteriormente policromada por el sacerdote abulense D. Juan Manuel Aranda. Actualmente se encuentra en el Museo del Convento de San Antonio. 
+			<br><br>		
+			<img src="./resources/pasos/medinaceli_nazareno.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			El Calvario
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Casa Alsina de Madrid
+			<br>
+			Fecha: 1946
+			<br><br>
+			Paso de misterio formado por el Cristo de la Salud, María Santísima, la Magdalena, San Juan y un soldado romano en actitud de trapasar con su lanza el costado del Señor. 
+			<br><br>		
+			<img src="./resources/pasos/medinaceli_calvario.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Virgen del Mayor Dolor
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Talleres de Arte Cristiano de Olot (Gerona)
+			<br>
+			Fecha: 1947
+			<br><br>
+			La Virgen del Mayor Dolor es un grupo escultorico de gran realismo humano; adquirida por la Juventud Catolico Antoniana, llegó a Ávila en el mes de Marzo de 1947. Representa a la Madre, ante quien han bajado de una cruz a su hijo muerto y lo han depositado en el suelo para prepararle el sudario
+			<br><br>		
+			<img src="./resources/pasos/medinaceli_dolor.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Cristo Yacente
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: D. Ricardo Granada
+			<br>
+			Fecha: 1942
+			<br><br>
+			El Cristo Yacente es una imagen de 1,70 m. Es una talla de madera pulida y encerada, que fue adquirida por los P. Franciscanos del Convento de San Antonio. Sustituyó en el desfile procesional a la imagen del Cristo Yacante de Niharra. 
+			<br><br>	
+			<img src="./resources/pasos/medinaceli_yacente.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Virgen de las Lágrimas
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Casa Alsina de Madrid
+			<br>
+			Fecha: 1950
+			<br><br>
+			Respecto a la Virgen de las Lagrimas es donación de una señora anonima y está inspirada en el "Stabar Mater", himno liturgico atribuido al franciscano poeta Fray Copone de Trodi. Es copia de las Virgenes talladas por Salcillo. Hasta el año 1967 iba acompañada de señoras y señoritas de la Venerable Orden Tercera de San Francisco, ataviadas con traje y velos negros
+			<br><br>	
+			<img src="./resources/pasos/medinaceli_lagrimas.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>			
+		</div>
+								
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			MÚSICA.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Banda de Cornetas y Tambores de la Oración en el Huerto de Medina del Campo.
+			<br><br>
+			Banda de Cornetas y Tambores del Santo Sepulcro de Medina del Campo.
+			<br><br>
+			Banda de Cornetas y Tambores del Stmo. Cristo a la Columna "El Amarrado".
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			MAPA DE LA RUTA.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Con salida y llegada en S.A.I Catedral, en Plaza de la Catedral, la ruta se recorre en sentido horario.
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<iframe id="route_map" style="background-color:#5E3656;border:none;width:100%;height:400px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:center center;" seamless="seamless" src=""> 
+				
+			</iframe>
 			<script>
-				current_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza Catedral, Ávila&destination=Plaza Catedral, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle Tomás Luis de Victoria, Ávila|Plaza Mercado Chico, Ávila|Calle Vallespín, 9, Ávila|Calle Ramón y Cajal, Ávila|Plaza Concepción Arenal, Ávila|Carretera Ronda Vieja, Ávila|Plaza San Vicente, Ávila|Calle San Segundo, 40, Ávila&language=es&zoom=15&center=40.658496,-4.698535";
-				draw_map(current_url,'ov_mapa_ruta_medinaceli_1');
+				route_map_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza Catedral, Ávila&destination=Plaza Catedral, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle Tomás Luis de Victoria, Ávila|Plaza Mercado Chico, Ávila|Calle Vallespín, 9, Ávila|Calle Ramón y Cajal, Ávila|Plaza Concepción Arenal, Ávila|Carretera Ronda Vieja, Ávila|Plaza San Vicente, Ávila|Calle San Segundo, 40, Ávila&language=es&zoom=15&center=40.658496,-4.698535";
+				setTimeout(function(){
+					$("#route_map").attr("src",route_map_url);
+				},2000);
 			</script>
-			<div class="ov_button_01" id="ov_button_01_medinaceli_view_map" onclick="draw_map(current_url,'ov_mapa_ruta_medinaceli_1')">
-				Actualizar Mapa
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			ITINERARIO.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" style="background-color:#5E3656;border:none;width:100%;height:400px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:center center;" seamless="seamless" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
 			</div>
-			<br>
 			
-			<span class="ov_span_03">Itinerario:</span>
-			<br>
-			<i>Pulsa sobre cualquier punto abajo para obtener una ruta desde tu ubicación actual</i>
-			
-			<div id="ov_geo_route_2" style="display:none">
-				<br><br>
-
-				<iframe id="ov_mapa_ruta_medinaceli_2" style="width:100%;height:300px;border:none"  src="">Espera, por favor...</iframe>
-			
-				<div id="ov_geo_route_2_text" style="text-align:center;padding-top:10px;padding-bottom:10px">
-					
-				</div>				
-				<div class="ov_button_01" id="ov_button_01_medinaceli_refresh_map" onclick="show_route_2(destination,'15',destination_center,destination_container,destination_big_container);">
-				Actualizar posición
-				</div>
-				<br>
-				<div class="ov_button_01" id="ov_button_01_medinaceli_hide_map" onclick="$('#ov_geo_route_2').hide()">
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
 				Ocultar
-				</div>					
 			</div>
 			
-			<br><br>
-			<span class="ov_span_04" id="ov_place_medinaceli_1">Plaza de la Catedral</span>
-			<script>
-				$("#ov_place_medinaceli_1").click(function(e){
-					show_route_2("Plaza Catedral, Ávila","","","ov_mapa_ruta_medinaceli_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_medinaceli_2">Calle Tomás Luis de Victoria</span>
-			<script>
-				$("#ov_place_medinaceli_2").click(function(e){
-					show_route_2("Calle Tomás Luis de Victoria, Ávila","","","ov_mapa_ruta_medinaceli_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_medinaceli_3">Plaza Zurraquín</span>
-			<script>
-				$("#ov_place_medinaceli_3").click(function(e){
-					show_route_2("Plaza Zurraquín, Ávila","","","ov_mapa_ruta_medinaceli_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_medinaceli_4">Plaza Mercado Chico</span>
-			<script>
-				$("#ov_place_medinaceli_4").click(function(e){
-					show_route_2("Plaza Mercado Chico, Ávila","","","ov_mapa_ruta_medinaceli_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_medinaceli_5">Calle Vallespín</span>
-			<script>
-				$("#ov_place_medinaceli_5").click(function(e){
-					show_route_2("Calle Vallespín, 9, Ávila","","","ov_mapa_ruta_medinaceli_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_medinaceli_6">Calle Ramón y Cajal</span>
-			<script>
-				$("#ov_place_medinaceli_6").click(function(e){
-					show_route_2("Calle Ramón y Cajal, Ávila","","","ov_mapa_ruta_medinaceli_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_medinaceli_7">Plaza Concepción Arenal</span>
-			<script>
-				$("#ov_place_medinaceli_7").click(function(e){
-					show_route_2("Plaza Concepción Arenal, Ávila","","","ov_mapa_ruta_medinaceli_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_medinaceli_8">Ronda Vieja</span>
-			<script>
-				$("#ov_place_medinaceli_8").click(function(e){
-					show_route_2("Carretera Ronda Vieja, Ávila","","","ov_mapa_ruta_medinaceli_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_medinaceli_9">Plaza San Vicente</span>
-			<script>
-				$("#ov_place_medinaceli_9").click(function(e){
-					show_route_2("Plaza San Vicente, Ávila","","","ov_mapa_ruta_medinaceli_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_medinaceli_10">Calle San Segundo</span>
-			<script>
-				$("#ov_place_medinaceli_10").click(function(e){
-					show_route_2("Calle San Segundo, 40, Ávila","","","ov_mapa_ruta_medinaceli_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>
-			<span class="ov_span_04" id="ov_place_medinaceli_11">Plaza de la Catedral</span>
-			<script>
-				$("#ov_place_medinaceli_11").click(function(e){
-					show_route_2("Plaza Catedral, Ávila","","","ov_mapa_ruta_medinaceli_2","ov_geo_route_2");
-				});
-			</script>
-			<br><br>								
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
 		</div>
+		
+		<div id="ov_place_1" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza Catedral
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Plaza Catedral, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_2" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Tomás Luis de Victoria
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Calle Tomás Luis de Victoria, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_3" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza Zurraquín
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Plaza Zurraquín, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_4" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza Mercado Chico
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Plaza Mercado Chico, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_5" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Vallespín
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Calle Vallespín, 9, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_6" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Ramón y Cajal
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Calle Ramón y Cajal, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_7" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza Concepción Arenal
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Plaza Concepción Arenal, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_8" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Carretera Ronda Vieja
+		</div>
+		<script>
+			$("#ov_place_8").click(function(e){
+				show_geoloc("Carretera Ronda Vieja, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_9" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza San Vicente
+		</div>
+		<script>
+			$("#ov_place_9").click(function(e){
+				show_geoloc("Plaza San Vicente, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_10" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle San Segundo
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Calle San Segundo, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_11" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza Catedral
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Plaza Catedral, Ávila");
+			});
+		</script>						
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
 	</div>
+	
 </div>	
-

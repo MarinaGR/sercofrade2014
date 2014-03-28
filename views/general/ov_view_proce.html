@@ -1,0 +1,836 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_1" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_2" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_1").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_2").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited">
+		
+		<div id="ov_calendar_container">
+	
+			<!--Decorative -->
+			<div class="ov_white_line_2"> </div>
+			
+			<div class="hollow_10px"> </div>		
+			<!--Decorative -->
+			
+			<div id="ov_calendar_items_container">	
+							
+				<div id="ov_box_10_11_abr" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_1">
+						Viernes
+					</div>
+					<div id="ov_vertical_space_03_11_abr" class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_1">
+						11
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_11_abr").click(function(e){
+						selected_day_in_proce_list=11;
+						calculate_day();	
+					});
+				</script>
+				
+				<div id="ov_box_10_12_abr" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_2">
+						Sábado
+					</div>
+					<div id="ov_vertical_space_03_12_abr" class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_2">
+						12
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_12_abr").click(function(e){
+						selected_day_in_proce_list=12;
+						calculate_day();	
+					});
+				</script>
+				
+				<div id="ov_box_10_13_abr" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_3">
+						Domingo
+					</div>
+					<div id="ov_vertical_space_03_13_abr" class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_3">
+						13
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_13_abr").click(function(e){						
+						selected_day_in_proce_list=13;
+						calculate_day();	
+					});
+				</script>
+				
+				<div id="ov_box_10_14_abr" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_4">
+						Lunes
+					</div>
+					<div id="ov_vertical_space_03_14_abr" class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_4">
+						14
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_14_abr").click(function(e){						
+						selected_day_in_proce_list=14;
+						calculate_day();	
+					});
+				</script>
+				
+				<div id="ov_box_10_15_abr" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_5">
+						Martes
+					</div>
+					<div id="ov_vertical_space_03_15_abr" class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_5">
+						15
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_15_abr").click(function(e){					
+						selected_day_in_proce_list=15;
+						calculate_day();	
+					});
+				</script>
+				
+				<div class="ov_clear_floats"> </div>	
+				
+				<div id="ov_box_10_16_abr" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_6">
+						Miércoles
+					</div>
+					<div id="ov_vertical_space_03_16_abr" class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_6">
+						16
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_16_abr").click(function(e){					
+						selected_day_in_proce_list=16;
+						calculate_day();	
+					});
+				</script>
+				
+				<div id="ov_box_10_17_abr" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_7">
+						Jueves
+					</div>
+					<div id="ov_vertical_space_03_17_abr" class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_7">
+						17
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_17_abr").click(function(e){					
+						selected_day_in_proce_list=17;
+						calculate_day();	
+					});
+				</script>
+				
+				<div id="ov_box_10_18_abr" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_8">
+						Viernes
+					</div>
+					<div id="ov_vertical_space_03_18_abr" class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_8">
+						18
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_18_abr").click(function(e){
+						selected_day_in_proce_list=18;
+						calculate_day();	
+					});
+				</script>
+				
+				<div id="ov_box_10_19_abr" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_9">
+						Sábado
+					</div>
+					<div id="ov_vertical_space_03_19_abr" class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_9">
+						19
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_19_abr").click(function(e){
+						selected_day_in_proce_list=19;
+						calculate_day();	
+					});
+				</script>
+				
+				<div id="ov_box_10_20_abr" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_10">
+						Domingo
+					</div>
+					<div id="ov_vertical_space_03_20_abr" class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_10">
+						20
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_20_abr").click(function(e){						
+						selected_day_in_proce_list=20;
+						calculate_day();	
+					});
+				</script>
+				
+				<div class="ov_clear_floats">&nbsp;</div>		
+					
+			</div>
+			
+			<!--Decorative -->
+			<div class="ov_white_line_2"> </div>
+			
+			<div class="hollow_10px"> </div>		
+			<!--Decorative -->
+	
+		</div>
+		
+		<div id="proce_list_container">
+	
+			<div class="hollow_10px"> </div>
+			<div class="hollow_10px"> </div>	
+			
+			<div id="ov_zone_13_11_abr" class="ov_zone_13">
+				
+				<div id="ov_box_13_1" class="ov_box_13">
+					<div id="ov_box_14_1" class="ov_box_14">
+						<div id="ov_text_12_1" class="ov_text_12">
+							VIA MATRIS
+						</div>
+						<div id="ov_text_13_1" class="ov_text_13">
+							día 11 
+						</div>
+					</div>
+					<div id="ov_box_15_1" class="ov_box_15">
+						<div id="ov_text_15_1" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_1" class="ov_text_14">
+							20 45h<br>
+							Convento de Santa Teresa
+						</div>
+						<div id="ov_box_16_1" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_1").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+								
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+						
+			</div>
+			
+			<div id="ov_zone_13_12_abr" class="ov_zone_13">
+				
+				<div id="ov_box_13_2" class="ov_box_13">
+					<div id="ov_box_14_2" class="ov_box_14">
+						<div id="ov_text_12_2" class="ov_text_12_b">
+							PROCESIÓN DE LOS ESTUDIANTES
+						</div>
+						<div id="ov_text_13_2" class="ov_text_13">
+							día 12
+						</div>
+					</div>
+					<div id="ov_box_15_2" class="ov_box_15">
+						<div id="ov_text_15_2" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_2" class="ov_text_14">
+							21 15h<br>
+							Iglesia de San Pedro Apóstol
+						</div>
+						<div id="ov_box_16_2" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats">&nbsp;</div>
+				</div>
+				<script>
+					$("#ov_box_13_2").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_estudiantes_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+			</div>
+			
+			<div id="ov_zone_13_13_abr" class="ov_zone_13">
+				
+				<div id="ov_box_13_3" class="ov_box_13">
+					<div id="ov_box_14_3" class="ov_box_14">
+						<div id="ov_text_12_3" class="ov_text_12">
+							LAS PALMAS
+						</div>
+						<div id="ov_text_13_3" class="ov_text_13">
+							día 13 
+						</div>
+					</div>
+					<div id="ov_box_15_3" class="ov_box_15">
+						<div id="ov_text_15_3" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_3" class="ov_text_14">
+							Fin de Misa Mayor 11 00h<br>
+							S.A.I Catedral
+						</div>
+						<div id="ov_box_16_3" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_3").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_las_palmas_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+												
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+			</div>
+			
+			<div id="ov_zone_13_14_abr" class="ov_zone_13">
+				
+				<div id="ov_box_13_4" class="ov_box_13">
+					<div id="ov_box_14_4" class="ov_box_14">
+						<div id="ov_text_12_4" class="ov_text_12_b">
+							PROCESIÓN DE LA ILUSIÓN
+						</div>
+						<div id="ov_text_13_4" class="ov_text_13">
+							día 14
+						</div>
+					</div>
+					<div id="ov_box_15_4" class="ov_box_15">
+						<div id="ov_text_15_4" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_4" class="ov_text_14">
+							21 00h<br>
+							Ermita Ntra. Sra. de las Vacas
+						</div>
+						<div id="ov_box_16_4" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_4").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_encuentro_1_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+												
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_5" class="ov_box_13">
+					<div id="ov_box_14_5" class="ov_box_14">
+						<div id="ov_text_12_5" class="ov_text_12_b">
+							PROCESIÓN DE LA ESPERANZA
+						</div>
+						<div id="ov_text_13_5" class="ov_text_13">
+							día 14
+						</div>
+					</div>
+					<div id="ov_box_15_5" class="ov_box_15">
+						<div id="ov_text_15_5" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_5" class="ov_text_14">
+							19 30h<br>
+							Iglesia de San Juan Bautista
+						</div>
+						<div id="ov_box_16_5" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_5").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_encuentro_2_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+													
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+					
+			</div>
+			
+			<div id="ov_zone_13_15_abr" class="ov_zone_13">
+				
+				<div id="ov_box_13_6" class="ov_box_13">
+					<div id="ov_box_14_6" class="ov_box_14">
+						<div id="ov_text_12_6" class="ov_text_12_b">
+							PROCESIÓN DE LA ESTRELLA
+						</div>
+						<div id="ov_text_13_6" class="ov_text_13">
+							día 15
+						</div>
+					</div>
+					<div id="ov_box_15_6" class="ov_box_15">
+						<div id="ov_text_15_6" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_6" class="ov_text_14">
+							16 15h<br>
+							Iglesia de Santa María de Jesús
+						</div>
+						<div id="ov_box_16_6" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_6").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_estrella_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_7" class="ov_box_13">
+					<div id="ov_box_14_7" class="ov_box_14">
+						<div id="ov_text_12_7" class="ov_text_12_b">
+							PROCESIÓN DE MEDINACELI
+						</div>
+						<div id="ov_text_13_7" class="ov_text_13">
+							día 15
+						</div>
+					</div>
+					<div id="ov_box_15_7" class="ov_box_15">
+						<div id="ov_text_15_7" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_7" class="ov_text_14">
+							21 00h<br>
+							S.A.I Catedral
+						</div>
+						<div id="ov_box_16_7" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_7").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_medinaceli_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_8" class="ov_box_13">
+					<div id="ov_box_14_8" class="ov_box_14">
+						<div id="ov_text_12_8" class="ov_text_12_b">
+							PROCESIÓN DEL MISERERE
+						</div>
+						<div id="ov_text_13_8" class="ov_text_13">
+							día 15
+						</div>
+					</div>
+					<div id="ov_box_15_8" class="ov_box_15">
+						<div id="ov_text_15_8" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_8" class="ov_text_14">
+							00 00h<br>
+							Iglesia de la Magdalena
+						</div>
+						<div id="ov_box_16_8" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_8").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_miserere_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+			</div>
+			
+			<div id="ov_zone_13_16_abr" class="ov_zone_13">
+				
+				<div id="ov_box_13_9" class="ov_box_13">
+					<div id="ov_box_14_9" class="ov_box_14">
+						<div id="ov_text_12_9" class="ov_text_12_b">
+							PROCESIÓN DEL SILENCIO
+						</div>
+						<div id="ov_text_13_9" class="ov_text_13">
+							día 16
+						</div>
+					</div>
+					<div id="ov_box_15_9" class="ov_box_15">
+						<div id="ov_text_15_9" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_9" class="ov_text_14">
+							20 30h<br>
+							Iglesia de San Nicolás
+						</div>
+						<div id="ov_box_16_9" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_9").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_silencio_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_10" class="ov_box_13">
+					<div id="ov_box_14_10" class="ov_box_14">
+						<div id="ov_text_12_10" class="ov_text_12_c">
+							PROCESIÓN DEL CRISTO DE LAS BATALLAS
+						</div>
+						<div id="ov_text_13_10" class="ov_text_13">
+							día 16
+						</div>
+					</div>
+					<div id="ov_box_15_10" class="ov_box_15">
+						<div id="ov_text_15_10" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_10" class="ov_text_14">
+							23 00h<br>
+							Iglesia de San Pedro Apóstol
+						</div>
+						<div id="ov_box_16_10" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_10").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_batallas_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+			
+			</div>
+			
+			<div id="ov_zone_13_17_abr" class="ov_zone_13">
+				
+				<div id="ov_box_13_11" class="ov_box_13">
+					<div id="ov_box_14_11" class="ov_box_14">
+						<div id="ov_text_12_11" class="ov_text_12_b">
+							PROCESIÓN DE LA MADRUGADA
+						</div>
+						<div id="ov_text_13_11" class="ov_text_13">
+							día 17
+						</div>
+					</div>
+					<div id="ov_box_15_11" class="ov_box_15">
+						<div id="ov_text_15_11" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_11" class="ov_text_14">
+							02 00h<br>
+							Iglesia de Mosén Rubí
+						</div>
+						<div id="ov_box_16_11" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_11").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_madrugada_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_12" class="ov_box_13">
+					<div id="ov_box_14_12" class="ov_box_14">
+						<div id="ov_text_12_12" class="ov_text_12_b">
+							PROCESIÓN DE LOS PASOS
+						</div>
+						<div id="ov_text_13_12" class="ov_text_13">
+							día 17
+						</div>
+					</div>
+					<div id="ov_box_15_12" class="ov_box_15">
+						<div id="ov_text_15_12" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_12" class="ov_text_14">
+							21 00h<br>
+							S.A.I Catedral
+						</div>
+						<div id="ov_box_16_12" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_12").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_pasos_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+			</div>
+			
+			<div id="ov_zone_13_18_abr" class="ov_zone_13">
+			
+				<div id="ov_box_13_13" class="ov_box_13">
+					<div id="ov_box_14_13" class="ov_box_14">
+						<div id="ov_text_12_13" class="ov_text_12">
+							VÍA CRUCIS
+						</div>
+						<div id="ov_text_13_13" class="ov_text_13">
+							día 18
+						</div>
+					</div>
+					<div id="ov_box_15_13" class="ov_box_15">
+						<div id="ov_text_15_13" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_13" class="ov_text_14">
+							05 30h<br>
+							S.A.I Catedral
+						</div>
+						<div id="ov_box_16_13" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_13").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_crucis_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_14" class="ov_box_13">
+					<div id="ov_box_14_14" class="ov_box_14">
+						<div id="ov_text_12_14" class="ov_text_12_b">
+							SERMÓN DE LAS SIETE PALABRAS
+						</div>
+						<div id="ov_text_13_14" class="ov_text_13">
+							día 18
+						</div>
+					</div>
+					<div id="ov_box_15_14" class="ov_box_15">
+						<div id="ov_text_15_14" class="ov_text_15">
+							Cuándo y Dónde:
+						</div>
+						<div id="ov_text_14_14" class="ov_text_14">
+							12 00h<br>
+							San Ignacio de Loyola
+						</div>
+						<div id="ov_box_16_14" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_14").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_sermon_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_15" class="ov_box_13">
+					<div id="ov_box_14_15" class="ov_box_14">
+						<div id="ov_text_12_15" class="ov_text_12_b">
+							PASIÓN Y SANTO ENTIERRO
+						</div>
+						<div id="ov_text_13_15" class="ov_text_13">
+							día 18
+						</div>
+					</div>
+					<div id="ov_box_15_15" class="ov_box_15">
+						<div id="ov_text_15_15" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_15" class="ov_text_14">
+							20 30h<br>
+							S.A.I Catedral
+						</div>
+						<div id="ov_box_16_15" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_15").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_pasion_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+			
+			</div>
+			
+			<div id="ov_zone_13_19_abr" class="ov_zone_13">
+				
+				<div id="ov_box_13_16" class="ov_box_13">
+					<div id="ov_box_14_16" class="ov_box_14">
+						<div id="ov_text_12_16" class="ov_text_12_b">
+							PROCESIÓN DE LA SOLEDAD
+						</div>
+						<div id="ov_text_13_16" class="ov_text_13">
+							día 19
+						</div>
+					</div>
+					<div id="ov_box_15_16" class="ov_box_15">
+						<div id="ov_text_15_16" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_16" class="ov_text_14">
+							19 45h<br>
+							Iglesia de San Pedro Apóstol
+						</div>
+						<div id="ov_box_16_16" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_16").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_soledad_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>		
+					
+			</div>
+			
+			<div id="ov_zone_13_20_abr" class="ov_zone_13">
+			
+				<div id="ov_box_13_17" class="ov_box_13">
+					<div id="ov_box_14_17" class="ov_box_14">
+						<div id="ov_text_12_17" class="ov_text_12_b">
+							PROCESIÓN DEL RESUCITADO
+						</div>
+						<div id="ov_text_13_17" class="ov_text_13">
+							día 20
+						</div>
+					</div>
+					<div id="ov_box_15_17" class="ov_box_15">
+						<div id="ov_text_15_17" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_17" class="ov_text_14">
+							Fin Misa Solemne 11 00h<br>
+							Iglesia de La Sagrada Familia
+						</div>
+						<div id="ov_box_16_17" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_17").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_resucitado_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+											
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+			</div>
+	
+			<div class="hollow_10px"> </div>
+			<div class="hollow_10px"> </div>
+			
+		</div>
+		
+	</div>
+		
+</div>
+<script>
+	calculate_day();	
+</script>
+
+
+

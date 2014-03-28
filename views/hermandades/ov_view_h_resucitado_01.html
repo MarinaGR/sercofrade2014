@@ -1,69 +1,58 @@
-<script>
-	$("#ov_view_container_02").css("background-color","#EBEBEB");	
-</script>
-
-<!-- Publi -->
-<div id="ov_zone_08_5" class="ov_zone_08">
+<!-- Volver -->
+<div style="display: block;" class="ov_back_button_container">
 	
-</div>
-<script>	
-	load_ads("ov_zone_08_5");	
-</script>
-<div class="ov_vertical_space_05">&nbsp;</div>
-<!-- Publi -->
-<!-- Volver -->
-<div id="ov_zone_11_1" class="ov_zone_11_b">
-	<div id="ov_text_11_h_resucitado" class="ov_text_11">
-		<img src="styles/images/atras.png" id="ov_image_09_1" class="ov_image_09" alt="arrow_05"/> volver
-	</div>
-	<script>
-		$("#ov_text_11_h_resucitado").click(function(e){
-			if(referrer_from_proce=="")
-			{
-				$('#ov_view_container_01').load("./views/general/ov_view_herman_01.html",function(){
-					$('#ov_view_container_01').show('slide',{direction: "left"},500);
-					$('#ov_view_container_02').hide('slide',{direction: "right"},500);				
-				});
-			}
-			else
-			{
-				$('#ov_view_container_02').load(referrer_from_proce,function(){
-					$('#ov_view_container_02').show('slide',{direction: "right"},500);
-					$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-					referrer_from_proce="";				
-				});
-			}	
-		});
-	</script>
-</div>
-<div class="ov_vertical_space_06">&nbsp;</div>
-<!-- Volver -->
-
-<div id="ov_zone_13_h_resucitado" class="ov_zone_13_b">
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_5" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"> Volver
+		</div>
 		
-	<div id="ov_box_13_h_resucitado" class="ov_box_13_b">
-		<div id="ov_box_14_h_resucitado" class="ov_box_14">
-			<img src="styles/images/escudos/resucitado.JPG" id="ov_image_03_4" class="ov_image_03" alt="circle_04"/>
+		<div id="ov_back_button_6" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"> Menú
 		</div>
-		<div id="ov_box_15_h_resucitado" class="ov_box_15">
-			<div id="ov_text_15_h_resucitado" class="ov_text_15">
-							
-				Cofradía del Stmo. Cristo Resucitado y Ntra. Sra. del Buen Suceso
-			</div>
-						
-		</div>
-		<div class="ov_clear_floats_01">&nbsp;</div>
 	</div>
 	
 </div>
-
-<div class="ov_vertical_space_01">&nbsp;</div>
-
-
-
-<div id="ov_zone_14_h_resucitado" class="ov_zone_14">
-	<div id="ov_box_17_h_resucitado" class="ov_box_17">
-		<div id="ov_text_16_h_resucitado" class="ov_text_16">
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_5").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_6").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div style="padding:10px;background-color:#5E3656">
+			
+			<div id="ov_large_menu_item_1" class="ov_large_menu_item">
+			
+				<div class="ov_box_circle_images">
+					
+					<img src="./resources/escudos/resucitado.JPG" class="ov_image_circle" alt=" ">
+					
+				</div>
+				
+				<div class="ov_box_large_menu_item_title">
+					
+					<div class="ov_text_large_menu_item_01" style="color:#FFF">Cofradía del Stmo. Cristo Resucitado y Ntra. Sra. del Buen Suceso</div>				
+					
+				</div>
+				
+				<div class="ov_clear_floats"> </div>
+				
+			</div>
+			
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			La Cofradía esta constituida actualmente por la fusión de las cofradías del Santísimo Cristo Resucitado y la de Nuestra Señora del Buen Suceso, fundadas ambas en la antigua parroquia de San Andrés.
 			<br>
 			La Cofradía del Santísimo Cristo Resucitado aparece ya constituida en el año 1689. Unos años después deciden trasladar su sede a la Ermita del Pradillo. Fue en el año 1750 cuando la Cofradía acordó hacer una procesión para el próximo año, sacando la imagen por los alrededores de la ermita. Ante la grata acogida que tuvo esta procesión los hermanos decidieron hacer la procesión por las calles de la ciudad el Domingo de Resurrección.
@@ -72,74 +61,87 @@
 			<br>
 			En el año 1944 la Cofradía de Nuestra Señora del Buen suceso considera la conveniencia de unirse a la Cofradía del Santísimo Cristo Resucitado y celebrar conjuntamente la procesión anual del Domingo de Resurrección.
 			<br>
-			Una vez celebrada la eucaristía, las dos imágenes salen de la iglesia de la Sagrada Familia por diferentes puertas y delante de la misma se realiza el encuentro. Acto seguido se inicia la procesión por las calles céntricas de la ciudad hasta la ermita del Pradillo, donde por la tarde se celebra una multitudinaria romería. 
+			Una vez celebrada la eucaristía, las dos imágenes salen de la iglesia de la Sagrada Familia por diferentes puertas y delante de la misma se realiza el encuentro. Acto seguido se inicia la procesión por las calles céntricas de la ciudad hasta la ermita del Pradillo, donde por la tarde se celebra una multitudinaria romería. 	
 		</div>
 		
-		<div id="ov_text_16_h_resucitado_3" class="ov_text_16">
-			<span class="ov_span_02">Datos.</span><br><br>
-			<span class="ov_span_01">Hábito:</span><br>Túnica y caperuza de color blanco, cíngulo y capa de color rojo.
-			<br><br>
-			<img src="styles/images/habitos/resucitado.png" class="ov_image_11"/>
-			<br><br>
-			<span class="ov_span_01">Templo de Residencia Canónica:</span><br>Ermita del Pradillo
-			<br><br>
-			<span class="ov_span_01">Fundación:</span><br>1689 
-			<br><br>
-			<span class="ov_span_01">Hermanos:</span><br>563
-			<br><br>
-			<span class="ov_span_01">Nazarenos:</span><br>200
-			<br><br>
-			<span class="ov_span_01">Atributos de los Hermanos:</span><br>Vela eléctrica.
-			<br><br>
-			<span class="ov_span_01">Culto(s) organizados:</span><br>Cada 2 meses, en su ermita, misa por los hermanos difuntos 
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			DATOS
 		</div>
-		<div id="ov_text_16_h_resucitado_6" class="ov_text_16">
-			<span class="ov_span_02">Contacto.</span><br><br>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			<b>Hábito:</b><br>Túnica y caperuza de color blanco, cíngulo y capa de color rojo.
+			<img src="./resources/habitos/resucitado.png" style="display:block">
+			<b>Templo de Residencia Canónica:</b><br>Ermita del Pradillo
+			<br><br>
+			<b>Fundación:</b><br>1689.
+			<br><br>
+			<b>Hermanos:</b><br>563.
+			<br><br>
+			<b>Nazarenos:</b><br>200.
+			<br><br>
+			<b>Atributos de los Hermanos:</b><br>Vela eléctrica
+			<br><br>
+			<b>Culto(s) organizados:</b>
+				<br>Cada 2 meses, en su ermita, misa por los hermanos difuntos 
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			CONTACTO
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
 			Cofradía Stmo. Cristo Resucitado y Ntra. Sra.del Buen Suceso<br>
 			Calle Valladolid, nº 40<br>
 			05005 Ávila<br>			
 		</div>
-		<div id="ov_text_16_h_resucitado_2" class="ov_text_16">
-			<span class="ov_span_02">Procesiones.</span><br><br>
-			<div id="ov_text_17_h_resucitado_1" class="ov_text_17">
-				Procesión del Resucitado (20 de Abril, Domingo de Resurección)
-			</div>
-			<script>
-				$("#ov_text_17_h_resucitado_1").click(function(e){
-					referrer_from_herman="./views/hermandades/ov_view_h_resucitado_01.html";
-					$('#ov_view_container_02').load("./views/procesiones/ov_view_resucitado_01.html",function(){
-						$('#ov_view_container_02').show('slide',{direction: "right"},500);
-						$('#ov_view_container_01').hide('slide',{direction: "left"},500);
-						$('body,html').scrollTop("0px");				
-					});	
-				});
-			</script>			
-		</div>	
-		<div id="ov_text_16_h_resucitado_4" class="ov_text_16">
-			<span class="ov_span_02">Pasos.</span><br><br>			
-			<div id="ov_text_18_h_resucitado_1" class="ov_text_18">
-				<span class="ov_span_03">Santísimo Cristo Resucitado</span>
-				<div id="ov_text_19_resucitado_1" class="ov_text_19">					
-				    Autor: Anónimo<br>
-				    Fecha: s.XX
-				    <br><br>
-					<img src="styles/images/pasos/resucitado_resucitado.jpg" class="ov_image_12"/>
-					<br>
-					
-				</div>
-			</div>
-			<div id="ov_text_18_h_resucitado_2" class="ov_text_18">
-				<span class="ov_span_03">Nuestra Señora del Buen Suceso</span>
-				<div id="ov_text_19_resucitado_2" class="ov_text_19">					
-				    Autor: Anónimo <br>
-				    Fecha: s XVII
-				    <br><br>
-					<img src="styles/images/pasos/suceso_resucitado.jpg" class="ov_image_12"/>
-					<br>				    
-				</div>
-			</div>			
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PROCESIONES
+		</div>
+		
+		<div id="ov_to_herman" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Procesión del Resucitado (20 de Abril, Domingo de Resurección)
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_resucitado_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+				
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+				
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Santísimo Cristo Resucitado
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Anónimo<br>
+		    Fecha: s.XX
+		    <br><br>
+			<img src="./resources/pasos/resucitado_resucitado.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Nuestra Señora del Buen Suceso
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Anónimo <br>
+		    Fecha: s XVII
+		    <br><br>	
+			<img src="./resources/pasos/suceso_resucitado.jpg" style="display:block;margin:auto;width:80%;max-width:300px">			
 		</div>
 			
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
 	</div>
+	
 </div>	
-

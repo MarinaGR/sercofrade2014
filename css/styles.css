@@ -297,6 +297,7 @@ body
 	border-bottom:2px solid #000;
 	display:none;
 	overflow:hidden;
+	top: 60px;
 }
 .ov_back_button_container_limited
 {

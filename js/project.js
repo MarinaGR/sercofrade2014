@@ -187,5 +187,5 @@ function onBackKeyDown()
 
 function onMenuKeyDown()
 {
-	
+	load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: view_background_image, view_background_image: prev_view_background_image, view_to_hide: previous_view });
 }

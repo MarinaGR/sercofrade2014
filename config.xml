@@ -3,8 +3,8 @@
 
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.ovnyline.sercofrade"
-    version     = "1.0.2"
-    versionCode = "21" >
+    version     = "1.0.3"
+    versionCode = "22" >
 
     <preference name="phonegap-version" value="3.1.0" />
 

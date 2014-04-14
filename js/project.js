@@ -135,7 +135,7 @@ function load_view(options)
 		}*/
 		if(options.url_to_load=="./views/general/ov_view_main_menu.html")
 		{
-			window.location.href=navigator.app.exitapp();
+			navigator.app.exitApp();
 			return false;
 		}
 			

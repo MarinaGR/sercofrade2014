@@ -67,22 +67,24 @@
 		</div>
 		
 		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
-			<b>Hábito:</b><br>Túnica, caperuza y capa de color morado, con cíngulo amarillo.
+			<b>Hábito:</b><br>Túnica y caperuza morada, con capa de terciopelo granate, y cíngulo amarillo
 				<img src="./resources/habitos/pasos_1.png" style="display:block">
-				<br>Túnica y caperuza blanco, cíngulo verde y capa morada.
-				<img src="./resources/habitos/pasos_2.png" style="display:block">
 			<b>Templo de Residencia Canónica:</b><br>Ermita del Humilladero - Iglesia de San Vicente - S.A.I Catedral
 			<br><br>
 			<b>Fundación:</b><br>1540.
 			<br><br>
-			<b>Hermanos:</b><br>372.
+			<b>Hermanos:</b><br>250.
 			<br><br>
 			<b>Nazarenos:</b><br>270.
 			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Hachones con luz eléctrica
+			<b>Atributos de los Hermanos:</b><br>Hachones con vela natural y Hachones con vela eléctrica
 			<br><br>
 			<b>Culto(s) organizados:</b>
-				<br>Encuentro con los jóvenes del Patronato todos los sábados. 	
+				<br>Triduo de la Santa Cruz
+				<br>Fiesta de la Exaltación de la Santa Cruz (Septiembre)
+				<br>Vía Crucis (todos los viernes de Cuaresma)
+				<br>Bendición de Ramos de la Parroquia de San Vicente (Domingo de Ramos)
+				<br>Encuentros y ensayos de anderos (sábados de Enero a Semana Santa)	
 		</div>
 		
 		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
@@ -94,11 +96,24 @@
 			Ermita del Humilladero<br>
 			Plaza del Humilladero, s/n<br>
 			05001 Ávila<br>
+			http://www.veracruzavila.org<br>
+			veracruzavila@gmail.com<br>
 		</div>
 		
 		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
 			PROCESIONES
 		</div>
+		
+		<div id="ov_to_herman0" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			 Traslado del Santísimo Cristo de los Ajusticiados (17 de Abril, Jueves Santo)
+		</div>
+		<script>
+			$("#ov_to_herman0").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_traslado_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
 		
 		<div id="ov_to_herman" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
 			Procesión de Los Pasos (17 de Abril, Jueves Santo)

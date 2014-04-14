@@ -133,7 +133,7 @@ function load_view(options)
 			window.location.href=options.url_to_load;
 			return false;
 		}*/
-		if(options.url_to_load=="./views/general/ov_view_main_menu.html")
+		if(options.previous_url=="./views/general/ov_view_main_menu.html")
 		{
 			navigator.app.exitApp();
 			return false;

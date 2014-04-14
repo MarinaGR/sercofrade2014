@@ -133,11 +133,7 @@ function load_view(options)
 			window.location.href=options.url_to_load;
 			return false;
 		}*/
-		if(current_url=="./views/general/ov_view_main_menu.html")
-		{
-			navigator.app.exitApp();
-			return false;
-		}
+	
 			
 		$('#'+options.view_to_load).load(options.url_to_load+"?"+Math.random(),function(){
 			
@@ -185,6 +181,11 @@ function onDeviceReady()
     
 function onBackKeyDown()
 {
+	if(current_url=="./views/general/ov_view_main_menu.html")
+	{
+		navigator.app.exitApp();
+		return false;
+	}
 	
 	load_view({view_to_load: previous_view, url_to_load: previous_url, view_background_color: prev_view_background_color, view_background_image: prev_view_background_image, view_to_hide: current_view });	
 	

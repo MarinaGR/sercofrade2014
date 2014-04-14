@@ -1,0 +1,218 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div style="padding:10px;background-color:#5E3656">
+			
+			<div style="font-family:'3';font-size:1.7em;color:#FFF;padding-bottom:10px;text-align:left;">
+				TRASLADO DEL SANTÍSIMO CRISTO DE LOS AJUSTICIADOS
+			</div>
+			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
+				17 de Abril - Jueves Santo
+			</div>
+			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
+				Salida a las <b>12 00h</b> desde la Ermita del Humilladero
+			</div>
+			
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			 Traslado del paso del Santísimo Cristo de los Ajusticiados, portado por 12 anderos, desde la Ermita del Humilladero hasta la Plaza de la Catedral.
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Iltre. Patronato de la Santa Vera Cruz
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/ov_view_h_veracruz_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			HÁBITO.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Túnica y caperuza morada, con capa de terciopelo granate, y cíngulo amarillo
+			<img src="./resources/habitos/pasos_1.png" style="display:block"/>
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Santísimo Cristo de los Ajusticiados
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Anónimo
+			<br>
+			Fecha: s. XVI
+			<br><br>
+			Es una talla esbelta de finales del siglo XVI o principios del XVII. y desconocemos el autor al que la Hermandad encargó su realización. Recibió al principio el titulo de "Santísimo Cristo de la Buena Muerte"y muy pronto pasó a llamarse "Santísimo Cristo de los Ajusticiados" por la misión especial de acompañar a los reos en sus últimos momentos antes de la ejecución.Se venera en su Ermita del Humilladero.
+			<br><br>
+			<img src="./resources/pasos/veracruz_ajusticiados.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>			
+		</div>
+								
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			MÚSICA.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Carraca
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			MAPA DE LA RUTA.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Con salida desde la Ermita del Humilladero y llegada a la Plaza de la Catedral. 
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<iframe id="route_map" style="background-color:#5E3656;border:none;width:100%;height:400px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:center center;" src=""> 
+				
+			</iframe>
+			<script>
+				route_map_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Calle Humilladero, Ávila&destination=Plaza Catedral, 9, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle Humilladero, Ávila|Calle de San Vicente, 4, Ávila|Av Portugal, Ávila|Calle San Segundo, 38, Ávila|Calle Los Leales, 2, Ávila|Plaza Catedral, Ávila&language=es&zoom=15&center=40.657877,-4.697912";				
+				
+				setTimeout(function(){
+					$("#route_map").attr("src",route_map_url);
+				},2000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			ITINERARIO.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" style="background-color:#5E3656;border:none;width:100%;height:400px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:center center;" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle del Humilladero
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Calle del Humilladero, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_2" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			San Vicente
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("San Vicente, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_3" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Av. de Portugal
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Avenida de Portugal, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_4" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle San Segundo
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Calle San Segundo, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_5" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Arco del Peso de la Harina
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Arco del Peso de la Harina, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_6" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza Catedral
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Plaza Catedral, 9, Ávila");
+			});
+		</script>
+				
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

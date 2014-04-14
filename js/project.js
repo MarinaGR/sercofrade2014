@@ -128,9 +128,14 @@ function onBodyLoad()
 
 function load_view(options)
 {
-		if(options.url_to_load=="./index.html")
+		/*if(options.url_to_load=="./index.html")
 		{
 			window.location.href=options.url_to_load;
+			return false;
+		}*/
+		if(options.url_to_load=="./views/general/ov_view_main_menu.html")
+		{
+			window.location.href=navigator.app.exitapp();
 			return false;
 		}
 			

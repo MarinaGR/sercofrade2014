@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
-
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.ovnyline.sercofrade"
-    version     = "1.0.4"
-    versionCode = "23" >
+    version     = "1.0.5"
+    versionCode = "24" >
 
-    <preference name="phonegap-version" value="3.1.0" />
-
-    <name>Ser Cofrade 2014</name>
+    <name>Ser Cofrade Ávila 2015</name>
 
     <description>
-    Aplicación con toda la información sobre la Semana Santa de Ávila 2014. 
+    Aplicación con toda la información sobre la Semana Santa de Ávila 2015. 
     </description>
 
     <author href="http://www.ovnyline.com" email="info@ovnyline.com">
@@ -23,10 +20,15 @@
         following tag to your config.xml; you will still have the INTERNET
         permission on your app, which PhoneGap requires.
     
-    <preference name="permissions" value="none"/>-->
+    -->
+	<preference name="permissions" value="none"/>
+	<!-- to enable individual permissions use the following examples -->
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+	<!-- end to enable individual permissions use the following examples -->
 
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="3.1.0" />          <!-- all: current version of PhoneGap -->
+    <preference name="phonegap-version"           value="3.6.3" />          <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
@@ -36,7 +38,7 @@
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
     <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
     <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
-    <preference name="android-minSdkVersion"      value="10" />             <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+    <preference name="android-minSdkVersion"      value="14" />             <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
 
     <!-- Plugins -->
@@ -53,13 +55,14 @@
     <gap:plugin name="org.apache.cordova.dialogs" />
     <gap:plugin name="org.apache.cordova.file" />
     <gap:plugin name="org.apache.cordova.file-transfer" />
-    <!-- <gap:plugin name="org.apache.cordova.geolocation" /> -->
-   <!-- <gap:plugin name="org.apache.cordova.globalization" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" />
+	<gap:plugin name="org.apache.cordova.globalization" />
     <gap:plugin name="org.apache.cordova.media" />
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
-    <gap:plugin name="org.apache.cordova.vibration" /> -->
+    <gap:plugin name="org.apache.cordova.vibration" />
+	<gap:plugin name="org.apache.cordova.device" version="0.2.8" />  -->
+	<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
+	<gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />

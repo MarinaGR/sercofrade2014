@@ -36,10 +36,10 @@
 				PROCESIÓN DE LA MADRUGADA
 			</div>
 			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
-				17 de Abril - Jueves Santo
+				Jueves Santo
 			</div>
 			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
-				Salida a las <b>02 00h</b> desde la Iglesia de Mosén Rubí, en Plaza de Mosén Rubí
+				Salida a las <b>02:00h</b> desde la S.A.I Catedral, en Plaza de la Catedral
 			</div>
 			
 		</div>
@@ -114,10 +114,10 @@
 		<div style="margin:auto;width:90%">
 		
 			<iframe id="route_map" style="background-color:#5E3656;border:none;width:100%;height:400px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:center center;" src=""> 
-				
+			
 			</iframe>
 			<script>
-				route_map_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Plaza Mosén Rubí, Ávila&destination=Plaza Mosén Rubí, Ávila&avoid=tolls|highways&mode=walking&waypoints=Calle Bracamonte, Ávila|Plaza Fuente el Sol, Ávila|Carretera Ronda Vieja, 1, Ávila|Plaza San Vicente, Ávila|Calle San Segundo, 40, Ávila|Plaza Catedral, Ávila|Calle Tomás Luis De Victoria, Ávila|Plaza Zurraquín, 1, Ávila|Calle Marqués de Benavites, 2, Ávila&language=es&zoom=15&center=40.659196,-4.698299";
+				route_map_url="https://www.google.com/maps/embed?pb=!1m59!1m12!1m3!1d3026.7781817683194!2d-4.698276534860971!3d40.656819804555944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m44!1i0!3e2!4m3!3m2!1d40.655859299999996!2d-4.6979672!4m5!1s0xd40f31c858c7895%3A0x446776499e6b8b99!2sCalle+Tom%C3%A1s+Luis+de+Victoria%2C+05001+%C3%81vila!3m2!1d40.656573!2d-4.6988974!4m3!3m2!1d40.656804099999995!2d-4.699781!4m3!3m2!1d40.657351999999996!2d-4.6996953999999995!4m5!1s0xd40f31cf8ec1437%3A0x53b687278e780c40!2sPlaza+Fuente+el+Sol%2C+05001+%C3%81vila!3m2!1d40.658069399999995!2d-4.6994562!4m3!3m2!1d40.6584358!2d-4.6983584!4m5!1s0xd40f3034a3730bf%3A0x867a9b2d02c99708!2sPlaza+San+Vicente%2C+05001+%C3%81vila!3m2!1d40.6572265!2d-4.6962969999999995!4m3!3m2!1d40.6561202!2d-4.6965351!4m3!3m2!1d40.655854!2d-4.697967!5e0!3m2!1ses!2ses!4v1425544501938";
 				setTimeout(function(){
 					$("#route_map").attr("src",route_map_url);
 				},2000);
@@ -157,101 +157,92 @@
 		</div>
 		
 		<div id="ov_place_1" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
-			Plaza Mosén Rubí
+			Plaza de la Catedral
 		</div>
 		<script>
 			$("#ov_place_1").click(function(e){
-				show_geoloc("Plaza Mosén Rubí, Ávila");
+				show_geoloc("Plaza de la Catedral, Ávila");
 			});
 		</script>
 		
 		<div id="ov_place_2" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
-			Calle Bracamonte
-		</div>
-		<script>
-			$("#ov_place_2").click(function(e){
-				show_geoloc("Calle Bracamonte, Ávila");
-			});
-		</script>
-		
-		<div id="ov_place_3" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
-			Plaza Fuente el Sol
-		</div>
-		<script>
-			$("#ov_place_3").click(function(e){
-				show_geoloc("Plaza Fuente el Sol, 4, Ávila");
-			});
-		</script>
-		
-		<div id="ov_place_4" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
-			Carretera Ronda Vieja
-		</div>
-		<script>
-			$("#ov_place_4").click(function(e){
-				show_geoloc("Carretera Ronda Vieja, 1, Ávila");
-			});
-		</script>
-		
-		<div id="ov_place_5" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
-			Plaza San Vicente
-		</div>
-		<script>
-			$("#ov_place_5").click(function(e){
-				show_geoloc("Plaza San Vicente, Ávila");
-			});
-		</script>
-		
-		<div id="ov_place_6" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
-			Calle San Segundo
-		</div>
-		<script>
-			$("#ov_place_6").click(function(e){
-				show_geoloc("Calle San Segundo, 40, Ávila");
-			});
-		</script>
-		
-		<div id="ov_place_7" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
-			Plaza Catedral
-		</div>
-		<script>
-			$("#ov_place_7").click(function(e){
-				show_geoloc("Plaza Catedral, Ávila");
-			});
-		</script>
-		
-		<div id="ov_place_8" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
 			Calle Tomás Luis de Victoria
 		</div>
 		<script>
-			$("#ov_place_8").click(function(e){
+			$("#ov_place_2").click(function(e){
 				show_geoloc("Calle Tomás Luis de Victoria, Ávila");
 			});
 		</script>
 		
+		<div id="ov_place_3" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza de Zurraquin
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Plaza de Zurraquin, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_4" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Bracamonte
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Calle Bracamonte, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_5" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza de Mosén Rubí
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Plaza de Mosén Rubí, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_6" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza de Fuente el Sol
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Plaza de Fuente el Sol, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_7" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Carretera de la Ronda Vieja
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Carretera de la Ronda Vieja, Ávila");
+			});
+		</script>
+		
+		<div id="ov_place_8" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza de San Vicente
+		</div>
+		<script>
+			$("#ov_place_8").click(function(e){
+				show_geoloc("Plaza de San Vicente, Ávila");
+			});
+		</script>
+		
 		<div id="ov_place_9" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
-			Plaza Zurraquín
+			Calle San Segundo
 		</div>
 		<script>
 			$("#ov_place_9").click(function(e){
-				show_geoloc("Plaza Zurraquín, Ávila");
+				show_geoloc("Calle San Segundo, Ávila");
 			});
 		</script>
 		
 		<div id="ov_place_10" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
-			Calle Marqués de Benavites
+			Plaza de la Catedral
 		</div>
 		<script>
 			$("#ov_place_10").click(function(e){
-				show_geoloc("Calle Marqués de Benavites, 2, Ávila");
-			});
-		</script>
-		
-		<div id="ov_place_11" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
-			Plaza Mosén Rubí
-		</div>
-		<script>
-			$("#ov_place_11").click(function(e){
-				show_geoloc("Plaza Mosén Rubí, Ávila");
+				show_geoloc("Plaza de la Catedral, Ávila");
 			});
 		</script>
 				

@@ -66,47 +66,74 @@ function error_geoloc(error)
 
 function calculate_day()
 {
-		if(selected_day_in_proce_list=="none")
+		if(selected_day_in_proce_list=="none")   //MIRAR ESTO PORQUE CAE ENTRE DOS MESES (MARZO Y ABRIL)
 		{
-			if(current_month!=3)
+			if(current_month!=2 && current_month!=3)
 			{
 				$(".ov_box_10_b").attr("class","ov_box_10");
-				$("#ov_box_10_11_abr").attr("class","ov_box_10_b");
+				$("#ov_box_10_22_mar").attr("class","ov_box_10_b");
 				$(".ov_vertical_space_03_b").attr("class","ov_vertical_space_03");
-				$("#ov_vertical_space_03_11_abr").attr("class","ov_vertical_space_03_b");
+				$("#ov_vertical_space_03_11_mar").attr("class","ov_vertical_space_03_b");
 				$(".ov_zone_13_b").attr("class","ov_zone_13");
-				$("#ov_zone_13_11_abr").attr("class","ov_zone_13_b");
-				selected_day_in_proce_list=11;
+				$("#ov_zone_13_22_mar").attr("class","ov_zone_13_b");
+				selected_day_in_proce_list=27;
 			}
-			else if(current_day_of_month<=11 || current_day_of_month>20)
+			else if(current_day_of_month<27 || current_day_of_month>31)
 			{
 				$(".ov_box_10_b").attr("class","ov_box_10");
-				$("#ov_box_10_11_abr").attr("class","ov_box_10_b");
+				$("#ov_box_10_22_mar").attr("class","ov_box_10_b");
 				$(".ov_vertical_space_03_b").attr("class","ov_vertical_space_03");
-				$("#ov_vertical_space_03_11_abr").attr("class","ov_vertical_space_03_b");
+				$("#ov_vertical_space_03_11_mar").attr("class","ov_vertical_space_03_b");
 				$(".ov_zone_13_b").attr("class","ov_zone_13");
-				$("#ov_zone_13_11_abr").attr("class","ov_zone_13_b");
-				selected_day_in_proce_list=11;
+				$("#ov_zone_13_22_mar").attr("class","ov_zone_13_b");
+				selected_day_in_proce_list=27;
 			}
 			else
 			{
-				$(".ov_box_10_b").attr("class","ov_box_10");
-				$("#ov_box_10_"+current_day_of_month+"_abr").attr("class","ov_box_10_b");
-				$(".ov_vertical_space_03_b").attr("class","ov_vertical_space_03");
-				$("#ov_vertical_space_03_"+current_day_of_month+"_abr").attr("class","ov_vertical_space_03_b");
-				$(".ov_zone_13_b").attr("class","ov_zone_13");
-				$("#ov_zone_13_"+current_day_of_month+"_abr").attr("class","ov_zone_13_b");
-				selected_day_in_proce_list=11;
-			}				
+				if(current_month==2)
+				{
+					$(".ov_box_10_b").attr("class","ov_box_10");
+					$("#ov_box_10_"+current_day_of_month+"_mar").attr("class","ov_box_10_b");
+					$(".ov_vertical_space_03_b").attr("class","ov_vertical_space_03");
+					$("#ov_vertical_space_03_"+current_day_of_month+"_mar").attr("class","ov_vertical_space_03_b");
+					$(".ov_zone_13_b").attr("class","ov_zone_13");
+					$("#ov_zone_13_"+current_day_of_month+"_mar").attr("class","ov_zone_13_b");
+					selected_day_in_proce_list=27;
+				}
+				else if(current_month==3)
+				{
+					$(".ov_box_10_b").attr("class","ov_box_10");
+					$("#ov_box_10_"+current_day_of_month+"_abr").attr("class","ov_box_10_b");
+					$(".ov_vertical_space_03_b").attr("class","ov_vertical_space_03");
+					$("#ov_vertical_space_03_"+current_day_of_month+"_abr").attr("class","ov_vertical_space_03_b");
+					$(".ov_zone_13_b").attr("class","ov_zone_13");
+					$("#ov_zone_13_"+current_day_of_month+"_abr").attr("class","ov_zone_13_b");
+					selected_day_in_proce_list=1;					
+				}
+			}	
+			
 		}
 		else
 		{
-			$(".ov_box_10_b").attr("class","ov_box_10");
-			$("#ov_box_10_"+selected_day_in_proce_list+"_abr").attr("class","ov_box_10_b");
-			$(".ov_vertical_space_03_b").attr("class","ov_vertical_space_03");
-			$("#ov_vertical_space_03_"+selected_day_in_proce_list+"_abr").attr("class","ov_vertical_space_03_b");
-			$(".ov_zone_13_b").attr("class","ov_zone_13");
-			$("#ov_zone_13_"+selected_day_in_proce_list+"_abr").attr("class","ov_zone_13_b");
+			if(selected_day_in_proce_list>=27 && selected_day_in_proce_list<=31)
+			{
+				$(".ov_box_10_b").attr("class","ov_box_10");
+				$("#ov_box_10_"+selected_day_in_proce_list+"_mar").attr("class","ov_box_10_b");
+				$(".ov_vertical_space_03_b").attr("class","ov_vertical_space_03");
+				$("#ov_vertical_space_03_"+selected_day_in_proce_list+"_mar").attr("class","ov_vertical_space_03_b");
+				$(".ov_zone_13_b").attr("class","ov_zone_13");
+				$("#ov_zone_13_"+selected_day_in_proce_list+"_mar").attr("class","ov_zone_13_b");
+			}
+			else if(selected_day_in_proce_list>=1 && selected_day_in_proce_list<=5)
+			{
+				$(".ov_box_10_b").attr("class","ov_box_10");
+				$("#ov_box_10_"+selected_day_in_proce_list+"_abr").attr("class","ov_box_10_b");
+				$(".ov_vertical_space_03_b").attr("class","ov_vertical_space_03");
+				$("#ov_vertical_space_03_"+selected_day_in_proce_list+"_abr").attr("class","ov_vertical_space_03_b");
+				$(".ov_zone_13_b").attr("class","ov_zone_13");
+				$("#ov_zone_13_"+selected_day_in_proce_list+"_abr").attr("class","ov_zone_13_b");
+			}
+			
 		}
 }
 

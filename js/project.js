@@ -31,7 +31,12 @@ var viewport_height=$(window).outerHeight();
 var screen_width=screen.width;
 var screen_height=screen.height;
 
-var publi_url='http://sercofradeavila.com/server/publicidad/loader.php?day='+current_day_of_month+'&month='+current_month;
+var imgsize="small";
+
+if(viewport_width>=758)
+	imgsize="big";
+
+var publi_url='http://sercofradeavila.com/server/publicidad/loader.php?day='+current_day_of_month+'&month='+current_month+'&imgsize='+imgsize;
 
 function show_geoloc(dest)
 {

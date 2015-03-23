@@ -182,7 +182,9 @@
 		</script>
 		<!--to diary -->
 		
-		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+			
 		<!--to offers 
 		<div class="hollow_10px"> </div>
 		<div class="hollow_10px"> </div>
@@ -204,11 +206,29 @@
 		</script>
 		<!--to offers -->
 		
+		<!--to instagram -->
+		<div id="ov_small_menu_item_3" class="ov_small_menu_item">
+			
+			<div class="ov_small_menu_item_title">
+				FOTOGRAFIAS INSTAGRAM &nbsp;&nbsp;
+				<img src="./resources/general_images/flechas2.png" class="ov_small_menu_item_image" alt=" "/>
+			</div>
+			
+		</div>
+		<script>
+			$("#ov_small_menu_item_3").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_01', url_to_load: './views/general/ov_view_instagram.html', view_background_color: '#A02B44', view_background_image: 'none', view_to_hide: 'ov_view_container_02' });	
+									
+			});
+		</script>
+		<!--to instagram -->		
+		
 		<div class="hollow_10px"> </div>
 		<div class="hollow_10px"> </div>
 		
 		<!--to about -->
-		<div id="ov_small_menu_item_3" class="ov_small_menu_item">
+		<div id="ov_small_menu_item_4" class="ov_small_menu_item">
 			
 			<div class="ov_small_menu_item_title">
 				ACERCA DE&nbsp;&nbsp;
@@ -217,7 +237,7 @@
 			
 		</div>
 		<script>
-			$("#ov_small_menu_item_3").click(function(e){
+			$("#ov_small_menu_item_4").click(function(e){
 				
 				load_view({view_to_load: 'ov_view_container_01', url_to_load: './views/general/ov_view_about.html', view_background_color: '#801669', view_background_image: 'none', view_to_hide: 'ov_view_container_02' });	
 									

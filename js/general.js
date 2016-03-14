@@ -31,8 +31,6 @@ function onBodyLoad()
 		setLocalStorage("fecha", now); 
 	}
 	
-	onOnline();
-	
 	var myIframe=document.getElementById('contenido');
 	myIframe.addEventListener("load", function() { }, false);
 	

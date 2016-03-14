@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="ES">
+	
+	<head>
+		<title>Ser Cofrade Ávila</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+		<meta name="robots" content="NOINDEX,NOFOLLOW,NOARCHIVE,NOODP,NOSNIPPET">
+		<meta name="description" content="Ser Cofrade Ávila">
+		<meta name="keywords" content="Ser Cofrade Ávila">  
+		<meta name="cache-control" content="no-cache">
+		<meta name="expires" content="0">
+		<link href="./css/css/font-awesome.min.css" rel="stylesheet" type="text/css">	
+		<link href="./css/styles.css" rel="stylesheet" type="text/css">	
+		<script src="./js/jquery.js"></script>
+		<script src="./js/jquery_ui.js"></script>
+		<script src="./js/general.js"></script>
+		<script src="./cordova.js"></script>
+		<script>
+
+			document.addEventListener("deviceready", function ()
+			{
+				document.addEventListener("backbutton", onBackKeyDown, false);
+
+				var boton_cierre=document.getElementById("boton_cierre");
+				if(boton_cierre!=null)
+				{
+					boton_cierre.addEventListener("click", function () {
+						navigator.app.exitApp();
+						return false;
+					}, false);	
+				}
+				
+			}, false); 
+
+		</script>
+	</head>
+
+	<body onload="onBodyLoad()" class="body_offline">
+		
+		<div class="ov_message">
+			Para tener acceso a la aplicación completa, necesita una conexión a internet. <a href="index.html">ACTUALIZAR</a>
+		</div>
+		
+		<div class="ov_zone_general">
+	
+			<div class="ov_zone_limited_2">
+				
+				<div class="ov_box_empty_side">	</div>
+				
+				<div class="ov_box_text_side">
+					<div class="ov_text_info_title">
+						- Acerca de esta App -
+					</div>
+					<div class="ov_text_info_text">
+						<p>
+						Esta aplicación para dispositivos móviles ha sido desarrollada por Ovnyline Comunicación para CADENA SER ÁVILA con el objetivo de difundir y permitir el acceso rápido a toda la información relacionada con la celebración de la SEMANA SANTA en este año 2016.
+						</p>
+						<p>
+						Queremos agradecer a todos los patrocinadores su colaboración en este proyecto.
+						</p>
+						<p>
+						Esperamos que os sea útil para disfrutar de la SEMANA SANTA y estar siempre informados. Desde Ovnyline Comunicación os pedimos que nos enviéis vuestros comentarios, críticas y propuestas para mejorar esta App para los próximos años y convertirla en lo que vosotros esperáis.
+						Podéis contactar con nosotros en info@ovnyline.com
+						</p>
+						<p>
+						<i>
+						Aplicación Compatible con Android 2.3 o superior, iPhone, iPad, y otros dispositivos móviles via webApp
+						</i>
+						</p>
+						<p>
+						<b>
+						Grupo Ovnyline Comunicacion S.L.
+						</b>
+						<br>
+						<i>
+						Desarrollo, diseño y comunicación on-line integral.   	
+						</i>
+						</p>				
+					</div>
+				</div>
+						
+				<div class="clear"> </div>
+				
+			</div>
+				
+		</div>
+		
+		<div id="boton_cierre">
+			<div style='width:100%;margin:auto;text-align:center;color:#f6f6f6;background:#111;cursor:pointer;padding:5px 0; position:fixed;bottom:0;' >
+				X
+			</div>
+		</div>
+		
+	</body>
+	
+</html>

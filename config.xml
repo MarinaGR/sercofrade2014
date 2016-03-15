@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap   = "http://phonegap.com/ns/1.0"
 		id          = "com.ovnyline.sercofrade"
-		version     = "1.1.0" > 
+		version     = "1.0.9" > 
 
     <name>Ser Cofrade Ávila 2016</name>
 

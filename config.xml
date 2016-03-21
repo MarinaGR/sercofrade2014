@@ -3,7 +3,8 @@
 		xmlns:gap   = "http://phonegap.com/ns/1.0"
 		id          = "com.ovnyline.sercofrade"
 		versionCode = "200" 
-		version     = "1.1.0" > 
+		version     = "1.1.1" > 
+		<!-- problemas limpieza cache -->
 
     <name>Ser Cofrade Ávila 2016</name>
 
@@ -68,6 +69,7 @@
 	<gap:plugin name="org.apache.cordova.device" version="0.2.12" /> 
 	<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
+	<plugin name="com.sharinglabs.cordova.plugin.cache" spec="1.0.0" source="pgb" />
 	
 	<!-- Ocultar barra ios, a partir de ios7-->
 	<gap:plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" version="1.1.0" />

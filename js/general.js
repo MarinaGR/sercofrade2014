@@ -31,6 +31,8 @@ function onBodyLoad()
 		setLocalStorage("fecha", now); 
 	}
 	
+	//onOnline();
+	
 	var myIframe=document.getElementById('contenido');
 	myIframe.addEventListener("load", function() { }, false);
 	
@@ -44,7 +46,7 @@ function onDeviceReady()
 	document.addEventListener("backbutton", onBackKeyDown, false);
 	document.addEventListener("menubutton", onMenuKeyDown, false);
 		
-	var start_session=getSessionStorage("start_session"); 
+	/*var start_session=getSessionStorage("start_session"); 
 	if(typeof start_session == "undefined" || start_session==null)	
 	{	
 		var nueva_fecha=parseInt(getLocalStorage("fecha"))+1000*60*60*24*2; //2 días
@@ -55,7 +57,7 @@ function onDeviceReady()
 			setLocalStorage("fecha", now);
 		}
 		getSessionStorage("start_session", "inicio");
-	}
+	}*/
 
 	check_internet();			
 	
